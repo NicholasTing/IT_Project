@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022B023EC31B658B487E45BC /* Pods_SWEDEN_iCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EC3EAD24FAEF2B4FA9A031 /* Pods_SWEDEN_iCareUITests.framework */; };
+		7554D20606FBA1C5C57A94E2 /* Pods_SWEDEN_iCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F828124DC0955444496C26 /* Pods_SWEDEN_iCare.framework */; };
 		E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */; };
-		E183B6C3211C1A7500D5FB2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C2211C1A7500D5FB2C /* ViewController.swift */; };
-		E183B6C6211C1A7500D5FB2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C4211C1A7500D5FB2C /* Main.storyboard */; };
+		E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */; };
 		E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C7211C1A7500D5FB2C /* Assets.xcassets */; };
 		E183B6CB211C1A7500D5FB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C9211C1A7500D5FB2C /* LaunchScreen.storyboard */; };
 		E183B6D6211C1A7600D5FB2C /* SWEDEN_iCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6D5211C1A7600D5FB2C /* SWEDEN_iCareTests.swift */; };
 		E183B6E1211C1A7600D5FB2C /* SWEDEN_iCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6E0211C1A7600D5FB2C /* SWEDEN_iCareUITests.swift */; };
+		E65CEEB28D00832EED458C8A /* Pods_SWEDEN_iCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07576DAD0119FBE2758C6E /* Pods_SWEDEN_iCareTests.framework */; };
+		EA5023C321316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
+		EA5023C421316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
+		EA5023C521316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
+		EAA9385421315864009932AC /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9385321315864009932AC /* UsersViewController.swift */; };
+		EAC5CDB021312BBF00492CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDAF21312BBF00492CCA /* Main.storyboard */; };
+		EAC5CDB121312BBF00492CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDAF21312BBF00492CCA /* Main.storyboard */; };
+		EAC5CDB221312BBF00492CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDAF21312BBF00492CCA /* Main.storyboard */; };
+		EAC5CDB82131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDB72131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg */; };
+		EAC5CDBA213131E700492CCA /* solid-orange-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDB9213131E700492CCA /* solid-orange-background.jpg */; };
+		EAC5CDC42131332A00492CCA /* ok.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDC32131332A00492CCA /* ok.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5199B735BB9ADC8648219F /* Pods-SWEDEN_iCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare.debug.xcconfig"; sourceTree = "<group>"; };
+		383605195D63FA326C40BFEA /* Pods-SWEDEN_iCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare.release.xcconfig"; sourceTree = "<group>"; };
+		72EC3EAD24FAEF2B4FA9A031 /* Pods_SWEDEN_iCareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F828124DC0955444496C26 /* Pods_SWEDEN_iCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78299532B704F28C8839FB72 /* Pods-SWEDEN_iCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareTests/Pods-SWEDEN_iCareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B6BE240D9D63390222E8044 /* Pods-SWEDEN_iCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareTests/Pods-SWEDEN_iCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB2CDF0EC92DF970618DD7B2 /* Pods-SWEDEN_iCareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareUITests/Pods-SWEDEN_iCareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE07576DAD0119FBE2758C6E /* Pods_SWEDEN_iCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5A1E2DE94F39D703A92659 /* Pods-SWEDEN_iCareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareUITests/Pods-SWEDEN_iCareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E183B6BD211C1A7500D5FB2C /* SWEDEN_iCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEDEN_iCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E183B6C2211C1A7500D5FB2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E183B6C5211C1A7500D5FB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E183B6C7211C1A7500D5FB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E183B6CA211C1A7500D5FB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E183B6CC211C1A7500D5FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +67,12 @@
 		E183B6DC211C1A7600D5FB2C /* SWEDEN_iCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWEDEN_iCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183B6E0211C1A7600D5FB2C /* SWEDEN_iCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWEDEN_iCareUITests.swift; sourceTree = "<group>"; };
 		E183B6E2211C1A7600D5FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5023C221316A5200568BC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAA9385321315864009932AC /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		EAC5CDAF21312BBF00492CCA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		EAC5CDB72131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "33388508-green-watercolor-ombre-background-.jpg"; sourceTree = "<group>"; };
+		EAC5CDB9213131E700492CCA /* solid-orange-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "solid-orange-background.jpg"; sourceTree = "<group>"; };
+		EAC5CDC32131332A00492CCA /* ok.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ok.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7554D20606FBA1C5C57A94E2 /* Pods_SWEDEN_iCare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65CEEB28D00832EED458C8A /* Pods_SWEDEN_iCareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022B023EC31B658B487E45BC /* Pods_SWEDEN_iCareUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38177A72F459DD7A99AE14F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B5199B735BB9ADC8648219F /* Pods-SWEDEN_iCare.debug.xcconfig */,
+				383605195D63FA326C40BFEA /* Pods-SWEDEN_iCare.release.xcconfig */,
+				78299532B704F28C8839FB72 /* Pods-SWEDEN_iCareTests.debug.xcconfig */,
+				7B6BE240D9D63390222E8044 /* Pods-SWEDEN_iCareTests.release.xcconfig */,
+				DA5A1E2DE94F39D703A92659 /* Pods-SWEDEN_iCareUITests.debug.xcconfig */,
+				AB2CDF0EC92DF970618DD7B2 /* Pods-SWEDEN_iCareUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C59E7373468C02FCAAACC22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76F828124DC0955444496C26 /* Pods_SWEDEN_iCare.framework */,
+				CE07576DAD0119FBE2758C6E /* Pods_SWEDEN_iCareTests.framework */,
+				72EC3EAD24FAEF2B4FA9A031 /* Pods_SWEDEN_iCareUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E183B6B4211C1A7500D5FB2C = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +133,12 @@
 				E183B6D4211C1A7600D5FB2C /* SWEDEN_iCareTests */,
 				E183B6DF211C1A7600D5FB2C /* SWEDEN_iCareUITests */,
 				E183B6BE211C1A7500D5FB2C /* Products */,
+<<<<<<< HEAD
+				38177A72F459DD7A99AE14F4 /* Pods */,
+				8C59E7373468C02FCAAACC22 /* Frameworks */,
+=======
 				E183B6EE211C22F700D5FB2C /* Frameworks */,
+>>>>>>> origin/master
 			);
 			sourceTree = "<group>";
 		};
@@ -98,12 +155,15 @@
 		E183B6BF211C1A7500D5FB2C /* SWEDEN_iCare */ = {
 			isa = PBXGroup;
 			children = (
+				EA5023C12131662800568BC7 /* Images */,
 				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
-				E183B6C2211C1A7500D5FB2C /* ViewController.swift */,
-				E183B6C4211C1A7500D5FB2C /* Main.storyboard */,
+				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
+				EAA9385321315864009932AC /* UsersViewController.swift */,
+				EAC5CDAF21312BBF00492CCA /* Main.storyboard */,
 				E183B6C7211C1A7500D5FB2C /* Assets.xcassets */,
 				E183B6C9211C1A7500D5FB2C /* LaunchScreen.storyboard */,
 				E183B6CC211C1A7500D5FB2C /* Info.plist */,
+				EA5023C221316A5200568BC7 /* GoogleService-Info.plist */,
 			);
 			path = SWEDEN_iCare;
 			sourceTree = "<group>";
@@ -126,11 +186,22 @@
 			path = SWEDEN_iCareUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+		EA5023C12131662800568BC7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5CDB9213131E700492CCA /* solid-orange-background.jpg */,
+				EAC5CDB72131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg */,
+				EAC5CDC32131332A00492CCA /* ok.jpeg */,
+			);
+			path = Images;
+=======
 		E183B6EE211C22F700D5FB2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+>>>>>>> origin/master
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E183B6E5211C1A7600D5FB2C /* Build configuration list for PBXNativeTarget "SWEDEN_iCare" */;
 			buildPhases = (
+				088957D36678E4CCFC252814 /* [CP] Check Pods Manifest.lock */,
 				E183B6B9211C1A7500D5FB2C /* Sources */,
 				E183B6BA211C1A7500D5FB2C /* Frameworks */,
 				E183B6BB211C1A7500D5FB2C /* Resources */,
+				DDE2D50C4645AEC9BE691C19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E183B6E8211C1A7600D5FB2C /* Build configuration list for PBXNativeTarget "SWEDEN_iCareTests" */;
 			buildPhases = (
+				6C1E53588F68DC107F3496C4 /* [CP] Check Pods Manifest.lock */,
 				E183B6CD211C1A7600D5FB2C /* Sources */,
 				E183B6CE211C1A7600D5FB2C /* Frameworks */,
 				E183B6CF211C1A7600D5FB2C /* Resources */,
@@ -175,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E183B6EB211C1A7600D5FB2C /* Build configuration list for PBXNativeTarget "SWEDEN_iCareUITests" */;
 			buildPhases = (
+				D2218655F4B849CB0B60EE6C /* [CP] Check Pods Manifest.lock */,
 				E183B6D8211C1A7600D5FB2C /* Sources */,
 				E183B6D9211C1A7600D5FB2C /* Frameworks */,
 				E183B6DA211C1A7600D5FB2C /* Resources */,
@@ -245,9 +320,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC5CDBA213131E700492CCA /* solid-orange-background.jpg in Resources */,
 				E183B6CB211C1A7500D5FB2C /* LaunchScreen.storyboard in Resources */,
+				EAC5CDB82131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg in Resources */,
+				EAC5CDC42131332A00492CCA /* ok.jpeg in Resources */,
 				E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */,
-				E183B6C6211C1A7500D5FB2C /* Main.storyboard in Resources */,
+				EAC5CDB021312BBF00492CCA /* Main.storyboard in Resources */,
+				EA5023C321316A5200568BC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +334,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC5CDB121312BBF00492CCA /* Main.storyboard in Resources */,
+				EA5023C421316A5200568BC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,17 +343,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC5CDB221312BBF00492CCA /* Main.storyboard in Resources */,
+				EA5023C521316A5200568BC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088957D36678E4CCFC252814 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWEDEN_iCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C1E53588F68DC107F3496C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWEDEN_iCareTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2218655F4B849CB0B60EE6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWEDEN_iCareUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE2D50C4645AEC9BE691C19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E183B6B9211C1A7500D5FB2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E183B6C3211C1A7500D5FB2C /* ViewController.swift in Sources */,
+				E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */,
+				EAA9385421315864009932AC /* UsersViewController.swift in Sources */,
 				E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,14 +474,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E183B6C4211C1A7500D5FB2C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E183B6C5211C1A7500D5FB2C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E183B6C9211C1A7500D5FB2C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,13 +594,14 @@
 		};
 		E183B6E6211C1A7600D5FB2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5199B735BB9ADC8648219F /* Pods-SWEDEN_iCare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH6D5KT59V;
+				DEVELOPMENT_TEAM = 53X25WWJC8;
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Nicholas.SWEDEN-iCare";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,13 +610,14 @@
 		};
 		E183B6E7211C1A7600D5FB2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383605195D63FA326C40BFEA /* Pods-SWEDEN_iCare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH6D5KT59V;
+				DEVELOPMENT_TEAM = 53X25WWJC8;
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Nicholas.SWEDEN-iCare";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,6 +626,7 @@
 		};
 		E183B6E9211C1A7600D5FB2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78299532B704F28C8839FB72 /* Pods-SWEDEN_iCareTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +644,7 @@
 		};
 		E183B6EA211C1A7600D5FB2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6BE240D9D63390222E8044 /* Pods-SWEDEN_iCareTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -501,6 +662,7 @@
 		};
 		E183B6EC211C1A7600D5FB2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5A1E2DE94F39D703A92659 /* Pods-SWEDEN_iCareUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +679,7 @@
 		};
 		E183B6ED211C1A7600D5FB2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2CDF0EC92DF970618DD7B2 /* Pods-SWEDEN_iCareUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
