@@ -133,8 +133,12 @@
 				E183B6D4211C1A7600D5FB2C /* SWEDEN_iCareTests */,
 				E183B6DF211C1A7600D5FB2C /* SWEDEN_iCareUITests */,
 				E183B6BE211C1A7500D5FB2C /* Products */,
+<<<<<<< HEAD
 				38177A72F459DD7A99AE14F4 /* Pods */,
 				8C59E7373468C02FCAAACC22 /* Frameworks */,
+=======
+				E183B6EE211C22F700D5FB2C /* Frameworks */,
+>>>>>>> origin/master
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +186,7 @@
 			path = SWEDEN_iCareUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		EA5023C12131662800568BC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +195,13 @@
 				EAC5CDC32131332A00492CCA /* ok.jpeg */,
 			);
 			path = Images;
+=======
+		E183B6EE211C22F700D5FB2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+>>>>>>> origin/master
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +277,11 @@
 					E183B6BC211C1A7500D5FB2C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E183B6D0211C1A7600D5FB2C = {
 						CreatedOnToolsVersion = 9.2;
