@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		022B023EC31B658B487E45BC /* Pods_SWEDEN_iCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EC3EAD24FAEF2B4FA9A031 /* Pods_SWEDEN_iCareUITests.framework */; };
+		047627AB2134C87400A57C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047627AA2134C87400A57C74 /* Main.storyboard */; };
+		04BBCDF7213524F900178098 /* blue-ombre-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDF5213524F800178098 /* blue-ombre-background.jpg */; };
+		04BBCDF8213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDF6213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg */; };
+		04BBCDFC2135270B00178098 /* ffff.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDF92135270A00178098 /* ffff.jpeg */; };
+		04BBCDFD2135270B00178098 /* ggg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDFA2135270B00178098 /* ggg.jpg */; };
+		04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDFB2135270B00178098 /* dddd.jpeg */; };
 		7554D20606FBA1C5C57A94E2 /* Pods_SWEDEN_iCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F828124DC0955444496C26 /* Pods_SWEDEN_iCare.framework */; };
 		E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */; };
 		E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */; };
 		E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C7211C1A7500D5FB2C /* Assets.xcassets */; };
-		E183B6CB211C1A7500D5FB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C9211C1A7500D5FB2C /* LaunchScreen.storyboard */; };
 		E183B6D6211C1A7600D5FB2C /* SWEDEN_iCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6D5211C1A7600D5FB2C /* SWEDEN_iCareTests.swift */; };
 		E183B6E1211C1A7600D5FB2C /* SWEDEN_iCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6E0211C1A7600D5FB2C /* SWEDEN_iCareUITests.swift */; };
 		E65CEEB28D00832EED458C8A /* Pods_SWEDEN_iCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07576DAD0119FBE2758C6E /* Pods_SWEDEN_iCareTests.framework */; };
@@ -20,12 +25,6 @@
 		EA5023C421316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
 		EA5023C521316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
 		EAA9385421315864009932AC /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9385321315864009932AC /* UsersViewController.swift */; };
-		EAC5CDB021312BBF00492CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDAF21312BBF00492CCA /* Main.storyboard */; };
-		EAC5CDB121312BBF00492CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDAF21312BBF00492CCA /* Main.storyboard */; };
-		EAC5CDB221312BBF00492CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDAF21312BBF00492CCA /* Main.storyboard */; };
-		EAC5CDB82131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDB72131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg */; };
-		EAC5CDBA213131E700492CCA /* solid-orange-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDB9213131E700492CCA /* solid-orange-background.jpg */; };
-		EAC5CDC42131332A00492CCA /* ok.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EAC5CDC32131332A00492CCA /* ok.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047627AA2134C87400A57C74 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04BBCDF5213524F800178098 /* blue-ombre-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blue-ombre-background.jpg"; sourceTree = "<group>"; };
+		04BBCDF6213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5ebb350afa99fb3a2b75c5855e98bd9c.jpg; sourceTree = "<group>"; };
+		04BBCDF92135270A00178098 /* ffff.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ffff.jpeg; sourceTree = "<group>"; };
+		04BBCDFA2135270B00178098 /* ggg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ggg.jpg; sourceTree = "<group>"; };
+		04BBCDFB2135270B00178098 /* dddd.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dddd.jpeg; sourceTree = "<group>"; };
 		0B5199B735BB9ADC8648219F /* Pods-SWEDEN_iCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare.debug.xcconfig"; sourceTree = "<group>"; };
 		383605195D63FA326C40BFEA /* Pods-SWEDEN_iCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare.release.xcconfig"; sourceTree = "<group>"; };
 		72EC3EAD24FAEF2B4FA9A031 /* Pods_SWEDEN_iCareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +64,6 @@
 		E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E183B6C7211C1A7500D5FB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E183B6CA211C1A7500D5FB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E183B6CC211C1A7500D5FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E183B6D1211C1A7600D5FB2C /* SWEDEN_iCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWEDEN_iCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183B6D5211C1A7600D5FB2C /* SWEDEN_iCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWEDEN_iCareTests.swift; sourceTree = "<group>"; };
@@ -69,10 +73,6 @@
 		E183B6E2211C1A7600D5FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA5023C221316A5200568BC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAA9385321315864009932AC /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
-		EAC5CDAF21312BBF00492CCA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
-		EAC5CDB72131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "33388508-green-watercolor-ombre-background-.jpg"; sourceTree = "<group>"; };
-		EAC5CDB9213131E700492CCA /* solid-orange-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "solid-orange-background.jpg"; sourceTree = "<group>"; };
-		EAC5CDC32131332A00492CCA /* ok.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ok.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,9 +155,8 @@
 				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
 				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				EAA9385321315864009932AC /* UsersViewController.swift */,
-				EAC5CDAF21312BBF00492CCA /* Main.storyboard */,
+				047627AA2134C87400A57C74 /* Main.storyboard */,
 				E183B6C7211C1A7500D5FB2C /* Assets.xcassets */,
-				E183B6C9211C1A7500D5FB2C /* LaunchScreen.storyboard */,
 				E183B6CC211C1A7500D5FB2C /* Info.plist */,
 				EA5023C221316A5200568BC7 /* GoogleService-Info.plist */,
 			);
@@ -185,11 +184,13 @@
 		EA5023C12131662800568BC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EAC5CDB9213131E700492CCA /* solid-orange-background.jpg */,
-				EAC5CDB72131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg */,
-				EAC5CDC32131332A00492CCA /* ok.jpeg */,
+				04BBCDFB2135270B00178098 /* dddd.jpeg */,
+				04BBCDF92135270A00178098 /* ffff.jpeg */,
+				04BBCDFA2135270B00178098 /* ggg.jpg */,
+				04BBCDF6213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg */,
+				04BBCDF5213524F800178098 /* blue-ombre-background.jpg */,
 			);
-			path = Images;
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,12 +309,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC5CDBA213131E700492CCA /* solid-orange-background.jpg in Resources */,
-				E183B6CB211C1A7500D5FB2C /* LaunchScreen.storyboard in Resources */,
-				EAC5CDB82131308400492CCA /* 33388508-green-watercolor-ombre-background-.jpg in Resources */,
-				EAC5CDC42131332A00492CCA /* ok.jpeg in Resources */,
+				04BBCDFD2135270B00178098 /* ggg.jpg in Resources */,
+				04BBCDF8213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg in Resources */,
+				04BBCDF7213524F900178098 /* blue-ombre-background.jpg in Resources */,
+				047627AB2134C87400A57C74 /* Main.storyboard in Resources */,
+				04BBCDFC2135270B00178098 /* ffff.jpeg in Resources */,
+				04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */,
 				E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */,
-				EAC5CDB021312BBF00492CCA /* Main.storyboard in Resources */,
 				EA5023C321316A5200568BC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +324,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC5CDB121312BBF00492CCA /* Main.storyboard in Resources */,
 				EA5023C421316A5200568BC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +332,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC5CDB221312BBF00492CCA /* Main.storyboard in Resources */,
 				EA5023C521316A5200568BC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,17 +460,6 @@
 			targetProxy = E183B6DD211C1A7600D5FB2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E183B6C9211C1A7500D5FB2C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E183B6CA211C1A7500D5FB2C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E183B6E3211C1A7600D5FB2C /* Debug */ = {

@@ -13,14 +13,14 @@ class LoginViewController: UIViewController {
     
     
     
-    @IBOutlet weak var textFieldLoginEmail: UITextField!
-    @IBOutlet weak var textFieldLoginPassword: UITextField!
-
-    @IBAction func loginButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "loginSegue", sender: self)
-    }
-    @IBAction func registerButton(_ sender: UIButton) {
-    }
+//    @IBOutlet weak var textFieldLoginEmail: UITextField!
+//    @IBOutlet weak var textFieldLoginPassword: UITextField!
+//
+//    @IBAction func loginButton(_ sender: UIButton) {
+//        performSegue(withIdentifier: "loginSegue", sender: self)
+//    }
+//    @IBAction func registerButton(_ sender: UIButton) {
+//    }
     
     
     
