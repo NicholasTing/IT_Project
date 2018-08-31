@@ -11,29 +11,44 @@ import Firebase
 
 class LoginViewController: UIViewController {
     
+    //OUTLETS
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
     
-    
-//    @IBOutlet weak var textFieldLoginEmail: UITextField!
-//    @IBOutlet weak var textFieldLoginPassword: UITextField!
-//
-//    @IBAction func loginButton(_ sender: UIButton) {
-//        performSegue(withIdentifier: "loginSegue", sender: self)
-//    }
-//    @IBAction func registerButton(_ sender: UIButton) {
-//    }
-    
-    
-    
+    //VARIABLES
+
+    //METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //ACTIONS
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        
+        //Authenticate user when they attempt to log in
+        Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
+            if let error = error, user == nil {
+                let alert = UIAlertController(title: "Sign In Failed",
+                                              message: error.localizedDescription,
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                
+                self.present(alert, animated:true, completion: nil)
+                
+            } else {
+                print("you're in")
+            }
+        }
     }
-
+    
+    @IBAction func signupButtonPressed(_ sender: UIButton) {
+        
+        //Instantiate and present SignUpViewController when button is pressed
+        let SignUpViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController
+        
+        self.present(SignUpViewController!, animated: true, completion: nil)
+    }
 
 }
 
