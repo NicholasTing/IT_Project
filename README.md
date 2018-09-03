@@ -4,7 +4,7 @@
 
 # Prerequisites 
 
-##### You will need XCode version 9 or later.
+##### You will need XCode version 9.4 or later.
 
 # 1. How to build this project
 
