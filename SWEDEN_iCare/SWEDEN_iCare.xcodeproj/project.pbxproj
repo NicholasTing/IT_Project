@@ -15,6 +15,7 @@
 		04BBCDFD2135270B00178098 /* ggg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDFA2135270B00178098 /* ggg.jpg */; };
 		04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDFB2135270B00178098 /* dddd.jpeg */; };
 		7554D20606FBA1C5C57A94E2 /* Pods_SWEDEN_iCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F828124DC0955444496C26 /* Pods_SWEDEN_iCare.framework */; };
+		E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131DA2B213F5849000354B5 /* HomeViewController.swift */; };
 		E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */; };
 		E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */; };
 		E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C7211C1A7500D5FB2C /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		AB2CDF0EC92DF970618DD7B2 /* Pods-SWEDEN_iCareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareUITests/Pods-SWEDEN_iCareUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE07576DAD0119FBE2758C6E /* Pods_SWEDEN_iCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5A1E2DE94F39D703A92659 /* Pods-SWEDEN_iCareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareUITests/Pods-SWEDEN_iCareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E131DA2B213F5849000354B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E183B6BD211C1A7500D5FB2C /* SWEDEN_iCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEDEN_iCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
 				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
+				E131DA2B213F5849000354B5 /* HomeViewController.swift */,
 				EAA9385321315864009932AC /* UsersViewController.swift */,
 				047627AA2134C87400A57C74 /* Main.storyboard */,
 				EAE284512139AA3A00B98325 /* User.swift */,
@@ -438,6 +441,7 @@
 				EAE284522139AA3A00B98325 /* User.swift in Sources */,
 				EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */,
 				E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */,
+				E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */,
 				EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
