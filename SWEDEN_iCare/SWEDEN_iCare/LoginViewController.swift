@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //OUTLETS
     @IBOutlet weak var emailText: UITextField!
@@ -26,6 +26,9 @@ class LoginViewController: UIViewController {
     //ACTIONS
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
+        // Gets the home screen
+        let homeTabVC = storyboard?.instantiateViewController(withIdentifier: "HomeTabVC") as! UITabBarController
+        
         //Authenticate user when they attempt to log in
         Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
             if let error = error, user == nil {
@@ -38,6 +41,9 @@ class LoginViewController: UIViewController {
                 
             } else {
                 print("you're in")
+                
+                homeTabVC.selectedViewController = homeTabVC.viewControllers?[1]
+                self.present(homeTabVC, animated:true, completion: nil)
             }
         }
     }
@@ -48,6 +54,16 @@ class LoginViewController: UIViewController {
         let SignUpViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController
         
         self.present(SignUpViewController!, animated: true, completion: nil)
+    }
+    
+    // Hide keyboard when user touches outisde keybar
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return (true)
     }
 
 }
