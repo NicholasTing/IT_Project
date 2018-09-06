@@ -26,6 +26,9 @@ class LoginViewController: UIViewController {
     //ACTIONS
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
+        // Gets the home screen
+        let homeTabVC = storyboard?.instantiateViewController(withIdentifier: "HomeTabVC") as! UITabBarController
+        
         //Authenticate user when they attempt to log in
         Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
             if let error = error, user == nil {
@@ -38,6 +41,9 @@ class LoginViewController: UIViewController {
                 
             } else {
                 print("you're in")
+                
+                homeTabVC.selectedViewController = homeTabVC.viewControllers?[1]
+                self.present(homeTabVC, animated:true, completion: nil)
             }
         }
     }
