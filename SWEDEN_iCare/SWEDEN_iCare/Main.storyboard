@@ -284,6 +284,22 @@
             </objects>
             <point key="canvasLocation" x="1054" y="1815"/>
         </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="K7z-ou-Xiu">
+            <objects>
+                <viewController id="ii5-tL-R9V" customClass="ChatViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BlM-IQ-tiL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hzJ-SR-YnG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4xe-t4-Njm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdv-y6-IqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="1862"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="a6l-wY-KLb">
             <objects>
@@ -404,6 +420,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRx-zO-GRB">
+                                <rect key="frame" x="50" y="474" width="120" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="ii5-tL-R9V" kind="show" id="1ei-sb-gE1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UaX-u0-tYW"/>
