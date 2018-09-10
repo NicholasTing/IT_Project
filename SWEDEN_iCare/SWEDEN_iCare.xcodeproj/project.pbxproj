@@ -13,6 +13,7 @@
 		04BBCDFC2135270B00178098 /* ffff.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDF92135270A00178098 /* ffff.jpeg */; };
 		04BBCDFD2135270B00178098 /* ggg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDFA2135270B00178098 /* ggg.jpg */; };
 		04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDFB2135270B00178098 /* dddd.jpeg */; };
+		04F2A36C214665840051D220 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2A36B214665840051D220 /* NavController.swift */; };
 		17E728D3014909865F620F8C /* Pods_SWEDEN_iCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361C783FAB3AC459D3E7351A /* Pods_SWEDEN_iCare.framework */; };
 		4F661E2595DAEF2646E60864 /* Pods_SWEDEN_iCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC26BAB81C554BC816DC5169 /* Pods_SWEDEN_iCareTests.framework */; };
 		5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5810C8E521437DB900642AFC /* ChatViewController.swift */; };
@@ -58,6 +59,7 @@
 		04BBCDF92135270A00178098 /* ffff.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ffff.jpeg; sourceTree = "<group>"; };
 		04BBCDFA2135270B00178098 /* ggg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ggg.jpg; sourceTree = "<group>"; };
 		04BBCDFB2135270B00178098 /* dddd.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dddd.jpeg; sourceTree = "<group>"; };
+		04F2A36B214665840051D220 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		361C783FAB3AC459D3E7351A /* Pods_SWEDEN_iCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5810C8E521437DB900642AFC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5810C8E821437EE600642AFC /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -160,6 +162,7 @@
 				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
 				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
+				04F2A36B214665840051D220 /* NavController.swift */,
 				E131DA2B213F5849000354B5 /* HomeViewController.swift */,
 				5810C8E521437DB900642AFC /* ChatViewController.swift */,
 				EAA9385321315864009932AC /* UsersViewController.swift */,
@@ -457,6 +460,7 @@
 				5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */,
 				EAE284522139AA3A00B98325 /* User.swift in Sources */,
 				EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */,
+				04F2A36C214665840051D220 /* NavController.swift in Sources */,
 				E131DA2F2140127E000354B5 /* HomeTabVC.swift in Sources */,
 				E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */,
 				E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */,
