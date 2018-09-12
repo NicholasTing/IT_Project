@@ -380,6 +380,7 @@
                         <segue destination="eXr-z4-Kiu" kind="relationship" relationship="viewControllers" id="P8P-4x-mDs"/>
                         <segue destination="6gd-ue-s0P" kind="relationship" relationship="viewControllers" id="Lja-Jv-chC"/>
                         <segue destination="CHL-PY-j9E" kind="relationship" relationship="viewControllers" id="9aF-DL-Fqm"/>
+                        <segue destination="LkE-ri-3Ym" kind="relationship" relationship="viewControllers" id="Kce-UY-WgW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUj-BQ-BOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -557,7 +558,7 @@
                                 </connections>
                             </searchBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwu-G1-qcX">
-                                <rect key="frame" x="0.0" y="160" width="375" height="507"/>
+                                <rect key="frame" x="0.0" y="160" width="375" height="458"/>
                                 <connections>
                                     <outlet property="delegate" destination="LkE-ri-3Ym" id="EiZ-9x-LEE"/>
                                 </connections>
@@ -590,6 +591,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pos-jR-oxb"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="8e3-0P-Ji8"/>
                     <connections>
                         <outlet property="Transportation" destination="UxF-8t-xeu" id="dro-Py-lah"/>
                         <outlet property="directionsLabel" destination="6Qt-FM-6fS" id="P33-up-56k"/>
@@ -599,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMy-IJ-9tb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-978" y="-512"/>
+            <point key="canvasLocation" x="2060" y="1854"/>
         </scene>
     </scenes>
     <resources>
