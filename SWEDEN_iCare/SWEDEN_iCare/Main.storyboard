@@ -537,6 +537,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bv-Ng-p9z">
+                                        <rect key="frame" x="7" y="22" width="48" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="&lt; Back"/>
+                                        <connections>
+                                            <segue destination="5Wc-v2-J7g" kind="show" id="IT4-b4-6kf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -601,10 +609,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMy-IJ-9tb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060" y="1854"/>
+            <point key="canvasLocation" x="2060" y="1853.5232383808097"/>
         </scene>
     </scenes>
     <resources>
         <image name="5ebb350afa99fb3a2b75c5855e98bd9c.jpg" width="744" height="1392"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="IT4-b4-6kf"/>
+    </inferredMetricsTieBreakers>
 </document>
