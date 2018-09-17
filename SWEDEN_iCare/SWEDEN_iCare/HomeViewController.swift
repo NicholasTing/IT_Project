@@ -36,4 +36,5 @@ class HomeViewController: UIViewController {
     }
     */
 
+    @IBOutlet weak var helpButton: UIButton!
 }
