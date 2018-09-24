@@ -14,6 +14,7 @@ import Firebase
 class ChatViewController: JSQMessagesViewController
 {
     var user = Auth.auth().currentUser
+    var currentFriend = User()
     var messages = [JSQMessage]()
     var databaseChats = Database.database().reference().child("chats")
     
@@ -28,16 +29,9 @@ class ChatViewController: JSQMessagesViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         senderId = user?.uid
         senderDisplayName = "Me"
-
-        title = "Chat: \(senderDisplayName!)"
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDisplayNameDialog))
-        tapGesture.numberOfTapsRequired = 1
-        
-        navigationController?.navigationBar.addGestureRecognizer(tapGesture)
+        self.title = currentFriend.address
         
         //hide attachment button and reduce avatar size to zero
         inputToolbar.contentView.leftBarButtonItem = nil
@@ -45,24 +39,30 @@ class ChatViewController: JSQMessagesViewController
         collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
     
         // load last 10 messages
-        let query = databaseChats.queryLimited(toLast: 10)
+        let query = databaseChats.queryLimited(toLast: 100000)
         
         _ = query.observe(.childAdded, with: { [weak self] snapshot in
             
-            if  let data        = snapshot.value as? [String: String],
-                let id          = data["sender_id"],
-                let name        = data["name"],
-                let text        = data["text"],
+            if  let data        = snapshot.value as? [String: Any],
+                let id          = data["sender_id"] as? String,
+                let text        = data["text"] as? String,
+                let receiverId  = data["receiver_id"] as? String,
+                let timeInt   = data["timestamp"] as? TimeInterval,
                 !text.isEmpty
             {
-                if let message = JSQMessage(senderId: id, displayName: name, text: text)
-                {
-                    self?.messages.append(message)
-                    
-                    self?.finishReceivingMessage()
+                if (self?.currentFriend.uid == id && self?.user?.uid == receiverId) || (self?.currentFriend.uid == receiverId && self?.user?.uid == id){
+                    if let message = JSQMessage(senderId: id, senderDisplayName: self?.currentFriend.address, date: NSDate(timeIntervalSince1970: timeInt/1000) as Date?, text: text)
+                    {
+                        self?.messages.append(message)
+                        
+                        self?.finishReceivingMessage()
+                    }
                 }
+                
             }
         })
+        
+       
     }
     
     override func didReceiveMemoryWarning() {
@@ -89,11 +89,25 @@ class ChatViewController: JSQMessagesViewController
     {
         return nil
     }
+    //change text color
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as! JSQMessagesCollectionViewCell
+        if !(messages[indexPath.item].senderId == senderId){
+            cell.textView!.textColor = UIColor.black
+        }
+        return cell
+    }
+    
     //called when the label text is needed
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, attributedTextForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString!
     {
-        return messages[indexPath.item].senderId == senderId ? nil : NSAttributedString(string: messages[indexPath.item].senderDisplayName)
+        let options:ISO8601DateFormatter.Options = [.withInternetDateTime, .withDashSeparatorInDate, .withColonSeparatorInTime, .withTimeZone]
+        let timeZone = TimeZone.current
+        let dateString = ISO8601DateFormatter.string(from: messages[indexPath.item].date, timeZone: timeZone, formatOptions: options)
+        print(dateString)
+        return messages[indexPath.item].senderId == senderId ? nil : NSAttributedString(string: dateString)
     }
+    
     //called when the height of the top label is needed
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat
     {
@@ -104,45 +118,10 @@ class ChatViewController: JSQMessagesViewController
     {
         let ref = databaseChats.childByAutoId()
         
-        let message = ["sender_id": user?.uid, "name": user?.email, "text": text]
-        
+        let message = ["sender_id": user?.uid, "name": user?.email! , "text": text, "receiver_id": currentFriend.uid!, "timestamp": Firebase.ServerValue.timestamp()] as! [String : Any]
+        print(message)
         ref.setValue(message)
         
         finishSendingMessage()
-    }
-    
-    @objc func showDisplayNameDialog()
-    {
-        let defaults = UserDefaults.standard
-        
-        let alert = UIAlertController(title: "Your Display Name", message: "Before you can chat, please choose a display name. Others will see this name when you send chat messages. You can change your display name again by tapping the navigation bar.", preferredStyle: .alert)
-        
-        alert.addTextField { textField in
-            
-            if let name = defaults.string(forKey: "jsq_name")
-            {
-                textField.text = name
-            }
-            else
-            {
-                let names = ["Ford", "Arthur", "Zaphod", "Trillian", "Slartibartfast", "Humma Kavula", "Deep Thought"]
-                textField.text = names[Int(arc4random_uniform(UInt32(names.count)))]
-            }
-        }
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self, weak alert] _ in
-            
-            if let textField = alert?.textFields?[0], !textField.text!.isEmpty {
-                
-                self?.senderDisplayName = textField.text
-                
-                self?.title = "Chat: \(self!.senderDisplayName!)"
-                
-                defaults.set(textField.text, forKey: "jsq_name")
-                defaults.synchronize()
-            }
-        }))
-        
-        present(alert, animated: true, completion: nil)
     }
 }

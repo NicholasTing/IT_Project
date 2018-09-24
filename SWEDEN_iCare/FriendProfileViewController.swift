@@ -14,16 +14,19 @@ class FriendProfileViewController: UIViewController {
     var databaseReference = Database.database().reference().child("users")
     var currentUser = User()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
+    
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var dateOfBirth: UILabel!
     @IBOutlet weak var address: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        address.text = currentUser.uid
+    }
+
     
     @IBAction func acceptbutton(_ sender: Any) {
         //random key to user
@@ -67,4 +70,9 @@ class FriendProfileViewController: UIViewController {
         declineUIButton.isHidden = true
     }
     @IBOutlet weak var declineUIButton: UIButton!
+    enum MyError: Error {
+        case runtimeError(String)
+    }
+    
+    
 }

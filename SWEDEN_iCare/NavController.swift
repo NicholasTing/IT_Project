@@ -32,8 +32,23 @@ class NavController: UIViewController {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.startUpdatingLocation()
+        
+        
+        // Have null problems
+        /*
+        // Tap to dismiss keyboard
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:"dismissKeyboard")
+        view.addGestureRecognizer(tap)
+         */
     }
     
+    // Have null problems
+    /*
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    */
+ 
     func getDirections(to destination: MKMapItem) {
         let sourcePlacemark = MKPlacemark(coordinate: currentCoordinate)
         let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
@@ -100,6 +115,18 @@ class NavController: UIViewController {
         if Transportation.selectedSegmentIndex == 2 {
             transportMethod = "walk"
         }
+        // **************** Added ******************
+        let localSearchRequest = MKLocalSearchRequest()
+        localSearchRequest.naturalLanguageQuery = searchBar.text
+        let region = MKCoordinateRegion(center: currentCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+        localSearchRequest.region = region
+        let localSearch = MKLocalSearch(request: localSearchRequest)
+        localSearch.start { (response, _) in
+            guard let response = response else { return }
+            guard let firstMapItem = response.mapItems.first else { return }
+            self.getDirections(to: firstMapItem)
+        }
+        
     }
     
     

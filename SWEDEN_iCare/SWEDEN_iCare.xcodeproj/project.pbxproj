@@ -30,13 +30,9 @@
 		EA5023C421316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
 		EA5023C521316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
 		EAA9385421315864009932AC /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9385321315864009932AC /* UsersViewController.swift */; };
-		EAB182DA214EB8450003135B /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB182D9214EB8450003135B /* FriendCell.swift */; };
-		EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */; };
 		EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2844D2139827200B98325 /* SignUpViewController.swift */; };
 		EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */; };
 		EAE284522139AA3A00B98325 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE284512139AA3A00B98325 /* User.swift */; };
-		EAFCFC5D214CF2C8002F2D08 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */; };
-		EAFCFC61214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,13 +86,9 @@
 		E2C83AA1A97ED07804C560B8 /* Pods-SWEDEN_iCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareTests/Pods-SWEDEN_iCareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA5023C221316A5200568BC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAA9385321315864009932AC /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
-		EAB182D9214EB8450003135B /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
-		EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileViewController.swift; sourceTree = "<group>"; };
 		EAE2844D2139827200B98325 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		EAE284512139AA3A00B98325 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
-		EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAndFriendRequestsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +169,6 @@
 				E131DA2E2140127E000354B5 /* HomeTabVC.swift */,
 				EAE284512139AA3A00B98325 /* User.swift */,
 				EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */,
-				EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */,
-				EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */,
-				EAB182D9214EB8450003135B /* FriendCell.swift */,
-				EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */,
 				047627AA2134C87400A57C74 /* Main.storyboard */,
 				E183B6C7211C1A7500D5FB2C /* Assets.xcassets */,
 				E183B6CC211C1A7500D5FB2C /* Info.plist */,
@@ -467,19 +455,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFCFC61214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift in Sources */,
 				E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */,
-				EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */,
 				EAA9385421315864009932AC /* UsersViewController.swift in Sources */,
 				5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */,
 				EAE284522139AA3A00B98325 /* User.swift in Sources */,
 				EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */,
 				04F2A36C214665840051D220 /* NavController.swift in Sources */,
-				EAFCFC5D214CF2C8002F2D08 /* FriendsViewController.swift in Sources */,
 				E131DA2F2140127E000354B5 /* HomeTabVC.swift in Sources */,
 				E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */,
 				E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */,
-				EAB182DA214EB8450003135B /* FriendCell.swift in Sources */,
 				EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

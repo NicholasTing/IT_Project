@@ -36,14 +36,4 @@ class HomeViewController: UIViewController {
     }
     */
 
-    @IBAction func helpCall(_ sender: UIButton) {
-        //        [[UIApplication, sharedApplication] openURL:[NSURL URLWithString:@"tel://1115550123"]];
-        //        let url: NSURL = NSURL(string: "tel://0478821628")!
-        //        UIApplication.shared.open(url as URL)
-        //
-        let numString = "0478821628"
-        let url = URL(string:"telprompt://\(numString)")
-        UIApplication.shared.open(url!)
-    }
-
 }

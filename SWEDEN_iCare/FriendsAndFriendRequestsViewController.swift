@@ -40,6 +40,7 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
             if let friends = snapshot.value as? [String: AnyObject] {
                 
                 for (_, friendID) in friends {
+            
                     self.users.append(friendID as! String)
                 }
                 self.tableView.reloadData()
