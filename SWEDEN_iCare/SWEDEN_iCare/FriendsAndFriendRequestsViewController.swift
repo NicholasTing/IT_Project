@@ -51,7 +51,7 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
     func fetchFriendRequests() {
         
         requests.removeAll()
-        /* The user Firebase reference */
+        /* The current user's tree Firebase reference */
         let databaseReference = Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("friendRequests")
         
         // retrieve a snapshot of your current database
