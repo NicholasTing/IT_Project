@@ -16,6 +16,10 @@ class usersTableViewCellSubClass: UITableViewCell {
 
 class FriendsViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /* The user Firebase reference */
     let databaseReference = Database.database().reference().child("users")
     
@@ -32,6 +36,7 @@ class FriendsViewController: UIViewController, UISearchBarDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         //creating a cell using the custom class
         let userCell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! usersTableViewCellSubClass
         
@@ -42,8 +47,9 @@ class FriendsViewController: UIViewController, UISearchBarDelegate, UITableViewD
         user = users[indexPath.row]
         
         //adding values to the two labels
+        
         userCell.firstName.text = user.address
-        userCell.lastName.text = user.address
+        userCell.lastName.text = "" //fix this later into the user's last name
         
         //returning cell
         return userCell
@@ -63,19 +69,22 @@ class FriendsViewController: UIViewController, UISearchBarDelegate, UITableViewD
         // retrieve a snapshot of your current database
         databaseReference.observeSingleEvent(of: .value) { (snapshot) in
             
-            // loop through each user and their corresponding properties
+            // loop through each user and their corresponding properties and add them to the table
             if let users = snapshot.value as? [String: AnyObject] {
                 for (_, property) in users {
+                    // Do not add the current user
+                    if property["uid"] as? String != Auth.auth().currentUser?.uid {
                     
-                    let currentUser = User()
-                    
-                    currentUser.firstName = property["firstName"] as! String
-                    currentUser.lastName = property["lastName"] as! String
-                    currentUser.address = property["address"] as! String
-                    currentUser.dob = property["dob"] as! String
-                    currentUser.uid = property["uid"] as! String
-                    
-                    self.users.append(currentUser)
+                        let currentUser = User()
+                        
+                        currentUser.firstName = property["firstName"] as? String
+                        currentUser.lastName = property["lastName"] as? String
+                        currentUser.address = property["address"] as? String
+                        currentUser.dob = property["dob"] as? String
+                        currentUser.uid = property["uid"] as? String
+                        
+                        self.users.append(currentUser)
+                    }
                 }
                 self.usersTableView.reloadData()
             }

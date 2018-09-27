@@ -12,19 +12,22 @@ import Firebase
 class FriendProfileViewController: UIViewController {
     
     var databaseReference = Database.database().reference().child("users")
-    var currentUser = User()
-    
+    var uid: String!
     
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var dateOfBirth: UILabel!
     @IBOutlet weak var address: UILabel!
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        address.text = currentUser.uid
+        
     }
 
     
@@ -33,21 +36,21 @@ class FriendProfileViewController: UIViewController {
         let key = databaseReference.childByAutoId().key
         
         //update person 1's friend list
-        databaseReference.child((Auth.auth().currentUser?.uid)!).updateChildValues(["friends/\(key)": currentUser.uid as Any])
+        databaseReference.child((Auth.auth().currentUser?.uid)!).updateChildValues(["friends/\(key)": uid as Any])
         //update person 2's friend list
-        databaseReference.child(currentUser.uid).updateChildValues(["friends/\(key)": Auth.auth().currentUser?.uid as Any])
+        databaseReference.child(uid).updateChildValues(["friends/\(key)": Auth.auth().currentUser?.uid as Any])
         
         //remove this user from current user's friend requests
         databaseReference.child((Auth.auth().currentUser?.uid)!).child("friendRequests").observeSingleEvent(of: .value) { (snapshot) in
             if let requests = snapshot.value as? [String: AnyObject] {
                 for (key, requestID) in requests {
-                    if requestID as? String == self.currentUser.uid {
+                    if requestID as? String == self.uid {
                         self.databaseReference.child((Auth.auth().currentUser?.uid)!).child("friendRequests").child(key).removeValue()
                     }
                 }
             }
         }
-        //hide the two buttons after the action is completed
+        // Hide the two buttons after an action is completed
         acceptUIButton.isHidden = true
         declineUIButton.isHidden = true
     }
@@ -59,20 +62,15 @@ class FriendProfileViewController: UIViewController {
         databaseReference.child((Auth.auth().currentUser?.uid)!).child("friendRequests").observeSingleEvent(of: .value) { (snapshot) in
             if let requests = snapshot.value as? [String: AnyObject] {
                 for (key, requestID) in requests {
-                    if requestID as? String == self.currentUser.uid {
+                    if requestID as? String == self.uid {
                         self.databaseReference.child((Auth.auth().currentUser?.uid)!).child("friendRequests").child(key).removeValue()
                     }
                 }
             }
         }
-        //hide the two buttons after the action is completed
-        declineUIButton.isHidden = true
+        // Hide the two buttons after an action is completed
+        acceptUIButton.isHidden = true
         declineUIButton.isHidden = true
     }
     @IBOutlet weak var declineUIButton: UIButton!
-    enum MyError: Error {
-        case runtimeError(String)
-    }
-    
-    
 }
