@@ -31,7 +31,7 @@ class ChatViewController: JSQMessagesViewController
         
         senderId = user?.uid
         senderDisplayName = "Me"
-//
+
         title = "Chat: \(senderDisplayName!)"
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDisplayNameDialog))

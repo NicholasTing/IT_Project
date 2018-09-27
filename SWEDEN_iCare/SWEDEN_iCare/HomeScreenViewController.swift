@@ -27,33 +27,14 @@ class HomeScreenViewController: UIViewController, UISearchBarDelegate {
 //        usersTableView.dataSource = self
 //        usersTableView.delegate = self
         searchBar.delegate = self
-        
-        fetchUsers()
     }
     
     func fetchUsers() {
         
         let databaseReference = Database.database().reference().child("users")
         
-        databaseReference.observeSingleEvent(of: .value) { (snapshot) in
-            
-            if let users = snapshot.value as? [String: AnyObject] {
-                for (_, property) in users {
-                    
-                    let currentUser = User()
-                    
-                    currentUser.firstName = property["firstName"] as! String
-                    currentUser.lastName = property["lastName"] as! String
-                    currentUser.address = property["address"] as! String
-                    currentUser.dob = property["dob"] as! String
-                    
-                    self.users.append(currentUser)
-                    print(users.count)
-                }
-            }
-        }
-        
+
         
     }
-    
+
 }

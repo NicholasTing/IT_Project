@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class UsersViewController: UIViewController {
+class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userFirstName: UILabel!
@@ -17,6 +17,7 @@ class UsersViewController: UIViewController {
     @IBOutlet weak var userDOB: UILabel!
     @IBOutlet weak var userEmail: UILabel!
     
+<<<<<<< HEAD
 //    //Sign out the user when the 'Sign out' button is pressed
 //    @IBAction func signOutButton(_ sender: Any) {
 //        try! Auth.auth().signOut()
@@ -43,12 +44,41 @@ class UsersViewController: UIViewController {
                 self.userEmail.text = properties["address"] as? String
             }
         }
+=======
+    let list = ["Milk", "Honey", "Bread", "Tacos", "Tomatoes"]
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (list.count)
+    }
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = list[indexPath.row]
+        
+        return (cell)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+>>>>>>> 53c602af495073b876629432b7ce32c1d13cd237
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
 
 //Retrieves the image from an image path

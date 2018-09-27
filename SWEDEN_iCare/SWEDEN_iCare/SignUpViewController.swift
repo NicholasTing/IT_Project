@@ -46,6 +46,7 @@ class SignUpViewController: UIViewController {
             
             //If there's no error and the user has provided the requested information, sign in user
             if let user = user {
+<<<<<<< HEAD
                 if self.firstNameText.text != "", self.lastNameText.text != "", self.dobText.text != ""
                 {
                     
@@ -69,6 +70,21 @@ class SignUpViewController: UIViewController {
                                                                "friendRequests": "",
                                                                "dob": self.dobText.text!,
                                                                "address": self.emailText.text!]
+=======
+                
+                //Stores the user information in a dictionary
+                let userInfo: [String: Any] = ["uid": user.user.uid,
+                                               "firstName": "",
+                                               "lastName": "",
+                                               "dob": "",
+                                               "address": ""]
+                
+                //Database reference
+                self.databaseReference = Database.database().reference()
+                
+                //Stores the dictionary under the 'users' branch within the database
+                self.databaseReference.child("users").child(user.user.uid).setValue(userInfo)
+>>>>>>> 53c602af495073b876629432b7ce32c1d13cd237
 
                                 //Database reference
                                 self.databaseReference = Database.database().reference()
