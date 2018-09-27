@@ -80,6 +80,7 @@
 		DAA38B96E68E776E04A5D255 /* Pods-SWEDEN_iCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareTests/Pods-SWEDEN_iCareTests.release.xcconfig"; sourceTree = "<group>"; };
 		E131DA2B213F5849000354B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E131DA2E2140127E000354B5 /* HomeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabVC.swift; sourceTree = "<group>"; };
+		E131DA4B215CCD0E000354B5 /* AllChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllChatsViewController.swift; path = ../AllChatsViewController.swift; sourceTree = "<group>"; };
 		E183B6BD211C1A7500D5FB2C /* SWEDEN_iCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEDEN_iCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 			children = (
 				EA5023C12131662800568BC7 /* Images */,
 				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
+				E131DA4B215CCD0E000354B5 /* AllChatsViewController.swift */,
 				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
 				04F2A36B214665840051D220 /* NavController.swift */,
@@ -216,9 +218,9 @@
 		EA5023C12131662800568BC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				04BBCDFB2135270B00178098 /* dddd.jpeg */,
 				04BBCDF92135270A00178098 /* ffff.jpeg */,
 				04BBCDFA2135270B00178098 /* ggg.jpg */,
+				04BBCDFB2135270B00178098 /* dddd.jpeg */,
 				04BBCDF6213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg */,
 				04BBCDF5213524F800178098 /* blue-ombre-background.jpg */,
 			);
@@ -302,7 +304,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Nicholas;
 				TargetAttributes = {
 					E183B6BC211C1A7500D5FB2C = {
@@ -538,6 +540,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -545,6 +548,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -595,6 +599,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -602,6 +607,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
