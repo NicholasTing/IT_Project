@@ -11,6 +11,11 @@ import Firebase
 
 class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var friendsAndFriendRequestsSegment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
@@ -43,8 +48,8 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
             
                     self.users.append(friendID as! String)
                 }
-                self.tableView.reloadData()
             }
+            self.tableView.reloadData()
         }
     }
     
@@ -52,20 +57,18 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
     func fetchFriendRequests() {
         
         requests.removeAll()
-        /* The user Firebase reference */
+        /* The current user's tree Firebase reference */
         let databaseReference = Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("friendRequests")
-        
+
         // retrieve a snapshot of your current database
         databaseReference.observeSingleEvent(of: .value) { (snapshot) in
-            
-            // loop through each user and their corresponding properties
+
             if let requests = snapshot.value as? [String: AnyObject] {
-                
                 for (_, friendID) in requests {
                     self.requests.append(friendID as! String)
                 }
-                self.tableView.reloadData()
-            }
+             }
+            self.tableView.reloadData()
         }
     }
     
@@ -74,8 +77,10 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
         
         if friendsAndFriendRequestsSegment.selectedSegmentIndex == 0 {
             fetchUsers()
+            print("friends\n")
         } else {
             fetchFriendRequests()
+            print("friend requests\n")
         }
     }
     
@@ -92,15 +97,19 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
         if friendsAndFriendRequestsSegment.selectedSegmentIndex == 0 {
             Database.database().reference().child("users").child(users[indexPath.row]).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let properties = snapshot.value as? [String: AnyObject] {
-                    otherFriendVC.currentUser.uid = properties["uid"] as? String
-                    otherFriendVC.currentUser.address = properties["address"] as? String
+                    otherFriendVC.uid = properties["uid"] as? String
+                    otherFriendVC.address.text = properties["address"] as? String
+                    
+                    //hide the two buttons if the current user and this user are already friends
+                    otherFriendVC.acceptUIButton.isHidden = true
+                    otherFriendVC.declineUIButton.isHidden = true
                 }
             })
         } else {
             Database.database().reference().child("users").child(requests[indexPath.row]).observeSingleEvent(of: .value, with: {(snapshot) in
                 if let properties = snapshot.value as? [String: AnyObject] {
-                    otherFriendVC.currentUser.uid = properties["uid"] as? String
-                    otherFriendVC.currentUser.address = properties["address"] as? String
+                    otherFriendVC.uid = properties["uid"] as? String
+                    otherFriendVC.address.text = properties["address"] as? String
                 }
             })
         }

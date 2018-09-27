@@ -33,6 +33,12 @@
 		EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2844D2139827200B98325 /* SignUpViewController.swift */; };
 		EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */; };
 		EAE284522139AA3A00B98325 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE284512139AA3A00B98325 /* User.swift */; };
+<<<<<<< HEAD
+		EAFCFC5D214CF2C8002F2D08 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */; };
+		EAFCFC61214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */; };
+		EAFF6B722159EE6B00615BAB /* empty_user_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFF6B712159EE6B00615BAB /* empty_user_pic.png */; };
+=======
+>>>>>>> 53c602af495073b876629432b7ce32c1d13cd237
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,13 @@
 		EAE2844D2139827200B98325 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		EAE284512139AA3A00B98325 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAndFriendRequestsViewController.swift; sourceTree = "<group>"; };
+		EAFF6B712159EE6B00615BAB /* empty_user_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_user_pic.png; sourceTree = "<group>"; };
+		EAFF6B73215A143C00615BAB /* SWEDEN_iCare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SWEDEN_iCare.entitlements; sourceTree = "<group>"; };
+=======
+>>>>>>> 53c602af495073b876629432b7ce32c1d13cd237
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +171,7 @@
 		E183B6BF211C1A7500D5FB2C /* SWEDEN_iCare */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF6B73215A143C00615BAB /* SWEDEN_iCare.entitlements */,
 				EA5023C12131662800568BC7 /* Images */,
 				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
 				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
@@ -198,6 +212,7 @@
 		EA5023C12131662800568BC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF6B712159EE6B00615BAB /* empty_user_pic.png */,
 				04BBCDFB2135270B00178098 /* dddd.jpeg */,
 				04BBCDF92135270A00178098 /* ffff.jpeg */,
 				04BBCDFA2135270B00178098 /* ggg.jpg */,
@@ -291,6 +306,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 0;
 							};
@@ -335,6 +353,7 @@
 			files = (
 				04BBCDFD2135270B00178098 /* ggg.jpg in Resources */,
 				04BBCDF8213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg in Resources */,
+				EAFF6B722159EE6B00615BAB /* empty_user_pic.png in Resources */,
 				04BBCDF7213524F900178098 /* blue-ombre-background.jpg in Resources */,
 				047627AB2134C87400A57C74 /* Main.storyboard in Resources */,
 				04BBCDFC2135270B00178098 /* ffff.jpeg in Resources */,
@@ -613,7 +632,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				DEVELOPMENT_TEAM = 53X25WWJC8;
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
@@ -630,7 +649,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				DEVELOPMENT_TEAM = 53X25WWJC8;
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
