@@ -22,6 +22,10 @@ class NavController: UIViewController {
     
     var stepCounter = 0
     
+    @IBAction func dismissController(_ sender: Any) {
+        
+    
+    }
     // By default, the transportation method is driving.
     var transportMethod = "drive";
     

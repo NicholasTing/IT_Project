@@ -23,6 +23,8 @@
 		E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131DA2B213F5849000354B5 /* HomeViewController.swift */; };
 		E131DA2D214011DC000354B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047627AA2134C87400A57C74 /* Main.storyboard */; };
 		E131DA2F2140127E000354B5 /* HomeTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131DA2E2140127E000354B5 /* HomeTabVC.swift */; };
+		E131DA4D215CD2FB000354B5 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E131DA4C215CD2FB000354B5 /* home-7.png */; };
+		E131DA4F215CD393000354B5 /* message-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E131DA4E215CD393000354B5 /* message-7.png */; };
 		E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */; };
 		E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */; };
 		E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C7211C1A7500D5FB2C /* Assets.xcassets */; };
@@ -81,6 +83,8 @@
 		E131DA2B213F5849000354B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E131DA2E2140127E000354B5 /* HomeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabVC.swift; sourceTree = "<group>"; };
 		E131DA4B215CCD0E000354B5 /* AllChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllChatsViewController.swift; path = ../AllChatsViewController.swift; sourceTree = "<group>"; };
+		E131DA4C215CD2FB000354B5 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
+		E131DA4E215CD393000354B5 /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
 		E183B6BD211C1A7500D5FB2C /* SWEDEN_iCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEDEN_iCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 				04BBCDF92135270A00178098 /* ffff.jpeg */,
 				04BBCDFA2135270B00178098 /* ggg.jpg */,
 				04BBCDFB2135270B00178098 /* dddd.jpeg */,
+				E131DA4C215CD2FB000354B5 /* home-7.png */,
+				E131DA4E215CD393000354B5 /* message-7.png */,
 				04BBCDF6213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg */,
 				04BBCDF5213524F800178098 /* blue-ombre-background.jpg */,
 			);
@@ -353,10 +359,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E131DA4D215CD2FB000354B5 /* home-7.png in Resources */,
 				04BBCDFD2135270B00178098 /* ggg.jpg in Resources */,
 				04BBCDF8213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg in Resources */,
 				04BBCDF7213524F900178098 /* blue-ombre-background.jpg in Resources */,
 				047627AB2134C87400A57C74 /* Main.storyboard in Resources */,
+				E131DA4F215CD393000354B5 /* message-7.png in Resources */,
 				04BBCDFC2135270B00178098 /* ffff.jpeg in Resources */,
 				04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */,
 				E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */,
