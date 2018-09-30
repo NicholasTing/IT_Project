@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyr-6m-IN9" userLabel="Texts Container">
                                 <rect key="frame" x="55.5" y="283.5" width="264" height="100"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-z6-Tke">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-z6-Tke">
                                         <rect key="frame" x="0.0" y="8" width="264" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="264" id="Cpg-rH-70f"/>
@@ -29,7 +29,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.36071275684931509" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j64-vt-fWm">
                                         <rect key="frame" x="0.0" y="62" width="264" height="30"/>
@@ -39,7 +39,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.36071275679999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,7 +56,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCare Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oN-q2-Agu">
-                                        <rect key="frame" x="91" y="117.5" width="193" height="48"/>
+                                        <rect key="frame" x="91.5" y="118" width="193" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="193" id="954-z6-6L8"/>
                                             <constraint firstAttribute="height" constant="48" id="gPU-nj-JkA"/>
@@ -75,7 +75,7 @@
                                 <rect key="frame" x="0.0" y="383.5" width="375" height="283.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WK-8F-Kun">
-                                        <rect key="frame" x="150" y="117" width="74" height="49"/>
+                                        <rect key="frame" x="150.5" y="117.5" width="74" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="7RB-py-bUj"/>
                                             <constraint firstAttribute="width" constant="74" id="i9V-vP-J8q"/>
@@ -87,7 +87,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsy-em-ddD">
-                                        <rect key="frame" x="39" y="238.5" width="297" height="38"/>
+                                        <rect key="frame" x="39.5" y="238.5" width="297" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="297" id="Kjs-wc-uAy"/>
                                             <constraint firstAttribute="height" constant="38" id="qab-YT-VnJ"/>
@@ -143,19 +143,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTY-Oq-NFZ" userLabel="Middle Container">
                                 <rect key="frame" x="55.5" y="283.5" width="264" height="100"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ES9-s2-L87">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter new password" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ES9-s2-L87">
                                         <rect key="frame" x="0.0" y="62" width="264" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.36071275679999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMi-j2-O5c">
                                         <rect key="frame" x="0.0" y="8" width="264" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.36071275679999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,7 +168,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCare Sign-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-Z9-rNa">
-                                        <rect key="frame" x="66" y="117" width="243" height="48"/>
+                                        <rect key="frame" x="66.5" y="117.5" width="243" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="243" id="bvF-ol-UiE"/>
                                             <constraint firstAttribute="height" constant="48" id="fJ6-Tw-7TN"/>
@@ -188,7 +188,7 @@
                                 <rect key="frame" x="0.0" y="383.5" width="375" height="283.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVJ-Hf-B2D">
-                                        <rect key="frame" x="132" y="122.5" width="110" height="38"/>
+                                        <rect key="frame" x="132.5" y="123" width="110" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="7kw-SH-KqC"/>
                                             <constraint firstAttribute="width" constant="110" id="EaC-O0-fED"/>
@@ -200,7 +200,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-oi-N2f">
-                                        <rect key="frame" x="40" y="238.5" width="295" height="38"/>
+                                        <rect key="frame" x="40.5" y="238.5" width="295" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="295" id="2PF-Z6-s08"/>
                                             <constraint firstAttribute="height" constant="38" id="zdG-0X-cgf"/>
