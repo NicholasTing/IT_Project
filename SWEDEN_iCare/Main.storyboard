@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCare Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oN-q2-Agu">
-                                        <rect key="frame" x="91.5" y="118.5" width="193" height="48"/>
+                                        <rect key="frame" x="91.5" y="118" width="193" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="193" id="954-z6-6L8"/>
                                             <constraint firstAttribute="height" constant="48" id="gPU-nj-JkA"/>
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="383.5" width="375" height="283.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WK-8F-Kun">
-                                        <rect key="frame" x="150.5" y="117.5" width="74" height="49"/>
+                                        <rect key="frame" x="150.5" y="118" width="74" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="7RB-py-bUj"/>
                                             <constraint firstAttribute="width" constant="74" id="i9V-vP-J8q"/>
@@ -144,7 +144,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="321"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCare Sign-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-Z9-rNa">
-                                        <rect key="frame" x="66.5" y="136.5" width="243" height="48"/>
+                                        <rect key="frame" x="66.5" y="137" width="243" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="iWE-oa-YuH"/>
                                             <constraint firstAttribute="width" constant="243" id="qBv-hZ-lht"/>
@@ -163,7 +163,7 @@
                                 <rect key="frame" x="0.0" y="421" width="375" height="246"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVJ-Hf-B2D">
-                                        <rect key="frame" x="132.5" y="90.5" width="110" height="38"/>
+                                        <rect key="frame" x="132.5" y="90" width="110" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="Uta-Kl-lIv"/>
                                             <constraint firstAttribute="width" constant="110" id="ro5-8s-zFX"/>

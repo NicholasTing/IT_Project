@@ -4,7 +4,7 @@
 
 # Prerequisites 
 
-##### You will need XCode version 9.4 or later.
+##### You will need XCode version 10.0 or later.
 
 # 1. How to build this project
 
@@ -13,6 +13,7 @@
 ##### Open the project using XCode
 
 ##### This project can be run using the emulator.
+##### However, video call, calls and navigation works better on real devices.
 
 # 2. Team members 
 
