@@ -20,12 +20,18 @@
 		583EC9B9215338540022B64E /* PrevChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EC9B8215338540022B64E /* PrevChatsViewController.swift */; };
 		583EC9C12155F6C90022B64E /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EC9C02155F6C90022B64E /* FriendsController.swift */; };
 		659214A582AA126DF02B3293 /* Pods_SWEDEN_iCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB876CAF6DBB8BD2EAD550A1 /* Pods_SWEDEN_iCareUITests.framework */; };
+		E12195EB2161E538007DAF25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E62161E537007DAF25 /* main.m */; };
+		E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E82161E537007DAF25 /* AppDelegate.m */; };
+		E12195ED2161E538007DAF25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E92161E537007DAF25 /* ViewController.m */; };
+		E12195F22161E5E4007DAF25 /* GruveoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12195F02161E5C4007DAF25 /* GruveoSDK.framework */; };
+		E12195F32161E5E4007DAF25 /* GruveoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E12195F02161E5C4007DAF25 /* GruveoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E12195F42161E5E4007DAF25 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12195EE2161E56F007DAF25 /* WebRTC.framework */; };
+		E12195F52161E5E4007DAF25 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E12195EE2161E56F007DAF25 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131DA2B213F5849000354B5 /* HomeViewController.swift */; };
 		E131DA2D214011DC000354B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047627AA2134C87400A57C74 /* Main.storyboard */; };
 		E131DA2F2140127E000354B5 /* HomeTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131DA2E2140127E000354B5 /* HomeTabVC.swift */; };
 		E131DA4D215CD2FB000354B5 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E131DA4C215CD2FB000354B5 /* home-7.png */; };
 		E131DA4F215CD393000354B5 /* message-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E131DA4E215CD393000354B5 /* message-7.png */; };
-		E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */; };
 		E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */; };
 		E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183B6C7211C1A7500D5FB2C /* Assets.xcassets */; };
 		E183B6D6211C1A7600D5FB2C /* SWEDEN_iCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183B6D5211C1A7600D5FB2C /* SWEDEN_iCareTests.swift */; };
@@ -60,6 +66,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E12195F62161E5E4007DAF25 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E12195F32161E5E4007DAF25 /* GruveoSDK.framework in Embed Frameworks */,
+				E12195F52161E5E4007DAF25 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		047627AA2134C87400A57C74 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04BBCDF5213524F800178098 /* blue-ombre-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blue-ombre-background.jpg"; sourceTree = "<group>"; };
@@ -80,13 +101,19 @@
 		C8F008BC12B553267218214F /* Pods-SWEDEN_iCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare.debug.xcconfig"; sourceTree = "<group>"; };
 		CB340BF61C5836D74FA2020E /* Pods-SWEDEN_iCareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareUITests/Pods-SWEDEN_iCareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA38B96E68E776E04A5D255 /* Pods-SWEDEN_iCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareTests/Pods-SWEDEN_iCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		E12195E62161E537007DAF25 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E12195E72161E537007DAF25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E12195E82161E537007DAF25 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E12195E92161E537007DAF25 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E12195EA2161E537007DAF25 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E12195EE2161E56F007DAF25 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		E12195F02161E5C4007DAF25 /* GruveoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GruveoSDK.framework; sourceTree = "<group>"; };
 		E131DA2B213F5849000354B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E131DA2E2140127E000354B5 /* HomeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabVC.swift; sourceTree = "<group>"; };
 		E131DA4B215CCD0E000354B5 /* AllChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllChatsViewController.swift; path = ../AllChatsViewController.swift; sourceTree = "<group>"; };
 		E131DA4C215CD2FB000354B5 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
 		E131DA4E215CD393000354B5 /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
 		E183B6BD211C1A7500D5FB2C /* SWEDEN_iCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEDEN_iCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E183B6C7211C1A7500D5FB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E183B6CC211C1A7500D5FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E728D3014909865F620F8C /* Pods_SWEDEN_iCare.framework in Frameworks */,
+				E12195F22161E5E4007DAF25 /* GruveoSDK.framework in Frameworks */,
+				E12195F42161E5E4007DAF25 /* WebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +204,9 @@
 		E183B6BF211C1A7500D5FB2C /* SWEDEN_iCare */ = {
 			isa = PBXGroup;
 			children = (
+				E12195F02161E5C4007DAF25 /* GruveoSDK.framework */,
+				E12195EE2161E56F007DAF25 /* WebRTC.framework */,
 				EA5023C12131662800568BC7 /* Images */,
-				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
 				E131DA4B215CCD0E000354B5 /* AllChatsViewController.swift */,
 				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
@@ -194,6 +224,11 @@
 				EAB182D9214EB8450003135B /* FriendCell.swift */,
 				EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */,
 				047627AA2134C87400A57C74 /* Main.storyboard */,
+				E12195E72161E537007DAF25 /* AppDelegate.h */,
+				E12195E82161E537007DAF25 /* AppDelegate.m */,
+				E12195E62161E537007DAF25 /* main.m */,
+				E12195EA2161E537007DAF25 /* ViewController.h */,
+				E12195E92161E537007DAF25 /* ViewController.m */,
 				E183B6C7211C1A7500D5FB2C /* Assets.xcassets */,
 				E183B6CC211C1A7500D5FB2C /* Info.plist */,
 				EA5023C221316A5200568BC7 /* GoogleService-Info.plist */,
@@ -255,6 +290,7 @@
 				E183B6BA211C1A7500D5FB2C /* Frameworks */,
 				E183B6BB211C1A7500D5FB2C /* Resources */,
 				F5E23326B1C501C55C8D7E96 /* [CP] Embed Pods Frameworks */,
+				E12195F62161E5E4007DAF25 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -485,17 +521,19 @@
 			files = (
 				583EC9C12155F6C90022B64E /* FriendsController.swift in Sources */,
 				583EC9B9215338540022B64E /* PrevChatsViewController.swift in Sources */,
+				E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */,
 				EAFCFC61214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift in Sources */,
 				E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */,
 				EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */,
 				EAA9385421315864009932AC /* UsersViewController.swift in Sources */,
 				5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */,
+				E12195ED2161E538007DAF25 /* ViewController.m in Sources */,
 				EAE284522139AA3A00B98325 /* User.swift in Sources */,
 				EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */,
 				04F2A36C214665840051D220 /* NavController.swift in Sources */,
 				EAFCFC5D214CF2C8002F2D08 /* FriendsViewController.swift in Sources */,
 				E131DA2F2140127E000354B5 /* HomeTabVC.swift in Sources */,
-				E183B6C1211C1A7500D5FB2C /* AppDelegate.swift in Sources */,
+				E12195EB2161E538007DAF25 /* main.m in Sources */,
 				E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */,
 				EAB182DA214EB8450003135B /* FriendCell.swift in Sources */,
 				EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */,
@@ -652,6 +690,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SWEDEN_iCare",
+				);
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
@@ -669,6 +712,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SWEDEN_iCare",
+				);
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
