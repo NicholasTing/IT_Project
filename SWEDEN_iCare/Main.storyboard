@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HID-P0-Wop">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HID-P0-Wop">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCare Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oN-q2-Agu">
-                                        <rect key="frame" x="91.5" y="118" width="193" height="48"/>
+                                        <rect key="frame" x="91" y="118" width="193" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="193" id="954-z6-6L8"/>
                                             <constraint firstAttribute="height" constant="48" id="gPU-nj-JkA"/>
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="383.5" width="375" height="283.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WK-8F-Kun">
-                                        <rect key="frame" x="150.5" y="118" width="74" height="49"/>
+                                        <rect key="frame" x="150.5" y="117.5" width="74" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="7RB-py-bUj"/>
                                             <constraint firstAttribute="width" constant="74" id="i9V-vP-J8q"/>
@@ -53,7 +53,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsy-em-ddD">
-                                        <rect key="frame" x="39.5" y="238.5" width="297" height="38"/>
+                                        <rect key="frame" x="39" y="238.5" width="297" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="297" id="Kjs-wc-uAy"/>
                                             <constraint firstAttribute="height" constant="38" id="qab-YT-VnJ"/>
@@ -144,7 +144,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="321"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCare Sign-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-Z9-rNa">
-                                        <rect key="frame" x="66.5" y="137" width="243" height="48"/>
+                                        <rect key="frame" x="66" y="136.5" width="243" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="iWE-oa-YuH"/>
                                             <constraint firstAttribute="width" constant="243" id="qBv-hZ-lht"/>
@@ -175,7 +175,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-oi-N2f">
-                                        <rect key="frame" x="40.5" y="201" width="295" height="38"/>
+                                        <rect key="frame" x="40" y="201" width="295" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="295" id="VwV-Dt-iw3"/>
                                             <constraint firstAttribute="height" constant="38" id="kEH-fU-t8C"/>
@@ -310,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdv-y6-IqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4034" y="1442"/>
+            <point key="canvasLocation" x="4972" y="1441.529235382309"/>
         </scene>
         <!--Prev Chats View Controller-->
         <scene sceneID="LiY-xp-VKY">
@@ -347,7 +347,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuK-fh-kmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3014" y="1442"/>
+            <point key="canvasLocation" x="3952.8000000000002" y="1441.529235382309"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zyq-dj-kOM">
@@ -378,9 +378,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qx4-AC-eZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2005.5999999999999" y="1442.4287856071965"/>
+            <point key="canvasLocation" x="2944.8000000000002" y="1442.4287856071965"/>
         </scene>
-        <!--Chat-->
+        <!--View Controller-->
         <scene sceneID="a6l-wY-KLb">
             <objects>
                 <viewController id="mav-bC-Qpp" sceneMemberID="viewController">
@@ -409,12 +409,11 @@
                         <color key="tintColor" red="1" green="0.66268277129999997" blue="0.66348732379999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Ke5-ac-5cn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat" selectedImage="message-7.png" id="U8C-s6-0HK"/>
                     <navigationItem key="navigationItem" id="OFv-b4-bqZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7er-sy-q1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="1443"/>
+            <point key="canvasLocation" x="1912.8" y="1442.4287856071965"/>
         </scene>
         <!--Home TabVC-->
         <scene sceneID="bgR-XA-ZGM">
@@ -428,7 +427,7 @@
                     <connections>
                         <segue destination="LkE-ri-3Ym" kind="relationship" relationship="viewControllers" id="v9w-L4-YF0"/>
                         <segue destination="6gd-ue-s0P" kind="relationship" relationship="viewControllers" id="Ebs-Fv-OeJ"/>
-                        <segue destination="mav-bC-Qpp" kind="relationship" relationship="viewControllers" id="x60-uE-r7m"/>
+                        <segue destination="gBy-cF-fuj" kind="relationship" relationship="viewControllers" id="x60-uE-r7m"/>
                         <segue destination="CHL-PY-j9E" kind="relationship" relationship="viewControllers" id="V8A-O7-TmM"/>
                     </connections>
                 </tabBarController>
@@ -549,7 +548,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friendCell" rowHeight="65" id="fp3-aK-mJN" customClass="FriendCell" customModule="SWEDEN_iCare" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friendCell" rowHeight="65" id="fp3-aK-mJN" customClass="FriendCell" customModule="SWEDEN_iCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fp3-aK-mJN" id="UIO-Wk-1br">
@@ -647,7 +646,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" rowHeight="65" id="YZ4-sN-pR8" customClass="usersTableViewCellSubClass" customModule="SWEDEN_iCare" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" rowHeight="65" id="YZ4-sN-pR8" customClass="usersTableViewCellSubClass" customModule="SWEDEN_iCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YZ4-sN-pR8" id="Dvp-GX-N8U" customClass="usersTableViewCellSubClass" customModule="SWEDEN_iCare" customModuleProvider="target">
@@ -882,6 +881,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMy-IJ-9tb" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13.6" y="2237.6311844077964"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="p7V-1h-ZJd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBy-cF-fuj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" selectedImage="message-7.png" id="U8C-s6-0HK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p4X-3P-H8h">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mav-bC-Qpp" kind="relationship" relationship="rootViewController" id="idK-iU-rvO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSA-tQ-aLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="1442.4287856071965"/>
         </scene>
     </scenes>
     <resources>
