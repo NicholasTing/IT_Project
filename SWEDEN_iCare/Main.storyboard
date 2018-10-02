@@ -300,7 +300,6 @@
         <!--Chat View Controller-->
         <scene sceneID="K7z-ou-Xiu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xdv-y6-IqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="chatView" hidesBottomBarWhenPushed="YES" id="ii5-tL-R9V" customClass="ChatViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BlM-IQ-tiL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -310,6 +309,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4xe-t4-Njm"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdv-y6-IqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4972" y="1441.529235382309"/>
         </scene>
@@ -331,7 +331,6 @@
         <!--Prev Chats View Controller-->
         <scene sceneID="LiY-xp-VKY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AuK-fh-kmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="YLc-Tk-AeC" customClass="PrevChatsViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fs2-fQ-qr9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
@@ -359,13 +358,13 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AuK-fh-kmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3943" y="1546"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zyq-dj-kOM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qx4-AC-eZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController hidesBottomBarWhenPushed="YES" id="Aus-pb-cXU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yiW-pG-Qmc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -403,6 +402,7 @@
                         <viewLayoutGuide key="safeArea" id="sbf-0c-UjS"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qx4-AC-eZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2944.8000000000002" y="1442.4287856071965"/>
         </scene>
@@ -1092,6 +1092,7 @@
         <image name="message-7.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="S0p-nL-8fU"/>
         <segue reference="V8A-O7-TmM"/>
         <segue reference="JAf-IN-hNE"/>
         <segue reference="4xl-7A-0Ry"/>
