@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045472752162274E007EB6CB /* NavigationInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045472742162274E007EB6CB /* NavigationInterfaceViewController.swift */; };
+		0454727721622DA8007EB6CB /* SetHomeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454727621622DA8007EB6CB /* SetHomeAddressViewController.swift */; };
 		047627AB2134C87400A57C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047627AA2134C87400A57C74 /* Main.storyboard */; };
 		04BBCDF7213524F900178098 /* blue-ombre-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDF5213524F800178098 /* blue-ombre-background.jpg */; };
 		04BBCDF8213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDF6213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg */; };
@@ -82,6 +84,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		045472742162274E007EB6CB /* NavigationInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationInterfaceViewController.swift; sourceTree = "<group>"; };
+		0454727621622DA8007EB6CB /* SetHomeAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetHomeAddressViewController.swift; sourceTree = "<group>"; };
 		047627AA2134C87400A57C74 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04BBCDF5213524F800178098 /* blue-ombre-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blue-ombre-background.jpg"; sourceTree = "<group>"; };
 		04BBCDF6213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5ebb350afa99fb3a2b75c5855e98bd9c.jpg; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 				EAB182D9214EB8450003135B /* FriendCell.swift */,
 				EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */,
 				047627AA2134C87400A57C74 /* Main.storyboard */,
+				0454727621622DA8007EB6CB /* SetHomeAddressViewController.swift */,
+				045472742162274E007EB6CB /* NavigationInterfaceViewController.swift */,
 				E12195E72161E537007DAF25 /* AppDelegate.h */,
 				E12195E82161E537007DAF25 /* AppDelegate.m */,
 				E12195E62161E537007DAF25 /* main.m */,
@@ -526,9 +532,11 @@
 				E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */,
 				EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */,
 				EAA9385421315864009932AC /* UsersViewController.swift in Sources */,
+				0454727721622DA8007EB6CB /* SetHomeAddressViewController.swift in Sources */,
 				5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */,
 				E12195ED2161E538007DAF25 /* ViewController.m in Sources */,
 				EAE284522139AA3A00B98325 /* User.swift in Sources */,
+				045472752162274E007EB6CB /* NavigationInterfaceViewController.swift in Sources */,
 				EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */,
 				04F2A36C214665840051D220 /* NavController.swift in Sources */,
 				EAFCFC5D214CF2C8002F2D08 /* FriendsViewController.swift in Sources */,
@@ -689,7 +697,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				DEVELOPMENT_TEAM = GPS97YC8L3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -697,7 +705,7 @@
 				);
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
+				PRODUCT_BUNDLE_IDENTIFIER = "weijiaw3-student.unimelb.edu.au";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -711,7 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				DEVELOPMENT_TEAM = GPS97YC8L3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -719,7 +727,7 @@
 				);
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
+				PRODUCT_BUNDLE_IDENTIFIER = "weijiaw3-student.unimelb.edu.au";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

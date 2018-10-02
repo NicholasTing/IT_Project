@@ -14,6 +14,9 @@ class NavController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
     
+    @IBAction func backButtonClicked(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     let locationManager = CLLocationManager()
     var currentCoordinate: CLLocationCoordinate2D!
     
@@ -21,6 +24,10 @@ class NavController: UIViewController {
     let speechSynthesizer = AVSpeechSynthesizer()
     
     var stepCounter = 0
+    
+    // Added for initial address search
+    //var initialAddress = ""
+    
     
     @IBAction func dismissController(_ sender: Any) {
         
@@ -44,6 +51,16 @@ class NavController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:"dismissKeyboard")
         view.addGestureRecognizer(tap)
          */
+        
+        // Perform search if search bar is not empty
+//        if (initialAddress != "") {
+//            // **************** Added ******************
+//            // If you're free, put everything below into another function
+//            searchBar.text = initialAddress
+//            searchBarSearchButtonClicked(searchBar)
+//            
+//        }
+        
     }
     
     // Have null problems
@@ -120,6 +137,7 @@ class NavController: UIViewController {
             transportMethod = "walk"
         }
         // **************** Added ******************
+        // If you're free, put everything below into another function
         let localSearchRequest = MKLocalSearchRequest()
         localSearchRequest.naturalLanguageQuery = searchBar.text
         let region = MKCoordinateRegion(center: currentCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
@@ -132,6 +150,12 @@ class NavController: UIViewController {
         }
         
     }
+    
+    
+//    func navigateFromExternalPage(dest: String) {
+//        searchBar.text = dest
+//        searchBarSearchButtonClicked(searchBar)
+//    }
     
     
 }

@@ -56,7 +56,8 @@ class SignUpViewController: UIViewController {
                                                "friends": "",
                                                "friendRequests": "",
                                                "dob": "",
-                                               "address": self.emailText.text]
+                                               "address": self.emailText.text,
+                                               "home": ""]
                 
                 //Database reference
                 self.databaseReference = Database.database().reference()
