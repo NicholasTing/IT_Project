@@ -19,6 +19,7 @@
 		5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5810C8E521437DB900642AFC /* ChatViewController.swift */; };
 		583EC9B9215338540022B64E /* PrevChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EC9B8215338540022B64E /* PrevChatsViewController.swift */; };
 		583EC9C12155F6C90022B64E /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EC9C02155F6C90022B64E /* FriendsController.swift */; };
+		58C22C372160A3A900FEA094 /* ChatParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C22C362160A3A900FEA094 /* ChatParticipantsViewController.swift */; };
 		659214A582AA126DF02B3293 /* Pods_SWEDEN_iCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB876CAF6DBB8BD2EAD550A1 /* Pods_SWEDEN_iCareUITests.framework */; };
 		E12195EB2161E538007DAF25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E62161E537007DAF25 /* main.m */; };
 		E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E82161E537007DAF25 /* AppDelegate.m */; };
@@ -94,6 +95,7 @@
 		5810C8E821437EE600642AFC /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		583EC9B8215338540022B64E /* PrevChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevChatsViewController.swift; sourceTree = "<group>"; };
 		583EC9C02155F6C90022B64E /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
+		58C22C362160A3A900FEA094 /* ChatParticipantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatParticipantsViewController.swift; sourceTree = "<group>"; };
 		89BAC0B53B0EA0333D7774D8 /* Pods-SWEDEN_iCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare.release.xcconfig"; sourceTree = "<group>"; };
 		AB876CAF6DBB8BD2EAD550A1 /* Pods_SWEDEN_iCareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC26BAB81C554BC816DC5169 /* Pods_SWEDEN_iCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +112,6 @@
 		E12195F02161E5C4007DAF25 /* GruveoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GruveoSDK.framework; sourceTree = "<group>"; };
 		E131DA2B213F5849000354B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E131DA2E2140127E000354B5 /* HomeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabVC.swift; sourceTree = "<group>"; };
-		E131DA4B215CCD0E000354B5 /* AllChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllChatsViewController.swift; path = ../AllChatsViewController.swift; sourceTree = "<group>"; };
 		E131DA4C215CD2FB000354B5 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
 		E131DA4E215CD393000354B5 /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
 		E183B6BD211C1A7500D5FB2C /* SWEDEN_iCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWEDEN_iCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,7 +208,11 @@
 				E12195F02161E5C4007DAF25 /* GruveoSDK.framework */,
 				E12195EE2161E56F007DAF25 /* WebRTC.framework */,
 				EA5023C12131662800568BC7 /* Images */,
+
+				E183B6C0211C1A7500D5FB2C /* AppDelegate.swift */,
+
 				E131DA4B215CCD0E000354B5 /* AllChatsViewController.swift */,
+
 				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
 				04F2A36B214665840051D220 /* NavController.swift */,
@@ -218,6 +223,7 @@
 				EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */,
 				5810C8E521437DB900642AFC /* ChatViewController.swift */,
 				583EC9B8215338540022B64E /* PrevChatsViewController.swift */,
+				58C22C362160A3A900FEA094 /* ChatParticipantsViewController.swift */,
 				583EC9C02155F6C90022B64E /* FriendsController.swift */,
 				EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */,
 				EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */,
@@ -519,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C22C372160A3A900FEA094 /* ChatParticipantsViewController.swift in Sources */,
 				583EC9C12155F6C90022B64E /* FriendsController.swift in Sources */,
 				583EC9B9215338540022B64E /* PrevChatsViewController.swift in Sources */,
 				E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */,
