@@ -205,9 +205,9 @@
         <!--Chat View Controller-->
         <scene sceneID="K7z-ou-Xiu">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="ii5-tL-R9V" customClass="ChatViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatView" hidesBottomBarWhenPushed="YES" id="ii5-tL-R9V" customClass="ChatViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BlM-IQ-tiL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hzJ-SR-YnG"/>
@@ -218,25 +218,46 @@
             </objects>
             <point key="canvasLocation" x="4972" y="1441.529235382309"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Participants View Controller-->
         <scene sceneID="pWE-Z0-rJ1">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="fEY-5k-Xdz" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="fEY-5k-Xdz" customClass="AddParticipantsViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JLf-Yl-mzd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="snn-0D-v2h">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="497"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="plv-R1-TIh" kind="embed" id="uVK-RN-8In"/>
+                                    <segue destination="plv-R1-TIh" kind="embed" identifier="participantsContainer" id="uVK-RN-8In"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBn-6W-FvG">
+                                <rect key="frame" x="131" y="637" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Create group"/>
+                                <connections>
+                                    <action selector="createGroupButtonPressed:" destination="fEY-5k-Xdz" eventType="touchUpInside" id="vCB-NX-S5P"/>
+                                    <segue destination="YLc-Tk-AeC" kind="show" id="tIP-dl-cof"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter group name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d72-xp-h2I">
+                                <rect key="frame" x="48" y="599" width="279" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="but-6a-gV3"/>
                     </view>
+                    <connections>
+                        <outlet property="createGroup" destination="BBn-6W-FvG" id="duu-MT-LxE"/>
+                        <outlet property="groupName" destination="d72-xp-h2I" id="NDn-E7-d5B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToX-ID-xf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,7 +268,7 @@
             <objects>
                 <tableViewController id="plv-R1-TIh" customClass="ChatsParticipantsViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ILx-kr-Hxm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -270,6 +291,21 @@
             </objects>
             <point key="canvasLocation" x="4972" y="735"/>
         </scene>
+        <!--Group Chat View Controller-->
+        <scene sceneID="D4m-sS-XK5">
+            <objects>
+                <viewController storyboardIdentifier="groupChatView" id="4bQ-hp-we0" customClass="GroupChatViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DGU-t5-D2W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XWO-PU-iPt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mk-ZF-WUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5713" y="1184"/>
+        </scene>
         <!--Prev Chats View Controller-->
         <scene sceneID="LiY-xp-VKY">
             <objects>
@@ -289,9 +325,6 @@
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="ii5-tL-R9V" kind="show" identifier="contactSegue" id="xSe-Ei-lQb"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <userDefinedRuntimeAttributes>
@@ -336,7 +369,7 @@
                                     <navigationItem title="Chats" id="fm8-5c-lYO">
                                         <barButtonItem key="rightBarButtonItem" title="New Group" id="ceG-ti-IyY">
                                             <connections>
-                                                <segue destination="fEY-5k-Xdz" kind="show" id="h1L-f2-PYq"/>
+                                                <segue destination="fEY-5k-Xdz" kind="show" identifier="addParticipants" id="h1L-f2-PYq"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -875,5 +908,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="V8A-O7-TmM"/>
         <segue reference="34q-c1-waW"/>
+        <segue reference="ieN-A6-etl"/>
     </inferredMetricsTieBreakers>
 </document>

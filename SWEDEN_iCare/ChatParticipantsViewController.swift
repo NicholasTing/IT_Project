@@ -10,17 +10,19 @@ import Foundation
 import UIKit
 import Firebase
 
+protocol ParticipantsSelectionDelegate {
+    func selectedParticipants(participants: [User])
+}
+
 class ChatsParticipantsViewController: UITableViewController {
     var user = Auth.auth().currentUser
-    var databaseChats = Database.database().reference().child("chats")
-    var databaseUsers = Database.database().reference().child("users")
     var friends:[User] = []{
         didSet{
             self.tableView.reloadData()
         }
     }
-    
-    var selectedFriends:[User]?
+    var selectionDelegate: ParticipantsSelectionDelegate!
+    var selectedFriends:[User] = []
     
     override func viewDidLoad() {
         self.fetchFriends()
@@ -31,6 +33,7 @@ class ChatsParticipantsViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section:Int) -> Int {
         return friends.count
@@ -46,9 +49,19 @@ class ChatsParticipantsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark {
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+            var count = 0
+            for selected in selectedFriends{
+                if selected.uid == friends[indexPath.row].uid{
+                    selectedFriends.remove(at: count)
+                    break
+                }
+                count += 1
+            }
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+            selectedFriends.append(friends[indexPath.row])
         }
+        selectionDelegate.selectedParticipants(participants: selectedFriends)
     }
     
     override func didReceiveMemoryWarning() {
@@ -70,12 +83,7 @@ class ChatsParticipantsViewController: UITableViewController {
     }
     
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "contactSegue" {
-//            let vc = segue.destination as! ChatViewController
-//            vc.currentFriend = self.selectedContact!
-//        }
-//    }
+  
 }
 
     
