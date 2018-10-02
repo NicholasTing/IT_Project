@@ -1,6 +1,0 @@
-framework module Pods_SWEDEN_iCare {
-  umbrella header "Pods-SWEDEN_iCare-umbrella.h"
-
-  export *
-  module * { export * }
-}
