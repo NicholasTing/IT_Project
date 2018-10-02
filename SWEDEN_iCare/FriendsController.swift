@@ -24,7 +24,7 @@ class FriendsController {
                     let fid = friendID as! String
                     idList.append(fid)
                 }
-      
+                
                 completion(idList)
             }
         }
@@ -41,5 +41,49 @@ class FriendsController {
                 completion(address)
             }
         })
+    }
+    
+    static func fetchGroupsFriendsIds(completion: @escaping (_ idsInGroup:[String: [String]]?) -> Void) {
+        let groupDBRef = Database.database().reference().child("groups")
+        
+        groupDBRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            var groupDict = [String: [String]]()
+            print(snapshot.childrenCount) // I got the expected number of items
+            let enumerator = snapshot.children
+            while let childSnapshot = enumerator.nextObject() as? DataSnapshot {
+                if let group = childSnapshot.value as? [String: AnyObject]{
+                    //                    print(group["participants"])
+                    let groupId = childSnapshot.key
+                    let participantIds = group["participants"] as? [String: String]
+                    var idList:[String] = []
+                    
+                    for (_, id) in participantIds!{
+                        if(id == currentUser?.uid){
+                            for (_, id) in participantIds!{
+                                idList.append(id)
+                            }
+                            groupDict[groupId] = idList
+                        }
+                    }
+                }
+            }
+            completion(groupDict)
+        })
+    }
+    
+    static func concatAddressesFromUsers(users: [User]) -> String{
+        var addresses:String = ""
+        for user in users{
+            addresses += (user.address + " ")
+        }
+        return addresses
+    }
+    
+    static func idListFromUsers(users: [User]) -> [String]{
+        var idList:[String] = []
+        for user in users{
+            idList.append(user.uid)
+        }
+        return idList
     }
 }
