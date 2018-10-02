@@ -45,7 +45,6 @@
  */
 - (NSString *)senderId;
 
-
 /**
  *  @return The display name for the user who sent the message.
  *

@@ -2,18 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD:SWEDEN_iCare/SWEDEN_iCare.xcodeproj/xcuserdata/dim045.xcuserdatad/xcschemes/xcschememanagement.plist
-	<key>SchemeUserState</key>
-	<dict>
-		<key>SWEDEN_iCare.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-=======
 	<key>IDEDidComputeMac32BitWarning</key>
 	<true/>
->>>>>>> 53c602af495073b876629432b7ce32c1d13cd237:SWEDEN_iCare.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
 </dict>
 </plist>
