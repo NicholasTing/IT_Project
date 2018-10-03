@@ -17,5 +17,4 @@ class User:NSObject {
     var dob: String!
     var address: String!
     
-   
 }

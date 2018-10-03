@@ -23,6 +23,9 @@
 		587CFC8321635AFB004B18D9 /* ChatParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CFC8121635AFA004B18D9 /* ChatParticipantsViewController.swift */; };
 		587CFC8421635AFB004B18D9 /* AddParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CFC8221635AFA004B18D9 /* AddParticipantsViewController.swift */; };
 		659214A582AA126DF02B3293 /* Pods_SWEDEN_iCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB876CAF6DBB8BD2EAD550A1 /* Pods_SWEDEN_iCareUITests.framework */; };
+		E10E4FA021647E6200A2DFB4 /* ChatTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4F9F21647E6200A2DFB4 /* ChatTest.swift */; };
+		E10E4FA22164839E00A2DFB4 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4FA12164839E00A2DFB4 /* LoginTest.swift */; };
+		E10E4FA42164859800A2DFB4 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4FA32164859800A2DFB4 /* Authentication.swift */; };
 		E12195EB2161E538007DAF25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E62161E537007DAF25 /* main.m */; };
 		E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E82161E537007DAF25 /* AppDelegate.m */; };
 		E12195ED2161E538007DAF25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E92161E537007DAF25 /* ViewController.m */; };
@@ -108,6 +111,9 @@
 		C8F008BC12B553267218214F /* Pods-SWEDEN_iCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCare/Pods-SWEDEN_iCare.debug.xcconfig"; sourceTree = "<group>"; };
 		CB340BF61C5836D74FA2020E /* Pods-SWEDEN_iCareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareUITests/Pods-SWEDEN_iCareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA38B96E68E776E04A5D255 /* Pods-SWEDEN_iCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareTests/Pods-SWEDEN_iCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		E10E4F9F21647E6200A2DFB4 /* ChatTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTest.swift; sourceTree = "<group>"; };
+		E10E4FA12164839E00A2DFB4 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+		E10E4FA32164859800A2DFB4 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		E12195E62161E537007DAF25 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E12195E72161E537007DAF25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E12195E82161E537007DAF25 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -241,6 +247,7 @@
 				E183B6C7211C1A7500D5FB2C /* Assets.xcassets */,
 				E183B6CC211C1A7500D5FB2C /* Info.plist */,
 				EA5023C221316A5200568BC7 /* GoogleService-Info.plist */,
+				E10E4FA32164859800A2DFB4 /* Authentication.swift */,
 			);
 			path = SWEDEN_iCare;
 			sourceTree = "<group>";
@@ -248,6 +255,8 @@
 		E183B6D4211C1A7600D5FB2C /* SWEDEN_iCareTests */ = {
 			isa = PBXGroup;
 			children = (
+				E10E4F9F21647E6200A2DFB4 /* ChatTest.swift */,
+				E10E4FA12164839E00A2DFB4 /* LoginTest.swift */,
 				E183B6D5211C1A7600D5FB2C /* SWEDEN_iCareTests.swift */,
 				E183B6D7211C1A7600D5FB2C /* Info.plist */,
 			);
@@ -551,6 +560,7 @@
 				E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */,
 				EAB182DA214EB8450003135B /* FriendCell.swift in Sources */,
 				EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */,
+				E10E4FA42164859800A2DFB4 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +568,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10E4FA22164839E00A2DFB4 /* LoginTest.swift in Sources */,
 				E183B6D6211C1A7600D5FB2C /* SWEDEN_iCareTests.swift in Sources */,
+				E10E4FA021647E6200A2DFB4 /* ChatTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
