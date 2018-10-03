@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HID-P0-Wop">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Wc-v2-J7g">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -245,6 +245,114 @@
             </objects>
             <point key="canvasLocation" x="970.39999999999998" y="-253.2233883058471"/>
         </scene>
+        <!--Add Reminder-->
+        <scene sceneID="nLK-cP-3BF">
+            <objects>
+                <viewController id="qpc-Db-s9w" customClass="AddReminderViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ma4-Gn-oYS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a reminder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-kC-Oc1">
+                                <rect key="frame" x="16" y="82" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yI4-Au-4PJ">
+                                <rect key="frame" x="0.0" y="132" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="560240118.50643599">
+                                    <!--2018-10-03 06:15:18 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="timeChanged:" destination="qpc-Db-s9w" eventType="valueChanged" id="6vR-sn-QEs"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clu-un-rAE">
+                                <rect key="frame" x="319" y="44" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Udz-XM-lCP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Reminder" id="mQC-if-iK8">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="RVe-jg-BD8">
+                            <connections>
+                                <action selector="cancel:" destination="qpc-Db-s9w" id="Trb-RO-7v3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="PrX-8z-fhL">
+                            <connections>
+                                <segue destination="U31-t8-tJ9" kind="unwind" unwindAction="unwindToReminderListWithSender:" id="ORT-7U-0tQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="reminderTextField" destination="nUh-kC-Oc1" id="cwa-23-54f"/>
+                        <outlet property="saveButton" destination="clu-un-rAE" id="nJp-4e-b2S"/>
+                        <outlet property="timePicker" destination="yI4-Au-4PJ" id="ue0-Mr-1pV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MF4-l3-1eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="U31-t8-tJ9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="2307.7961019490258"/>
+        </scene>
+        <!--Reminders-->
+        <scene sceneID="UFX-c0-BW6">
+            <objects>
+                <tableViewController id="rMb-0N-eYo" customClass="ReminderTableViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e1g-S8-irn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reminderCell" textLabel="6Rl-BG-Wa6" detailTextLabel="b4k-Xk-jps" style="IBUITableViewCellStyleSubtitle" id="ioy-4K-NI3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ioy-4K-NI3" id="iTf-co-men">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Rl-BG-Wa6">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b4k-Xk-jps">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rMb-0N-eYo" id="A4I-wL-18A"/>
+                            <outlet property="delegate" destination="rMb-0N-eYo" id="7K9-EC-FvD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Reminders" id="Icm-Cy-fg2">
+                        <barButtonItem key="rightBarButtonItem" title="Add" systemItem="add" id="eQK-RR-Aeb">
+                            <connections>
+                                <segue destination="men-7O-GTE" kind="presentation" id="Krd-ST-raT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2o1-fV-lX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3364" y="2336.5817091454273"/>
+        </scene>
         <!--Home-->
         <scene sceneID="lTU-Zj-L24">
             <objects>
@@ -260,10 +368,28 @@
                                 <color key="textColor" red="0.069910155759999995" green="0.58922906090000005" blue="0.095997766700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BH-Oz-sIm">
-                                <rect key="frame" x="6" y="351" width="369" height="192"/>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enq-mZ-erd">
+                                <rect key="frame" x="0.0" y="203" width="217" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.66268277129999997" blue="0.66348732379999997" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Medical Reminders">
+                                    <color key="titleColor" red="0.54085606340000003" green="0.1069072241" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makeToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ExF-1C-6e4" kind="show" id="pwC-xz-jFN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BH-Oz-sIm">
+                                <rect key="frame" x="0.0" y="323" width="202" height="162"/>
+                                <color key="backgroundColor" red="1" green="0.66268277129999997" blue="0.66348732379999997" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Help">
                                     <color key="titleColor" red="0.54085606340000003" green="0.1069072241" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -294,7 +420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ou3-VM-6My" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-927" y="2238"/>
+            <point key="canvasLocation" x="5223.1999999999998" y="2336.5817091454273"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="K7z-ou-Xiu">
@@ -1066,7 +1192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmV-j5-ZPe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1913" y="2238"/>
+            <point key="canvasLocation" x="9426.3999999999996" y="2237.6311844077964"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="BWV-bM-kTu">
@@ -1092,7 +1218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OO5-F1-DNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="321" y="2423"/>
+            <point key="canvasLocation" x="7834.3999999999996" y="2422.9385307346329"/>
         </scene>
         <!--Call-->
         <scene sceneID="f1A-DQ-7u0">
@@ -1113,7 +1239,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MhK-xF-Lvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="2238"/>
+            <point key="canvasLocation" x="8602.3999999999996" y="2237.6311844077964"/>
         </scene>
         <!--Add Participants View Controller-->
         <scene sceneID="z3b-AT-c2k">
@@ -1222,6 +1348,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fN1-sx-UKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3943.1999999999998" y="735.38230884557731"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j5V-qx-nL1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ExF-1C-6e4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W3Y-gk-4K5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rMb-0N-eYo" kind="relationship" relationship="rootViewController" id="qWB-AD-xmE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eof-hb-tOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.8000000000002" y="2336.5817091454273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7v9-Lg-y0X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="men-7O-GTE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="REf-Wx-XVE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qpc-Db-s9w" kind="relationship" relationship="rootViewController" id="9uC-2Z-ge0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0Q-TD-7ML" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352.80000000000001" y="2307.7961019490258"/>
         </scene>
     </scenes>
     <resources>
