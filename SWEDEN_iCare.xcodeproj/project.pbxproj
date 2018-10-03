@@ -42,6 +42,7 @@
 		EA5023C321316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
 		EA5023C421316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
 		EA5023C521316A5200568BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5023C221316A5200568BC7 /* GoogleService-Info.plist */; };
+		EA865BA2216444E7002848EA /* user placeholder image.png in Resources */ = {isa = PBXBuildFile; fileRef = EA865BA1216444E7002848EA /* user placeholder image.png */; };
 		EAA9385421315864009932AC /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA9385321315864009932AC /* UsersViewController.swift */; };
 		EAB182DA214EB8450003135B /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB182D9214EB8450003135B /* FriendCell.swift */; };
 		EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */; };
@@ -130,6 +131,7 @@
 		E183B6E2211C1A7600D5FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C83AA1A97ED07804C560B8 /* Pods-SWEDEN_iCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWEDEN_iCareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWEDEN_iCareTests/Pods-SWEDEN_iCareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA5023C221316A5200568BC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA865BA1216444E7002848EA /* user placeholder image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user placeholder image.png"; sourceTree = "<group>"; };
 		EAA9385321315864009932AC /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		EAB182D9214EB8450003135B /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		EA5023C12131662800568BC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EA865BA1216444E7002848EA /* user placeholder image.png */,
 				04BBCDF92135270A00178098 /* ffff.jpeg */,
 				04BBCDFA2135270B00178098 /* ggg.jpg */,
 				04BBCDFB2135270B00178098 /* dddd.jpeg */,
@@ -407,6 +410,7 @@
 				04BBCDF8213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg in Resources */,
 				04BBCDF7213524F900178098 /* blue-ombre-background.jpg in Resources */,
 				047627AB2134C87400A57C74 /* Main.storyboard in Resources */,
+				EA865BA2216444E7002848EA /* user placeholder image.png in Resources */,
 				E131DA4F215CD393000354B5 /* message-7.png in Resources */,
 				04BBCDFC2135270B00178098 /* ffff.jpeg in Resources */,
 				04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */,
