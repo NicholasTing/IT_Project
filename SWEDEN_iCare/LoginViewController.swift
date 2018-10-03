@@ -57,7 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             } else {
                 print("you're in")
                 
-                homeTabVC.selectedViewController = homeTabVC.viewControllers?[2]
+                homeTabVC.selectedViewController = homeTabVC.viewControllers?[1]
                 self.present(homeTabVC, animated:true, completion: nil)
             }
         }
