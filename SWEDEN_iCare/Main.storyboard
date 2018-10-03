@@ -310,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdv-y6-IqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4972" y="1441.529235382309"/>
+            <point key="canvasLocation" x="5911.1999999999998" y="1441.529235382309"/>
         </scene>
         <!--Group Chat View Controller-->
         <scene sceneID="psm-11-sNl">
@@ -325,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsh-b8-dKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5827" y="1211"/>
+            <point key="canvasLocation" x="7704.8000000000002" y="1210.344827586207"/>
         </scene>
         <!--Prev Chats View Controller-->
         <scene sceneID="LiY-xp-VKY">
@@ -356,12 +356,13 @@
                             <outlet property="delegate" destination="YLc-Tk-AeC" id="Uag-fj-SOn"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="m55-na-00e"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuK-fh-kmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3943" y="1546"/>
+            <point key="canvasLocation" x="4880.8000000000002" y="1545.8770614692655"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="Zyq-dj-kOM">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="Aus-pb-cXU" sceneMemberID="viewController">
@@ -383,7 +384,7 @@
                                     <navigationItem title="Chats" id="0Q0-CW-QKs">
                                         <barButtonItem key="rightBarButtonItem" title="New Group" id="DBF-Bn-hh4">
                                             <connections>
-                                                <segue destination="HBh-7L-qaL" kind="show" id="S0p-nL-8fU"/>
+                                                <segue destination="0II-3a-Yrp" kind="show" id="S0p-nL-8fU"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -393,52 +394,18 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="YLc-Tk-AeC" kind="embed" id="ieN-A6-etl"/>
+                                    <segue destination="Qob-kW-sCQ" kind="embed" id="ieN-A6-etl"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sbf-0c-UjS"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="3mL-uT-KWS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qx4-AC-eZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2944.8000000000002" y="1442.4287856071965"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="a6l-wY-KLb">
-            <objects>
-                <viewController id="mav-bC-Qpp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WI1-re-iPD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iCare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fD3-Ca-zxU">
-                                <rect key="frame" x="66" y="70" width="243" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.069910155759999995" green="0.58922906090000005" blue="0.095997766700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRx-zO-GRB">
-                                <rect key="frame" x="127" y="386" width="120" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Chat"/>
-                                <connections>
-                                    <segue destination="Aus-pb-cXU" kind="show" id="KWP-3W-A4L"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="1" green="0.66268277129999997" blue="0.66348732379999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="Ke5-ac-5cn"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="OFv-b4-bqZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7er-sy-q1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1912.8" y="1442.4287856071965"/>
         </scene>
         <!--Home TabVC-->
         <scene sceneID="bgR-XA-ZGM">
@@ -451,10 +418,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="kIc-Xa-TSZ" kind="relationship" relationship="viewControllers" id="6hE-XP-pFO"/>
-                        <segue destination="gBy-cF-fuj" kind="relationship" relationship="viewControllers" id="x60-uE-r7m"/>
                         <segue destination="6gd-ue-s0P" kind="relationship" relationship="viewControllers" id="Ebs-Fv-OeJ"/>
                         <segue destination="Okg-Jm-ffZ" kind="relationship" relationship="viewControllers" id="U8R-iI-y9r"/>
                         <segue destination="CHL-PY-j9E" kind="relationship" relationship="viewControllers" id="V8A-O7-TmM"/>
+                        <segue destination="Aus-pb-cXU" kind="relationship" relationship="viewControllers" id="bML-gt-Kk9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUj-BQ-BOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1035,25 +1002,6 @@
             </objects>
             <point key="canvasLocation" x="-823" y="3116"/>
         </scene>
-        <!--Chat-->
-        <scene sceneID="p7V-1h-ZJd">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBy-cF-fuj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chat" image="chat-nofill.png" selectedImage="chat-fill.png" id="U8C-s6-0HK"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p4X-3P-H8h">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="mav-bC-Qpp" kind="relationship" relationship="rootViewController" id="idK-iU-rvO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mSA-tQ-aLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="973.60000000000002" y="1442.4287856071965"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="EJU-Vw-rma">
             <objects>
@@ -1202,13 +1150,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="I78-1G-m3b"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NRA-r5-826"/>
                     <connections>
                         <outlet property="groupName" destination="QIh-4M-gus" id="Btn-HX-Sdm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmi-se-Z9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3943.1999999999998" y="735.38230884557731"/>
+            <point key="canvasLocation" x="4882.3999999999996" y="735.38230884557731"/>
         </scene>
         <!--Chats Participants View Controller-->
         <scene sceneID="MdN-3y-XPv">
@@ -1236,17 +1185,51 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UbY-4t-FjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4972" y="735"/>
+            <point key="canvasLocation" x="5911.1999999999998" y="734.93253373313348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bf3-po-gQG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qob-kW-sCQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dpT-QZ-RhI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YLc-Tk-AeC" kind="relationship" relationship="rootViewController" id="cs1-GI-gj4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wvs-Jn-dwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3941.5999999999999" y="1545.8770614692655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K0E-Rp-94R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0II-3a-Yrp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nAw-b0-uwP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HBh-7L-qaL" kind="relationship" relationship="rootViewController" id="QVV-mH-OGc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fN1-sx-UKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3943.1999999999998" y="735.38230884557731"/>
         </scene>
     </scenes>
     <resources>
         <image name="call-fill.png" width="26" height="26"/>
         <image name="call-nofill.png" width="26" height="26"/>
-        <image name="chat-fill.png" width="26" height="26"/>
-        <image name="chat-nofill.png" width="26" height="26"/>
         <image name="home-fill.png" width="26" height="26"/>
         <image name="home-nofill.png" width="26" height="26"/>
-        <image name="navigation-fill.png" width="30" height="30"/>
+        <image name="navigation-fill.png" width="26" height="26"/>
         <image name="navigation-nofill.png" width="26" height="26"/>
         <image name="profile-fill.png" width="26" height="26"/>
         <image name="profile-nofill.png" width="26" height="26"/>
@@ -1255,6 +1238,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="V8A-O7-TmM"/>
         <segue reference="34q-c1-waW"/>
-        <segue reference="KWP-3W-A4L"/>
+        <segue reference="bML-gt-Kk9"/>
     </inferredMetricsTieBreakers>
 </document>
