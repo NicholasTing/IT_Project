@@ -800,11 +800,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q4f-MY-DMP">
+
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user placeholder image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q4f-MY-DMP">
                                 <rect key="frame" x="50" y="95" width="275" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-b0-7ic">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-b0-7ic">
                                 <rect key="frame" x="218" y="479" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -818,11 +821,32 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6P-xm-Q1H">
+                                <rect key="frame" x="261" y="554" width="64" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="CHL-PY-j9E" eventType="touchUpInside" id="ExZ-ly-i1u"/>
+                                </connections>
+                            </button>
+ 
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UaX-u0-tYW"/>
                     </view>
+
                     <tabBarItem key="tabBarItem" title="Profile" image="profile-nofill1.png" selectedImage="profile-fill.png" id="hkI-3L-le8"/>
+
+                    <tabBarItem key="tabBarItem" title="Profile" id="hkI-3L-le8"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="3Xk-b0-7ic" id="p3N-UL-aCZ"/>
+                        <outlet property="dobTextField" destination="omt-mr-35G" id="tqd-Oo-ukh"/>
+                        <outlet property="firstNameTextField" destination="64J-bU-g9j" id="Hf6-gW-sdn"/>
+                        <outlet property="lastNameTextField" destination="vPe-5C-G0l" id="6hi-Gw-CcF"/>
+                    </connections>
+
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IxV-WU-lmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1240,6 +1264,7 @@
         </scene>
     </scenes>
     <resources>
+
         <image name="call-fill.png" width="26" height="26"/>
         <image name="call-nofill1.png" width="26" height="26"/>
         <image name="chat-fill.png" width="26" height="26"/>
@@ -1259,5 +1284,15 @@
         <segue reference="V8A-O7-TmM"/>
         <segue reference="JAf-IN-hNE"/>
         <segue reference="KWP-3W-A4L"/>
+
+        <image name="home-7.png" width="30" height="30"/>
+        <image name="message-7.png" width="30" height="30"/>
+        <image name="user placeholder image.png" width="225" height="225"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4SN-9f-EZ1"/>
+        <segue reference="34q-c1-waW"/>
+        <segue reference="4xl-7A-0Ry"/>
+
     </inferredMetricsTieBreakers>
 </document>

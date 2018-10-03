@@ -98,6 +98,9 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
             Database.database().reference().child("users").child(users[indexPath.row]).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let properties = snapshot.value as? [String: AnyObject] {
                     otherFriendVC.uid = properties["uid"] as? String
+                    otherFriendVC.firstName.text = properties["firstName"] as? String
+                    otherFriendVC.lastName.text = properties["lastName"] as? String
+                    otherFriendVC.dateOfBirth.text = properties["dob"] as? String
                     otherFriendVC.address.text = properties["address"] as? String
                     
                     //hide the two buttons if the current user and this user are already friends
@@ -109,6 +112,9 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
             Database.database().reference().child("users").child(requests[indexPath.row]).observeSingleEvent(of: .value, with: {(snapshot) in
                 if let properties = snapshot.value as? [String: AnyObject] {
                     otherFriendVC.uid = properties["uid"] as? String
+                    otherFriendVC.firstName.text = properties["firstName"] as? String
+                    otherFriendVC.lastName.text = properties["lastName"] as? String
+                    otherFriendVC.dateOfBirth.text = properties["dob"] as? String
                     otherFriendVC.address.text = properties["address"] as? String
                 }
             })
