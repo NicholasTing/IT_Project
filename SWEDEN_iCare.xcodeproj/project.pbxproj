@@ -15,6 +15,20 @@
 		04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBCDFB2135270B00178098 /* dddd.jpeg */; };
 		04F2A36C214665840051D220 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2A36B214665840051D220 /* NavController.swift */; };
 		17E728D3014909865F620F8C /* Pods_SWEDEN_iCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361C783FAB3AC459D3E7351A /* Pods_SWEDEN_iCare.framework */; };
+		1E09401B2163B54F0041AD5D /* home-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E09400D2163B54A0041AD5D /* home-fill.png */; };
+		1E09401D2163B54F0041AD5D /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E09400F2163B54A0041AD5D /* person.png */; };
+		1E09401E2163B54F0041AD5D /* chat-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940102163B54A0041AD5D /* chat-fill.png */; };
+		1E09401F2163B54F0041AD5D /* navigation-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940112163B54B0041AD5D /* navigation-fill.png */; };
+		1E0940222163B54F0041AD5D /* call-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940142163B54B0041AD5D /* call-fill.png */; };
+		1E0940262163B54F0041AD5D /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940182163B54E0041AD5D /* greenButton.png */; };
+		1E0940322163BADF0041AD5D /* themeButton1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940312163BADE0041AD5D /* themeButton1.png */; };
+		1E0940382163BB9F0041AD5D /* chat-nofill1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940332163BB9C0041AD5D /* chat-nofill1.png */; };
+		1E0940392163BB9F0041AD5D /* home-nofill1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940342163BB9D0041AD5D /* home-nofill1.png */; };
+		1E09403A2163BB9F0041AD5D /* navigation-nofill1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940352163BB9D0041AD5D /* navigation-nofill1.png */; };
+		1E09403B2163BB9F0041AD5D /* profile-nofill1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940362163BB9D0041AD5D /* profile-nofill1.png */; };
+		1E09403C2163BB9F0041AD5D /* call-nofill1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0940372163BB9E0041AD5D /* call-nofill1.png */; };
+		1E09403E2163BE000041AD5D /* profile-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E09403D2163BE000041AD5D /* profile-fill.png */; };
+		1E0940402163BF100041AD5D /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E09403F2163BF100041AD5D /* redButton.png */; };
 		4F661E2595DAEF2646E60864 /* Pods_SWEDEN_iCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC26BAB81C554BC816DC5169 /* Pods_SWEDEN_iCareTests.framework */; };
 		5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5810C8E521437DB900642AFC /* ChatViewController.swift */; };
 		583EC9B9215338540022B64E /* PrevChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EC9B8215338540022B64E /* PrevChatsViewController.swift */; };
@@ -93,6 +107,20 @@
 		04BBCDFA2135270B00178098 /* ggg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ggg.jpg; sourceTree = "<group>"; };
 		04BBCDFB2135270B00178098 /* dddd.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dddd.jpeg; sourceTree = "<group>"; };
 		04F2A36B214665840051D220 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		1E09400D2163B54A0041AD5D /* home-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-fill.png"; sourceTree = "<group>"; };
+		1E09400F2163B54A0041AD5D /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		1E0940102163B54A0041AD5D /* chat-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-fill.png"; sourceTree = "<group>"; };
+		1E0940112163B54B0041AD5D /* navigation-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-fill.png"; sourceTree = "<group>"; };
+		1E0940142163B54B0041AD5D /* call-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call-fill.png"; sourceTree = "<group>"; };
+		1E0940182163B54E0041AD5D /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButton.png; sourceTree = "<group>"; };
+		1E0940312163BADE0041AD5D /* themeButton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = themeButton1.png; sourceTree = "<group>"; };
+		1E0940332163BB9C0041AD5D /* chat-nofill1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-nofill1.png"; sourceTree = "<group>"; };
+		1E0940342163BB9D0041AD5D /* home-nofill1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-nofill1.png"; sourceTree = "<group>"; };
+		1E0940352163BB9D0041AD5D /* navigation-nofill1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-nofill1.png"; sourceTree = "<group>"; };
+		1E0940362163BB9D0041AD5D /* profile-nofill1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-nofill1.png"; sourceTree = "<group>"; };
+		1E0940372163BB9E0041AD5D /* call-nofill1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call-nofill1.png"; sourceTree = "<group>"; };
+		1E09403D2163BE000041AD5D /* profile-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-fill.png"; sourceTree = "<group>"; };
+		1E09403F2163BF100041AD5D /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redButton.png; sourceTree = "<group>"; };
 		361C783FAB3AC459D3E7351A /* Pods_SWEDEN_iCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWEDEN_iCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5810C8E521437DB900642AFC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5810C8E821437EE600642AFC /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -266,7 +294,24 @@
 		EA5023C12131662800568BC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+
+				1E09403F2163BF100041AD5D /* redButton.png */,
+				1E09403D2163BE000041AD5D /* profile-fill.png */,
+				1E0940372163BB9E0041AD5D /* call-nofill1.png */,
+				1E0940332163BB9C0041AD5D /* chat-nofill1.png */,
+				1E0940342163BB9D0041AD5D /* home-nofill1.png */,
+				1E0940352163BB9D0041AD5D /* navigation-nofill1.png */,
+				1E0940362163BB9D0041AD5D /* profile-nofill1.png */,
+				1E0940312163BADE0041AD5D /* themeButton1.png */,
+				1E0940142163B54B0041AD5D /* call-fill.png */,
+				1E0940102163B54A0041AD5D /* chat-fill.png */,
+				1E0940182163B54E0041AD5D /* greenButton.png */,
+				1E09400D2163B54A0041AD5D /* home-fill.png */,
+				1E0940112163B54B0041AD5D /* navigation-fill.png */,
+				1E09400F2163B54A0041AD5D /* person.png */,
+
 				EA865BA1216444E7002848EA /* user placeholder image.png */,
+
 				04BBCDF92135270A00178098 /* ffff.jpeg */,
 				04BBCDFA2135270B00178098 /* ggg.jpg */,
 				04BBCDFB2135270B00178098 /* dddd.jpeg */,
@@ -405,17 +450,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0940322163BADF0041AD5D /* themeButton1.png in Resources */,
+				1E09403C2163BB9F0041AD5D /* call-nofill1.png in Resources */,
+				1E0940382163BB9F0041AD5D /* chat-nofill1.png in Resources */,
 				E131DA4D215CD2FB000354B5 /* home-7.png in Resources */,
 				04BBCDFD2135270B00178098 /* ggg.jpg in Resources */,
 				04BBCDF8213524F900178098 /* 5ebb350afa99fb3a2b75c5855e98bd9c.jpg in Resources */,
 				04BBCDF7213524F900178098 /* blue-ombre-background.jpg in Resources */,
 				047627AB2134C87400A57C74 /* Main.storyboard in Resources */,
+
+				1E09403A2163BB9F0041AD5D /* navigation-nofill1.png in Resources */,
+				1E09401D2163B54F0041AD5D /* person.png in Resources */,
+				1E0940392163BB9F0041AD5D /* home-nofill1.png in Resources */,
+
 				EA865BA2216444E7002848EA /* user placeholder image.png in Resources */,
+
 				E131DA4F215CD393000354B5 /* message-7.png in Resources */,
 				04BBCDFC2135270B00178098 /* ffff.jpeg in Resources */,
 				04BBCDFE2135270B00178098 /* dddd.jpeg in Resources */,
+				1E09401F2163B54F0041AD5D /* navigation-fill.png in Resources */,
+				1E09401B2163B54F0041AD5D /* home-fill.png in Resources */,
+				1E09403E2163BE000041AD5D /* profile-fill.png in Resources */,
 				E183B6C8211C1A7500D5FB2C /* Assets.xcassets in Resources */,
+				1E09401E2163B54F0041AD5D /* chat-fill.png in Resources */,
+				1E0940262163B54F0041AD5D /* greenButton.png in Resources */,
+				1E09403B2163BB9F0041AD5D /* profile-nofill1.png in Resources */,
+				1E0940222163B54F0041AD5D /* call-fill.png in Resources */,
 				EA5023C321316A5200568BC7 /* GoogleService-Info.plist in Resources */,
+				1E0940402163BF100041AD5D /* redButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
