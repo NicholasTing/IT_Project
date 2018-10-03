@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Wc-v2-J7g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HID-P0-Wop">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -351,6 +351,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Reminders" id="Icm-Cy-fg2">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="9GS-Lx-aE1">
+                            <connections>
+                                <action selector="back:" destination="rMb-0N-eYo" id="n7p-0B-paB"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" systemItem="add" id="eQK-RR-Aeb">
                             <connections>
                                 <segue destination="men-7O-GTE" kind="presentation" id="Krd-ST-raT"/>
@@ -429,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ou3-VM-6My" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5223.1999999999998" y="2336.5817091454273"/>
+            <point key="canvasLocation" x="4431" y="2337"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="K7z-ou-Xiu">

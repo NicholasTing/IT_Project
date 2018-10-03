@@ -15,7 +15,10 @@ class ReminderTableViewController: UITableViewController {
     let dateFormatter = DateFormatter()
     let locale = NSLocale.current
     
-
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
