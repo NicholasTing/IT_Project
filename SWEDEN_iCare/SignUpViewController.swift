@@ -63,7 +63,7 @@ class SignUpViewController: UIViewController {
                 self.databaseReference = Database.database().reference()
                 
                 //Stores the dictionary under the 'users' branch within the database
-            self.databaseReference.child("users").child(user.user.uid).setValue(userInfo)
+                self.databaseReference.child("users").child(user.user.uid).setValue(userInfo)
                 
                 // Gets the home screen
                 let homeTabVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeTabVC") as! UITabBarController
