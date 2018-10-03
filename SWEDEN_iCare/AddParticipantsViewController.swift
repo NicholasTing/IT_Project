@@ -17,6 +17,7 @@ class AddParticipantsViewController: UIViewController, ParticipantsSelectionDele
     var databaseGroup = Database.database().reference().child("groups")
     
     @IBOutlet weak var groupName: UITextField!
+    
     @IBOutlet weak var createGroup: UIButton!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
