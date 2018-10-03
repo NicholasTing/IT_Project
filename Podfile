@@ -13,7 +13,7 @@ target 'SWEDEN_iCare' do
     # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
     use_frameworks!
     
-    # Pods for SWEDEN_iCare
+    pod 'MaterialComponents/TextFields'
     
     target 'SWEDEN_iCareTests' do
         inherit! :search_paths
