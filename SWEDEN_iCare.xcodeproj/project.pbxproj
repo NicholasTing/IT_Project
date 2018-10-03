@@ -35,6 +35,9 @@
 		E10E4FA021647E6200A2DFB4 /* ChatTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4F9F21647E6200A2DFB4 /* ChatTest.swift */; };
 		E10E4FA22164839E00A2DFB4 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4FA12164839E00A2DFB4 /* LoginTest.swift */; };
 		E10E4FA42164859800A2DFB4 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4FA32164859800A2DFB4 /* Authentication.swift */; };
+		E10E4FA62164961900A2DFB4 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4FA52164961900A2DFB4 /* Reminder.swift */; };
+		E10E4FA821649B0100A2DFB4 /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4FA721649B0100A2DFB4 /* ReminderTableViewController.swift */; };
+		E10E4FAA2164A5C600A2DFB4 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */; };
 		E12195EB2161E538007DAF25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E62161E537007DAF25 /* main.m */; };
 		E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E82161E537007DAF25 /* AppDelegate.m */; };
 		E12195ED2161E538007DAF25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12195E92161E537007DAF25 /* ViewController.m */; };
@@ -129,6 +132,10 @@
 		E10E4F9F21647E6200A2DFB4 /* ChatTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTest.swift; sourceTree = "<group>"; };
 		E10E4FA12164839E00A2DFB4 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 		E10E4FA32164859800A2DFB4 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		E10E4FA52164961900A2DFB4 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		E10E4FA721649B0100A2DFB4 /* ReminderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
+		E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		E10E4FAB2164B17500A2DFB4 /* SWEDEN_iCare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SWEDEN_iCare.entitlements; sourceTree = "<group>"; };
 		E12195E62161E537007DAF25 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E12195E72161E537007DAF25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E12195E82161E537007DAF25 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -229,6 +236,7 @@
 		E183B6BF211C1A7500D5FB2C /* SWEDEN_iCare */ = {
 			isa = PBXGroup;
 			children = (
+				E10E4FAB2164B17500A2DFB4 /* SWEDEN_iCare.entitlements */,
 				E12195F02161E5C4007DAF25 /* GruveoSDK.framework */,
 				E12195EE2161E56F007DAF25 /* WebRTC.framework */,
 				EA5023C12131662800568BC7 /* Images */,
@@ -251,6 +259,7 @@
 				EAB182D9214EB8450003135B /* FriendCell.swift */,
 				EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */,
 				047627AA2134C87400A57C74 /* Main.storyboard */,
+				E10E4FA52164961900A2DFB4 /* Reminder.swift */,
 				E12195E72161E537007DAF25 /* AppDelegate.h */,
 				E12195E82161E537007DAF25 /* AppDelegate.m */,
 				E12195E62161E537007DAF25 /* main.m */,
@@ -260,6 +269,8 @@
 				E183B6CC211C1A7500D5FB2C /* Info.plist */,
 				EA5023C221316A5200568BC7 /* GoogleService-Info.plist */,
 				E10E4FA32164859800A2DFB4 /* Authentication.swift */,
+				E10E4FA721649B0100A2DFB4 /* ReminderTableViewController.swift */,
+				E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */,
 			);
 			path = SWEDEN_iCare;
 			sourceTree = "<group>";
@@ -395,7 +406,13 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Push = {
 								enabled = 0;
 							};
 						};
@@ -647,9 +664,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10E4FAA2164A5C600A2DFB4 /* AddReminderViewController.swift in Sources */,
 				587CFC8321635AFB004B18D9 /* ChatParticipantsViewController.swift in Sources */,
 				587CFC8421635AFB004B18D9 /* AddParticipantsViewController.swift in Sources */,
 				587CFC8021635A5B004B18D9 /* GroupChatViewController.swift in Sources */,
+				E10E4FA62164961900A2DFB4 /* Reminder.swift in Sources */,
 				583EC9C12155F6C90022B64E /* FriendsController.swift in Sources */,
 				583EC9B9215338540022B64E /* PrevChatsViewController.swift in Sources */,
 				E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */,
@@ -657,6 +676,7 @@
 				E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */,
 				EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */,
 				EAA9385421315864009932AC /* UsersViewController.swift in Sources */,
+				E10E4FA821649B0100A2DFB4 /* ReminderTableViewController.swift in Sources */,
 				5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */,
 				E12195ED2161E538007DAF25 /* ViewController.m in Sources */,
 				EAE284522139AA3A00B98325 /* User.swift in Sources */,
@@ -822,6 +842,8 @@
 			baseConfigurationReference = C8F008BC12B553267218214F /* Pods-SWEDEN_iCare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43QD9Q67P7;
 				ENABLE_BITCODE = NO;
@@ -829,6 +851,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SWEDEN_iCare",
 				);
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
@@ -844,6 +867,8 @@
 			baseConfigurationReference = 89BAC0B53B0EA0333D7774D8 /* Pods-SWEDEN_iCare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43QD9Q67P7;
 				ENABLE_BITCODE = NO;
@@ -851,6 +876,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SWEDEN_iCare",
 				);
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				INFOPLIST_FILE = SWEDEN_iCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dimosthenis-Goulas.restrictions";
