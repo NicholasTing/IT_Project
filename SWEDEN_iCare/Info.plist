@@ -27,13 +27,13 @@
 		<string>MKDirectionsModeCar</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>NSCameraUsageDescription</string>
+	<string>$(PRODUCT_NAME) uses the camera</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>ALWAYS GETTING YOUR LOCATION</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>WHEN IN USE BAYBEH</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>NSMicrophoneUsageDescription</string>
+	<string>$(PRODUCT_NAME) uses the microphone</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
