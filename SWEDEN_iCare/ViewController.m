@@ -26,12 +26,25 @@
 
     [self.activityIndicator stopAnimating];
     [GruveoCallManager setDelegate:self];
+    
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:gestureRecognizer];
+    gestureRecognizer.cancelsTouchesInView = NO;
+    
+  
+}
+
+- (void)dismissKeyboard
+{
+    [self.view endEditing:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     [self.textField becomeFirstResponder];
+    
+    
 }
 
 #pragma mark - Private
@@ -98,8 +111,12 @@
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
     [self makeCall];
+    
     return NO;
 }
+
 
 @end
