@@ -103,6 +103,9 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
                     otherFriendVC.dateOfBirth.text = properties["dob"] as? String
                     otherFriendVC.address.text = properties["address"] as? String
                     
+                    if properties["pathToImage"] as! String != "" {
+                        otherFriendVC.profileImage.downloadImage(from: properties["pathToImage"] as! String)
+                    }
                     //hide the two buttons if the current user and this user are already friends
                     otherFriendVC.acceptUIButton.isHidden = true
                     otherFriendVC.declineUIButton.isHidden = true
@@ -116,6 +119,10 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
                     otherFriendVC.lastName.text = properties["lastName"] as? String
                     otherFriendVC.dateOfBirth.text = properties["dob"] as? String
                     otherFriendVC.address.text = properties["address"] as? String
+                    
+                    if properties["pathToImage"] as! String != "" {
+                        otherFriendVC.profileImage.downloadImage(from: properties["pathToImage"] as! String)
+                    }
                 }
             })
         }
@@ -123,23 +130,35 @@ class FriendsAndFriendRequestsViewController: UIViewController, UITableViewDeleg
         self.present(otherFriendVC, animated:  true, completion: nil)
     }
     
+    
+    
+    //this tableview will display the information of each user in the repeating cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath) as! FriendCell
         
+        //display the user information from the profiles in the current user's friends
         if friendsAndFriendRequestsSegment.selectedSegmentIndex == 0 {
             Database.database().reference().child("users").child(self.users[indexPath.row]).observeSingleEvent(of: .value) { (snapshot) in
                 
                 if let properties = snapshot.value as? [String: AnyObject] {
                     cell.nameLabel.text = properties["address"] as? String
+                    if properties["pathToImage"] as! String != "" {
+                        cell.profileImage.downloadImage(from: properties["pathToImage"] as! String)
+                    }
                 }
             }
-        } else {
+        }
+        //display the user information from the profiles in the current user's friend requests
+        else {
             Database.database().reference().child("users").child(self.requests[indexPath.row]).observeSingleEvent(of: .value) { (snapshot) in
                 
                 if let properties = snapshot.value as? [String: AnyObject] {
                     cell.nameLabel.text = properties["address"] as? String
                     
+                    if properties["pathToImage"] as! String != "" {
+                        cell.profileImage.downloadImage(from: properties["pathToImage"] as! String)
+                    }
                 }
             }
         }

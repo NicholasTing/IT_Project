@@ -15,5 +15,6 @@ class FriendCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     
+    @IBOutlet var profileImage: UIImageView!
     
 }
