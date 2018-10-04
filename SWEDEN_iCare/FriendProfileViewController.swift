@@ -19,6 +19,8 @@ class FriendProfileViewController: UIViewController {
     @IBOutlet weak var dateOfBirth: UILabel!
     @IBOutlet weak var address: UILabel!
     
+    @IBOutlet var profileImage: UIImageView!
+    
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

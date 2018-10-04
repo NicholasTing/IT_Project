@@ -13,8 +13,10 @@ class AddReminderViewController: UIViewController, UITextFieldDelegate {
     var reminder : Reminder!
 
     @IBOutlet var timePicker: UIDatePicker!
+  
     @IBOutlet var reminderTextField: UITextField!
-    @IBOutlet var saveButton: UIButton!
+    
+    @IBOutlet var saveButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
