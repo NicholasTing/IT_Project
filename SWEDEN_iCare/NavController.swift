@@ -13,10 +13,26 @@ class NavController: UIViewController {
     @IBOutlet weak var directionsLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var exitButton: UIButton!
+    
+    
+    @IBAction func userLocationButtonClicked(_ sender: UIButton) {
+        mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
+    }
     
     @IBAction func backButtonClicked(_ sender: UIButton) {
+        locationManager.stopUpdatingLocation()
+        
         self.dismiss(animated: true, completion: nil)
     }
+    
+    // Clear map
+    @IBAction func exitButtonClicked(_ sender: UIButton) {
+        mapView.removeOverlays(self.mapView.overlays)
+        directionsLabel.text = ""
+        exitButton.isHidden = true
+    }
+    
     let locationManager = CLLocationManager()
     var currentCoordinate: CLLocationCoordinate2D!
     
@@ -26,12 +42,12 @@ class NavController: UIViewController {
     var stepCounter = 0
     
     // Added for initial address search
-    //var initialAddress = ""
+    var initialAddress = String()
     
     
     @IBAction func dismissController(_ sender: Any) {
         
-    
+        
     }
     // By default, the transportation method is driving.
     var transportMethod = "drive";
@@ -39,37 +55,23 @@ class NavController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.startUpdatingLocation()
-        
-        
-        // Have null problems
-        /*
-        // Tap to dismiss keyboard
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:"dismissKeyboard")
-        view.addGestureRecognizer(tap)
-         */
+        exitButton.isHidden = true
         
         // Perform search if search bar is not empty
-//        if (initialAddress != "") {
-//            // **************** Added ******************
-//            // If you're free, put everything below into another function
-//            searchBar.text = initialAddress
-//            searchBarSearchButtonClicked(searchBar)
-//            
-//        }
+        if (initialAddress != "") {
+            // **************** Added ******************
+            // If you're free, put everything below into another function
+            searchBar.text = initialAddress
+            searchBarSearchButtonClicked(searchBar)
+            
+        }
         
     }
     
-    // Have null problems
-    /*
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    */
- 
+    
     func getDirections(to destination: MKMapItem) {
         let sourcePlacemark = MKPlacemark(coordinate: currentCoordinate)
         let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
@@ -81,9 +83,6 @@ class NavController: UIViewController {
         
         if transportMethod == "drive" {
             directionsRequest.transportType = .automobile
-        }
-        else if transportMethod == "bus" {
-            directionsRequest.transportType = .transit
         }
         else if transportMethod == "walk" {
             directionsRequest.transportType = .walking
@@ -101,7 +100,7 @@ class NavController: UIViewController {
             // Add polyline route
             self.mapView.add(primaryRoute.polyline)
             
-        self.locationManager.monitoredRegions.forEach({ self.locationManager.stopMonitoring(for: $0) })
+            self.locationManager.monitoredRegions.forEach({ self.locationManager.stopMonitoring(for: $0) })
             
             self.steps = primaryRoute.steps
             print(self.steps)
@@ -110,7 +109,7 @@ class NavController: UIViewController {
                 print(step.instructions)
                 print(step.distance)
                 let region = CLCircularRegion(center: step.polyline.coordinate,
-                                              radius: 15,
+                                              radius: 9,
                                               identifier: "\(i)")
                 self.locationManager.startMonitoring(for: region)
                 let circle = MKCircle(center: region.center, radius: region.radius)
@@ -123,6 +122,9 @@ class NavController: UIViewController {
             self.speechSynthesizer.speak(speechUtterance)
             self.stepCounter += 1
         }
+        
+        // Show the exit navigation button
+        self.exitButton.isHidden = false
     }
     
     @IBAction func SwitchTransMethod(_ sender: Any) {
@@ -131,9 +133,6 @@ class NavController: UIViewController {
             transportMethod = "drive"
         }
         if Transportation.selectedSegmentIndex == 1 {
-            transportMethod = "bus"
-        }
-        if Transportation.selectedSegmentIndex == 2 {
             transportMethod = "walk"
         }
         // **************** Added ******************
@@ -152,26 +151,12 @@ class NavController: UIViewController {
     }
     
     
-//    func navigateFromExternalPage(dest: String) {
-//        searchBar.text = dest
-//        searchBarSearchButtonClicked(searchBar)
-//    }
     
     
 }
 
 extension NavController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        
-        
-        // *********** Attempt to show user location
-//        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
-//        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(-37.81, 144.96)
-//
-        
-        
-        
         
         manager.stopUpdatingLocation()
         guard let currentLocation = locations.first else { return }
@@ -214,7 +199,7 @@ extension NavController: UISearchBarDelegate {
             let speechUtterance = AVSpeechUtterance(string: message)
             self.speechSynthesizer.speak(speechUtterance)
         }
-        
+            
         else {
             let localSearchRequest = MKLocalSearchRequest()
             localSearchRequest.naturalLanguageQuery = searchBar.text
@@ -235,18 +220,20 @@ extension NavController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MKPolyline {
             let renderer = MKPolylineRenderer(overlay: overlay)
-            renderer.strokeColor = UIColor (red: 21/255, green: 100/255, blue: 216/255, alpha: 1.0)
-            renderer.lineWidth = 10
+            renderer.strokeColor = UIColor (red: 198/255, green: 9/255, blue: 57/255, alpha: 1.0)
+            renderer.lineWidth = 9
             return renderer
         }
         if overlay is MKCircle {
             let renderer = MKCircleRenderer(overlay: overlay)
-            renderer.strokeColor = .red
-            renderer.fillColor = .red
-            renderer.alpha = 0.5
+            renderer.fillColor = .white
+            renderer.alpha = 1
+            renderer.lineWidth = 1
+            renderer.strokeColor = .black
             return renderer
         }
         return MKOverlayRenderer()
     }
 }
+
 

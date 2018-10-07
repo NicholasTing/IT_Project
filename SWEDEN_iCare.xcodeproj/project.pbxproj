@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041F2C7F2169B11400899954 /* LocationSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C792169B11200899954 /* LocationSharingViewController.swift */; };
+		041F2C802169B11400899954 /* NavigationInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7A2169B11200899954 /* NavigationInterfaceViewController.swift */; };
+		041F2C812169B11400899954 /* LocationSharingFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */; };
+		041F2C822169B11400899954 /* SetHomeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7C2169B11300899954 /* SetHomeAddressViewController.swift */; };
+		041F2C832169B11400899954 /* ChooseFriendForLocationSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7D2169B11300899954 /* ChooseFriendForLocationSharing.swift */; };
+		041F2C842169B11400899954 /* ChooseFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */; };
 		047627AB2134C87400A57C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047627AA2134C87400A57C74 /* Main.storyboard */; };
 		04F2A36C214665840051D220 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2A36B214665840051D220 /* NavController.swift */; };
 		17E728D3014909865F620F8C /* Pods_SWEDEN_iCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361C783FAB3AC459D3E7351A /* Pods_SWEDEN_iCare.framework */; };
@@ -98,6 +104,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		041F2C792169B11200899954 /* LocationSharingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSharingViewController.swift; sourceTree = "<group>"; };
+		041F2C7A2169B11200899954 /* NavigationInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationInterfaceViewController.swift; path = ../../../Latest_Branch/SWEDEN_iCare/SWEDEN_iCare/NavigationInterfaceViewController.swift; sourceTree = "<group>"; };
+		041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSharingFriendList.swift; sourceTree = "<group>"; };
+		041F2C7C2169B11300899954 /* SetHomeAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetHomeAddressViewController.swift; path = ../../../Latest_Branch/SWEDEN_iCare/SWEDEN_iCare/SetHomeAddressViewController.swift; sourceTree = "<group>"; };
+		041F2C7D2169B11300899954 /* ChooseFriendForLocationSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFriendForLocationSharing.swift; sourceTree = "<group>"; };
+		041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFriendTableViewController.swift; sourceTree = "<group>"; };
 		047627AA2134C87400A57C74 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04F2A36B214665840051D220 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		1E90020A21648F3E00003BB5 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
@@ -271,6 +283,12 @@
 				E10E4FA32164859800A2DFB4 /* Authentication.swift */,
 				E10E4FA721649B0100A2DFB4 /* ReminderTableViewController.swift */,
 				E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */,
+				041F2C7D2169B11300899954 /* ChooseFriendForLocationSharing.swift */,
+				041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */,
+				041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */,
+				041F2C792169B11200899954 /* LocationSharingViewController.swift */,
+				041F2C7A2169B11200899954 /* NavigationInterfaceViewController.swift */,
+				041F2C7C2169B11300899954 /* SetHomeAddressViewController.swift */,
 			);
 			path = SWEDEN_iCare;
 			sourceTree = "<group>";
@@ -669,11 +687,13 @@
 				587CFC8421635AFB004B18D9 /* AddParticipantsViewController.swift in Sources */,
 				587CFC8021635A5B004B18D9 /* GroupChatViewController.swift in Sources */,
 				E10E4FA62164961900A2DFB4 /* Reminder.swift in Sources */,
+				041F2C842169B11400899954 /* ChooseFriendTableViewController.swift in Sources */,
 				583EC9C12155F6C90022B64E /* FriendsController.swift in Sources */,
 				583EC9B9215338540022B64E /* PrevChatsViewController.swift in Sources */,
 				E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */,
 				EAFCFC61214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift in Sources */,
 				E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */,
+				041F2C822169B11400899954 /* SetHomeAddressViewController.swift in Sources */,
 				EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */,
 				EAA9385421315864009932AC /* UsersViewController.swift in Sources */,
 				E10E4FA821649B0100A2DFB4 /* ReminderTableViewController.swift in Sources */,
@@ -683,12 +703,16 @@
 				EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */,
 				04F2A36C214665840051D220 /* NavController.swift in Sources */,
 				EAFCFC5D214CF2C8002F2D08 /* FriendsViewController.swift in Sources */,
+				041F2C812169B11400899954 /* LocationSharingFriendList.swift in Sources */,
 				E131DA2F2140127E000354B5 /* HomeTabVC.swift in Sources */,
 				E12195EB2161E538007DAF25 /* main.m in Sources */,
 				E131DA2C213F5849000354B5 /* HomeViewController.swift in Sources */,
+				041F2C832169B11400899954 /* ChooseFriendForLocationSharing.swift in Sources */,
+				041F2C7F2169B11400899954 /* LocationSharingViewController.swift in Sources */,
 				EAB182DA214EB8450003135B /* FriendCell.swift in Sources */,
 				EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */,
 				E10E4FA42164859800A2DFB4 /* Authentication.swift in Sources */,
+				041F2C802169B11400899954 /* NavigationInterfaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
