@@ -774,7 +774,7 @@
                                 <rect key="frame" x="0.0" y="66" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.90196078430000004" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-hX-0M2">
@@ -891,7 +891,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-N4-wML">
-                                <rect key="frame" x="16" y="538" width="150" height="60"/>
+                                <rect key="frame" x="16" y="587" width="150" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Et1-MM-6wi"/>
                                     <constraint firstAttribute="width" constant="150" id="uQi-if-Oxh"/>
@@ -937,7 +937,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6P-xm-Q1H">
-                                <rect key="frame" x="209" y="538" width="150" height="60"/>
+                                <rect key="frame" x="209" y="587" width="150" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="FkU-jt-cPO"/>
                                     <constraint firstAttribute="width" constant="150" id="v0D-2n-8g0"/>
@@ -1000,10 +1000,13 @@
                                     <outlet property="delegate" destination="mAP-cs-r9Q" id="uJA-Yv-e5O"/>
                                 </connections>
                             </textField>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IDc-nQ-yWd">
+                                <rect key="frame" x="169" y="283" width="37" height="37"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuC-wW-cHI">
-                                <rect key="frame" x="112.5" y="271" width="150" height="60"/>
+                                <rect key="frame" x="97" y="271" width="180" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="2QN-Nh-dKG"/>
+                                    <constraint firstAttribute="width" constant="180" id="2QN-Nh-dKG"/>
                                     <constraint firstAttribute="height" constant="60" id="eHC-Ha-vjp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -1014,9 +1017,6 @@
                                     <action selector="callAction:" destination="mAP-cs-r9Q" eventType="touchUpInside" id="cXB-Cc-C8r"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IDc-nQ-yWd">
-                                <rect key="frame" x="169" y="283" width="37" height="37"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1085,7 +1085,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKW-6L-zZc">
-                                <rect key="frame" x="98" y="596" width="179" height="60"/>
+                                <rect key="frame" x="98" y="596" width="180" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Create group" backgroundImage="buttonTheme.png">
@@ -1171,7 +1171,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0Q-TD-7ML" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352.80000000000001" y="2307.7961019490258"/>
+            <point key="canvasLocation" x="-422" y="2549"/>
         </scene>
         <!--Profile-->
         <scene sceneID="6Ni-xX-GQN">
@@ -1257,71 +1257,81 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where to?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXk-RR-GED">
-                                <rect key="frame" x="148" y="91" width="79" height="21"/>
+                                <rect key="frame" x="127" y="73" width="132" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OY-S0-OW3">
-                                <rect key="frame" x="167" y="231" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <action selector="navigateToHomeButtonClicked:" destination="vYF-bo-Glk" eventType="touchUpInside" id="CcG-Ua-ocT"/>
-                                    <segue destination="f4x-WT-T38" kind="show" identifier="home" id="CkI-is-WoF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG2-1M-E0Z">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="vYF-bo-Glk" eventType="touchUpInside" id="b8Q-EL-kqs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-ak-mc1">
-                                <rect key="frame" x="170" y="306" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Eat"/>
-                                <connections>
-                                    <action selector="findRestaurant:" destination="vYF-bo-Glk" eventType="touchUpInside" id="dhF-vu-Hz3"/>
-                                    <segue destination="f4x-WT-T38" kind="show" identifier="eat" id="jh3-w5-i6h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxQ-P7-yT8">
                                 <rect key="frame" x="234" y="20" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Set home address"/>
+                                <state key="normal" title="Set home address">
+                                    <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="setHomeButtonPressed:" destination="vYF-bo-Glk" eventType="touchUpInside" id="KAz-fq-J0j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xga-bt-Xs6">
-                                <rect key="frame" x="329" y="134" width="30" height="30"/>
+                                <rect key="frame" x="97" y="187" width="180" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go!"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go!" backgroundImage="buttonTheme.png">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goButtonClicked:" destination="vYF-bo-Glk" eventType="touchUpInside" id="kgA-WR-NrS"/>
                                     <segue destination="f4x-WT-T38" kind="show" identifier="navigate" id="ihU-pu-1ei"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaE-IY-qG8">
-                                <rect key="frame" x="30" y="121" width="289" height="56"/>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaE-IY-qG8">
+                                <rect key="frame" x="43" y="121" width="289" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <color key="tintColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits" textContentType="street-address"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OY-S0-OW3">
+                                <rect key="frame" x="52" y="380" width="270" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home" image="go_home_btn.png"/>
+                                <connections>
+                                    <action selector="navigateToHomeButtonClicked:" destination="vYF-bo-Glk" eventType="touchUpInside" id="CcG-Ua-ocT"/>
+                                    <segue destination="f4x-WT-T38" kind="show" identifier="home" id="CkI-is-WoF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-ak-mc1">
+                                <rect key="frame" x="52" y="517" width="270" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Eat" image="find_restaurant_btn.png"/>
+                                <connections>
+                                    <action selector="findRestaurant:" destination="vYF-bo-Glk" eventType="touchUpInside" id="dhF-vu-Hz3"/>
+                                    <segue destination="f4x-WT-T38" kind="show" identifier="eat" id="jh3-w5-i6h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ncq-Z8-2w3"/>
                     </view>
-                    <connections>
-                        <outlet property="searchBar" destination="AaE-IY-qG8" id="mxN-wU-C2a"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fom-SN-rjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="4253"/>
+            <point key="canvasLocation" x="708" y="4252.6236881559225"/>
         </scene>
         <!--Set Home Address View Controller-->
         <scene sceneID="QG3-nS-NHK">
@@ -1331,32 +1341,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9u-23-Yh6">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="s9u-23-Yh6">
                                 <rect key="frame" x="30" y="318" width="314" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" textContentType="street-address"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your home address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8H-M5-13L">
-                                <rect key="frame" x="89" y="289" width="197" height="21"/>
+                                <rect key="frame" x="23" y="243" width="328" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfz-tq-7Na">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="FKX-Ed-H4X" eventType="touchUpInside" id="e7N-uf-ml3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgW-uA-Tuv">
-                                <rect key="frame" x="172" y="356" width="30" height="30"/>
+                                <rect key="frame" x="97" y="398" width="180" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Set"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Set" backgroundImage="buttonTheme.png">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="setButtonPressed:" destination="FKX-Ed-H4X" eventType="touchUpInside" id="ff0-oT-wjg"/>
                                 </connections>
@@ -1371,7 +1386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ond-fN-R8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751" y="4212"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="4211.2443778110946"/>
         </scene>
         <!--Choose Friend For Location Sharing-->
         <scene sceneID="0fS-V9-9gR">
@@ -1384,37 +1399,27 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gz-7f-Ane">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="Gv1-bV-vh2" eventType="touchUpInside" id="XHg-HS-8HE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqG-8h-5EE">
-                                <rect key="frame" x="259" y="20" width="100" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqG-8h-5EE">
+                                <rect key="frame" x="52" y="279" width="270" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select a friend"/>
+                                <state key="normal" title="Select a friend" image="new_loc_shar_btn.png">
+                                    <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="szv-yO-sLU" kind="show" id="De9-qA-n8Y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a friend you want to share location with ^" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KA-I9-HmP">
-                                <rect key="frame" x="9" y="122" width="364" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCl-CY-2TT">
+                                <rect key="frame" x="52" y="410" width="270" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who's sharing location with me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaM-lX-XO0">
-                                <rect key="frame" x="64" y="323" width="247" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCl-CY-2TT">
-                                <rect key="frame" x="159" y="368" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find out"/>
+                                <state key="normal" title="Join location sharing" image="join_loc_shar_btn.png"/>
                                 <connections>
                                     <segue destination="gga-cZ-sCA" kind="show" id="dhl-IS-p6D"/>
                                 </connections>
@@ -1426,7 +1431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1h-PX-Nkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2764" y="3519"/>
+            <point key="canvasLocation" x="2764" y="3518.5907046476764"/>
         </scene>
         <!--Location Sharing Friend List-->
         <scene sceneID="N9F-rc-Oia">
@@ -1513,7 +1518,9 @@
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agx-4f-YGE">
                                     <rect key="frame" x="14" y="6" width="34" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Back"/>
+                                    <state key="normal" title="Back">
+                                        <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="backButtonPressed:" destination="szv-yO-sLU" eventType="touchUpInside" id="rLC-cF-yda"/>
                                     </connections>
@@ -1521,7 +1528,9 @@
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnF-d7-uec">
                                     <rect key="frame" x="326" y="6" width="37" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Done"/>
+                                    <state key="normal" title="Done">
+                                        <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="doneButtonPressed:" destination="szv-yO-sLU" eventType="touchUpInside" id="RAx-fw-NVq"/>
                                         <segue destination="gfL-AN-wnD" kind="show" identifier="segue" id="WPA-qv-sy5"/>
@@ -1624,6 +1633,7 @@
                                     <segment title="Drive"/>
                                     <segment title="Walk"/>
                                 </segments>
+                                <color key="tintColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="SwitchTransMethod:" destination="f4x-WT-T38" eventType="valueChanged" id="V2y-kw-fNM"/>
                                 </connections>
@@ -1642,7 +1652,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLl-5N-rTU">
                                         <rect key="frame" x="8" y="-7" width="48" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Back"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="backButtonClicked:" destination="f4x-WT-T38" eventType="touchUpInside" id="zRM-7W-eLe"/>
                                             <action selector="dismissController:" destination="f4x-WT-T38" eventType="touchUpInside" id="YBS-ur-Qm3"/>
@@ -1665,7 +1677,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjH-5R-Ful">
                                         <rect key="frame" x="14" y="69" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Exit"/>
+                                        <state key="normal" title="Exit">
+                                            <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="exitButtonClicked:" destination="f4x-WT-T38" eventType="touchUpInside" id="1Sm-ir-CRs"/>
                                         </connections>
@@ -1698,7 +1712,7 @@
             </objects>
             <point key="canvasLocation" x="-233" y="4253"/>
         </scene>
-        <!--Item-->
+        <!--Navigation-->
         <scene sceneID="1bf-7h-ScJ">
             <objects>
                 <viewController id="j5b-w3-wbf" sceneMemberID="viewController">
@@ -1706,18 +1720,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6t-ud-eqw">
-                                <rect key="frame" x="151" y="318" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6t-ud-eqw">
+                                <rect key="frame" x="52" y="252" width="270" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Navigation"/>
+                                <state key="normal" title="Navigation" image="navigate_btn.png"/>
                                 <connections>
                                     <segue destination="vYF-bo-Glk" kind="show" id="sH7-6u-7fI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlq-mo-Rw7">
-                                <rect key="frame" x="130" y="383" width="115" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlq-mo-Rw7">
+                                <rect key="frame" x="52" y="354" width="270" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Location Sharing"/>
+                                <state key="normal" title="Location Sharing" image="loc_sharing_btn.png"/>
                                 <connections>
                                     <segue destination="Gv1-bV-vh2" kind="show" id="QEk-m4-c5f"/>
                                 </connections>
@@ -1726,11 +1740,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F2H-i3-UIr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8AM-Vc-d8V"/>
+                    <tabBarItem key="tabBarItem" title="Navigation" image="navigation-nofill.png" selectedImage="navigation-fill.png" id="8AM-Vc-d8V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5F-n5-5Q7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="3493"/>
+            <point key="canvasLocation" x="828" y="3492.5037481259374"/>
         </scene>
     </scenes>
     <resources>
@@ -1741,18 +1755,26 @@
         <image name="call-nofill.png" width="26" height="26"/>
         <image name="chat-fill.png" width="26" height="26"/>
         <image name="chat-nofill.png" width="26" height="26"/>
+        <image name="find_restaurant_btn.png" width="2085" height="427"/>
+        <image name="go_home_btn.png" width="2085" height="427"/>
         <image name="home-fill.png" width="26" height="26"/>
         <image name="home-nofill.png" width="26" height="26"/>
+        <image name="join_loc_shar_btn.png" width="2085" height="427"/>
+        <image name="loc_sharing_btn.png" width="2085" height="427"/>
+        <image name="navigate_btn.png" width="2085" height="419"/>
+        <image name="navigation-fill.png" width="26" height="26"/>
+        <image name="navigation-nofill.png" width="26" height="26"/>
+        <image name="new_loc_shar_btn.png" width="2085" height="427"/>
         <image name="person.png" width="100" height="100"/>
         <image name="profile-fill.png" width="26" height="26"/>
         <image name="profile-nofill.png" width="26" height="26"/>
-        <image name="user_location.png" width="16" height="16"/>
+        <image name="user_location.png" width="558" height="558"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ihU-pu-1ei"/>
         <segue reference="WPA-qv-sy5"/>
-        <segue reference="bML-gt-Kk9"/>
-        <segue reference="V8A-O7-TmM"/>
+        <segue reference="4xl-7A-0Ry"/>
+        <segue reference="4SN-9f-EZ1"/>
         <segue reference="JAf-IN-hNE"/>
     </inferredMetricsTieBreakers>
 </document>
