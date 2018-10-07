@@ -8,14 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		041F2C7F2169B11400899954 /* LocationSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C792169B11200899954 /* LocationSharingViewController.swift */; };
-		041F2C802169B11400899954 /* NavigationInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7A2169B11200899954 /* NavigationInterfaceViewController.swift */; };
 		041F2C812169B11400899954 /* LocationSharingFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */; };
-		041F2C822169B11400899954 /* SetHomeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7C2169B11300899954 /* SetHomeAddressViewController.swift */; };
 		041F2C832169B11400899954 /* ChooseFriendForLocationSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7D2169B11300899954 /* ChooseFriendForLocationSharing.swift */; };
 		041F2C842169B11400899954 /* ChooseFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */; };
 		047627AB2134C87400A57C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047627AA2134C87400A57C74 /* Main.storyboard */; };
 		04F2A36C214665840051D220 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2A36B214665840051D220 /* NavController.swift */; };
 		17E728D3014909865F620F8C /* Pods_SWEDEN_iCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361C783FAB3AC459D3E7351A /* Pods_SWEDEN_iCare.framework */; };
+		1E2D60BA2169BFCF007F93B8 /* NavigationInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D60B82169BFCE007F93B8 /* NavigationInterfaceViewController.swift */; };
+		1E2D60BB2169BFCF007F93B8 /* SetHomeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D60B92169BFCF007F93B8 /* SetHomeAddressViewController.swift */; };
+		1E2D60C32169C117007F93B8 /* open_map_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60BC2169C113007F93B8 /* open_map_btn.png */; };
+		1E2D60C42169C117007F93B8 /* go_home_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60BD2169C113007F93B8 /* go_home_btn.png */; };
+		1E2D60C52169C117007F93B8 /* go_shopping_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60BE2169C114007F93B8 /* go_shopping_btn.png */; };
+		1E2D60C62169C117007F93B8 /* join_loc_shar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60BF2169C114007F93B8 /* join_loc_shar_btn.png */; };
+		1E2D60C72169C117007F93B8 /* user_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60C02169C115007F93B8 /* user_location.png */; };
+		1E2D60C82169C117007F93B8 /* new_loc_shar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60C12169C116007F93B8 /* new_loc_shar_btn.png */; };
+		1E2D60C92169C117007F93B8 /* find_restaurant_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60C22169C117007F93B8 /* find_restaurant_btn.png */; };
+		1E2D60CC2169C323007F93B8 /* loc_sharing_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60CA2169C321007F93B8 /* loc_sharing_btn.png */; };
+		1E2D60CD2169C323007F93B8 /* navigate_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D60CB2169C323007F93B8 /* navigate_btn.png */; };
 		1E90021821648F4600003BB5 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E90020A21648F3E00003BB5 /* person.png */; };
 		1E90021921648F4600003BB5 /* chat-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E90020B21648F3E00003BB5 /* chat-fill.png */; };
 		1E90021A21648F4600003BB5 /* home-nofill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E90020C21648F3F00003BB5 /* home-nofill.png */; };
@@ -105,13 +114,22 @@
 
 /* Begin PBXFileReference section */
 		041F2C792169B11200899954 /* LocationSharingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSharingViewController.swift; sourceTree = "<group>"; };
-		041F2C7A2169B11200899954 /* NavigationInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationInterfaceViewController.swift; path = ../../../Latest_Branch/SWEDEN_iCare/SWEDEN_iCare/NavigationInterfaceViewController.swift; sourceTree = "<group>"; };
 		041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSharingFriendList.swift; sourceTree = "<group>"; };
-		041F2C7C2169B11300899954 /* SetHomeAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetHomeAddressViewController.swift; path = ../../../Latest_Branch/SWEDEN_iCare/SWEDEN_iCare/SetHomeAddressViewController.swift; sourceTree = "<group>"; };
 		041F2C7D2169B11300899954 /* ChooseFriendForLocationSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFriendForLocationSharing.swift; sourceTree = "<group>"; };
 		041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFriendTableViewController.swift; sourceTree = "<group>"; };
 		047627AA2134C87400A57C74 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04F2A36B214665840051D220 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		1E2D60B82169BFCE007F93B8 /* NavigationInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationInterfaceViewController.swift; sourceTree = "<group>"; };
+		1E2D60B92169BFCF007F93B8 /* SetHomeAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetHomeAddressViewController.swift; sourceTree = "<group>"; };
+		1E2D60BC2169C113007F93B8 /* open_map_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_map_btn.png; sourceTree = "<group>"; };
+		1E2D60BD2169C113007F93B8 /* go_home_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = go_home_btn.png; sourceTree = "<group>"; };
+		1E2D60BE2169C114007F93B8 /* go_shopping_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = go_shopping_btn.png; sourceTree = "<group>"; };
+		1E2D60BF2169C114007F93B8 /* join_loc_shar_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = join_loc_shar_btn.png; sourceTree = "<group>"; };
+		1E2D60C02169C115007F93B8 /* user_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_location.png; sourceTree = "<group>"; };
+		1E2D60C12169C116007F93B8 /* new_loc_shar_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_loc_shar_btn.png; sourceTree = "<group>"; };
+		1E2D60C22169C117007F93B8 /* find_restaurant_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = find_restaurant_btn.png; sourceTree = "<group>"; };
+		1E2D60CA2169C321007F93B8 /* loc_sharing_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loc_sharing_btn.png; sourceTree = "<group>"; };
+		1E2D60CB2169C323007F93B8 /* navigate_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigate_btn.png; sourceTree = "<group>"; };
 		1E90020A21648F3E00003BB5 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 		1E90020B21648F3E00003BB5 /* chat-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-fill.png"; sourceTree = "<group>"; };
 		1E90020C21648F3F00003BB5 /* home-nofill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-nofill.png"; sourceTree = "<group>"; };
@@ -287,8 +305,8 @@
 				041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */,
 				041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */,
 				041F2C792169B11200899954 /* LocationSharingViewController.swift */,
-				041F2C7A2169B11200899954 /* NavigationInterfaceViewController.swift */,
-				041F2C7C2169B11300899954 /* SetHomeAddressViewController.swift */,
+				1E2D60B82169BFCE007F93B8 /* NavigationInterfaceViewController.swift */,
+				1E2D60B92169BFCF007F93B8 /* SetHomeAddressViewController.swift */,
 			);
 			path = SWEDEN_iCare;
 			sourceTree = "<group>";
@@ -316,11 +334,20 @@
 		EA5023C12131662800568BC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1E2D60C22169C117007F93B8 /* find_restaurant_btn.png */,
+				1E2D60BD2169C113007F93B8 /* go_home_btn.png */,
+				1E2D60BE2169C114007F93B8 /* go_shopping_btn.png */,
+				1E2D60BF2169C114007F93B8 /* join_loc_shar_btn.png */,
+				1E2D60C12169C116007F93B8 /* new_loc_shar_btn.png */,
+				1E2D60BC2169C113007F93B8 /* open_map_btn.png */,
+				1E2D60C02169C115007F93B8 /* user_location.png */,
 				1E90021121648F4300003BB5 /* buttonGreen.png */,
 				1E90020F21648F4200003BB5 /* buttonRed.png */,
 				1E90021721648F4600003BB5 /* buttonTheme.png */,
 				1E90021021648F4200003BB5 /* call-fill.png */,
 				1E90021521648F4500003BB5 /* call-nofill.png */,
+				1E2D60CA2169C321007F93B8 /* loc_sharing_btn.png */,
+				1E2D60CB2169C323007F93B8 /* navigate_btn.png */,
 				1E90020B21648F3E00003BB5 /* chat-fill.png */,
 				1E90021621648F4500003BB5 /* chat-nofill.png */,
 				1E90021321648F4400003BB5 /* home-fill.png */,
@@ -472,14 +499,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2D60C62169C117007F93B8 /* join_loc_shar_btn.png in Resources */,
 				1E90021A21648F4600003BB5 /* home-nofill.png in Resources */,
 				1E90021D21648F4600003BB5 /* buttonRed.png in Resources */,
 				1E90022221648F4600003BB5 /* navigation-fill.png in Resources */,
 				1E90022421648F4600003BB5 /* chat-nofill.png in Resources */,
+				1E2D60C72169C117007F93B8 /* user_location.png in Resources */,
 				1E90021E21648F4600003BB5 /* call-fill.png in Resources */,
+				1E2D60CD2169C323007F93B8 /* navigate_btn.png in Resources */,
+				1E2D60C42169C117007F93B8 /* go_home_btn.png in Resources */,
 				1E90022021648F4600003BB5 /* profile-nofill.png in Resources */,
 				1E90021C21648F4600003BB5 /* navigation-nofill.png in Resources */,
+				1E2D60C32169C117007F93B8 /* open_map_btn.png in Resources */,
+				1E2D60CC2169C323007F93B8 /* loc_sharing_btn.png in Resources */,
 				1E90022121648F4600003BB5 /* home-fill.png in Resources */,
+				1E2D60C82169C117007F93B8 /* new_loc_shar_btn.png in Resources */,
 				1E90022321648F4600003BB5 /* call-nofill.png in Resources */,
 				1E90021B21648F4600003BB5 /* profile-fill.png in Resources */,
 				1E90021821648F4600003BB5 /* person.png in Resources */,
@@ -488,6 +522,8 @@
 				1E90022521648F4600003BB5 /* buttonTheme.png in Resources */,
 				1E90021921648F4600003BB5 /* chat-fill.png in Resources */,
 				EA5023C321316A5200568BC7 /* GoogleService-Info.plist in Resources */,
+				1E2D60C52169C117007F93B8 /* go_shopping_btn.png in Resources */,
+				1E2D60C92169C117007F93B8 /* find_restaurant_btn.png in Resources */,
 				1E90021F21648F4600003BB5 /* buttonGreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,6 +720,7 @@
 			files = (
 				E10E4FAA2164A5C600A2DFB4 /* AddReminderViewController.swift in Sources */,
 				587CFC8321635AFB004B18D9 /* ChatParticipantsViewController.swift in Sources */,
+				1E2D60BA2169BFCF007F93B8 /* NavigationInterfaceViewController.swift in Sources */,
 				587CFC8421635AFB004B18D9 /* AddParticipantsViewController.swift in Sources */,
 				587CFC8021635A5B004B18D9 /* GroupChatViewController.swift in Sources */,
 				E10E4FA62164961900A2DFB4 /* Reminder.swift in Sources */,
@@ -693,11 +730,11 @@
 				E12195EC2161E538007DAF25 /* AppDelegate.m in Sources */,
 				EAFCFC61214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift in Sources */,
 				E183B6C3211C1A7500D5FB2C /* LoginViewController.swift in Sources */,
-				041F2C822169B11400899954 /* SetHomeAddressViewController.swift in Sources */,
 				EAB182DC214EBC1F0003135B /* FriendProfileViewController.swift in Sources */,
 				EAA9385421315864009932AC /* UsersViewController.swift in Sources */,
 				E10E4FA821649B0100A2DFB4 /* ReminderTableViewController.swift in Sources */,
 				5810C8E621437DB900642AFC /* ChatViewController.swift in Sources */,
+				1E2D60BB2169BFCF007F93B8 /* SetHomeAddressViewController.swift in Sources */,
 				E12195ED2161E538007DAF25 /* ViewController.m in Sources */,
 				EAE284522139AA3A00B98325 /* User.swift in Sources */,
 				EAE2844E2139827200B98325 /* SignUpViewController.swift in Sources */,
@@ -712,7 +749,6 @@
 				EAB182DA214EB8450003135B /* FriendCell.swift in Sources */,
 				EAE284502139A74300B98325 /* HomeScreenViewController.swift in Sources */,
 				E10E4FA42164859800A2DFB4 /* Authentication.swift in Sources */,
-				041F2C802169B11400899954 /* NavigationInterfaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,7 +905,7 @@
 				CLANG_ANALYZER_OBJC_RETAIN_COUNT = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				DEVELOPMENT_TEAM = 6DLCMPH7L3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -882,7 +918,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -894,7 +930,7 @@
 				CLANG_ANALYZER_OBJC_RETAIN_COUNT = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43QD9Q67P7;
+				DEVELOPMENT_TEAM = 6DLCMPH7L3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -907,7 +943,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
