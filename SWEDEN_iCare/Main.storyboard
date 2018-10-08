@@ -1004,7 +1004,7 @@
                                 <rect key="frame" x="169" y="283" width="37" height="37"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuC-wW-cHI">
-                                <rect key="frame" x="97" y="271" width="180" height="60"/>
+                                <rect key="frame" x="97.5" y="271" width="180" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="2QN-Nh-dKG"/>
                                     <constraint firstAttribute="height" constant="60" id="eHC-Ha-vjp"/>
@@ -1280,7 +1280,7 @@
                                     <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="setHomeButtonPressed:" destination="vYF-bo-Glk" eventType="touchUpInside" id="KAz-fq-J0j"/>
+                                    <action selector="setHomeAddressButtonPressed:" destination="vYF-bo-Glk" eventType="touchUpInside" id="Z7D-yR-aUA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xga-bt-Xs6">
@@ -1291,7 +1291,7 @@
                                     <color key="titleColor" red="0.90196078430000004" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="goButtonClicked:" destination="vYF-bo-Glk" eventType="touchUpInside" id="kgA-WR-NrS"/>
+                                    <action selector="goButtonPressed:" destination="vYF-bo-Glk" eventType="touchUpInside" id="V1s-6d-tlk"/>
                                     <segue destination="f4x-WT-T38" kind="show" identifier="navigate" id="ihU-pu-1ei"/>
                                 </connections>
                             </button>
@@ -1320,7 +1320,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Eat" image="find_restaurant_btn.png"/>
                                 <connections>
-                                    <action selector="findRestaurant:" destination="vYF-bo-Glk" eventType="touchUpInside" id="dhF-vu-Hz3"/>
+                                    <action selector="eatButtonClicked:" destination="vYF-bo-Glk" eventType="touchUpInside" id="119-GE-oTo"/>
                                     <segue destination="f4x-WT-T38" kind="show" identifier="eat" id="jh3-w5-i6h"/>
                                 </connections>
                             </button>
@@ -1328,6 +1328,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ncq-Z8-2w3"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="AaE-IY-qG8" id="jHT-hY-Hzc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fom-SN-rjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1771,7 +1774,7 @@
         <image name="user_location.png" width="558" height="558"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ihU-pu-1ei"/>
+        <segue reference="jh3-w5-i6h"/>
         <segue reference="WPA-qv-sy5"/>
         <segue reference="4xl-7A-0Ry"/>
         <segue reference="4SN-9f-EZ1"/>

@@ -21,6 +21,7 @@ class NavController: UIViewController {
     }
     
     @IBAction func backButtonClicked(_ sender: UIButton) {
+        self.speechSynthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
         locationManager.stopUpdatingLocation()
         
         self.dismiss(animated: true, completion: nil)
@@ -28,6 +29,7 @@ class NavController: UIViewController {
     
     // Clear map
     @IBAction func exitButtonClicked(_ sender: UIButton) {
+        self.speechSynthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
         mapView.removeOverlays(self.mapView.overlays)
         directionsLabel.text = ""
         exitButton.isHidden = true
@@ -54,8 +56,10 @@ class NavController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("Navcontroller: ")
+        print(currentCoordinate)
         locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.startUpdatingLocation()
         exitButton.isHidden = true
@@ -173,7 +177,8 @@ extension NavController: CLLocationManagerDelegate {
         stepCounter += 1
         if stepCounter < steps.count {
             let currentStep = steps[stepCounter]
-            let message = "In \(currentStep.distance) meters, \(currentStep.instructions)"
+            let dist = Int(currentStep.distance)
+            let message = "In \(dist) meters, \(currentStep.instructions)"
             directionsLabel.text = message
             let speechUtterance = AVSpeechUtterance(string: message)
             speechSynthesizer.speak(speechUtterance)
