@@ -68,7 +68,7 @@ class SignUpViewController: UIViewController {
                 // Gets the home screen
                 let homeTabVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeTabVC") as! UITabBarController
                 
-                homeTabVC.selectedViewController = homeTabVC.viewControllers?[4]
+                homeTabVC.selectedViewController = homeTabVC.viewControllers?[2]
                 self.present(homeTabVC, animated:true, completion: nil)
 
             } else {

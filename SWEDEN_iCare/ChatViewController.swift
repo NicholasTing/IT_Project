@@ -124,4 +124,6 @@ class ChatViewController: JSQMessagesViewController
         
         finishSendingMessage()
     }
+    
+
 }

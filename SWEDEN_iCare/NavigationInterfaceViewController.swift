@@ -120,6 +120,11 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
         self.present(alert, animated: true, completion: nil)
     }
     
+    // Hide keyboard when user touches outisde keybar
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
     // Add a home address
     func addHomeAddress() {
