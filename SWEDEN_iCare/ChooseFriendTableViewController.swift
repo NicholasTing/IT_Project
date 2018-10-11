@@ -29,7 +29,7 @@ class ChooseFriendTableViewController: UITableViewController{
             self.createAlert(title: "Hey!", message: "You haven't selected a friend yet.")
         }
         else {
-            performSegue(withIdentifier: "segue", sender: self)
+//            performSegue(withIdentifier: "segue", sender: self)
         }
     }
     

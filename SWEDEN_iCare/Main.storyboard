@@ -462,7 +462,7 @@
         <!--Group Chat View Controller-->
         <scene sceneID="psm-11-sNl">
             <objects>
-                <viewController storyboardIdentifier="groupChatView" id="2br-le-vSy" customClass="GroupChatViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="groupChatView" hidesBottomBarWhenPushed="YES" id="2br-le-vSy" customClass="GroupChatViewController" customModule="SWEDEN_iCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6d0-Oa-cSz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -507,7 +507,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuK-fh-kmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5766" y="1425"/>
+            <point key="canvasLocation" x="5764" y="1442.4287856071965"/>
         </scene>
         <!--Chats-->
         <scene sceneID="Zyq-dj-kOM">
@@ -891,7 +891,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-N4-wML">
-                                <rect key="frame" x="16" y="538" width="150" height="60"/>
+                                <rect key="frame" x="16" y="587" width="150" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Et1-MM-6wi"/>
                                     <constraint firstAttribute="width" constant="150" id="uQi-if-Oxh"/>
@@ -937,7 +937,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6P-xm-Q1H">
-                                <rect key="frame" x="209" y="538" width="150" height="60"/>
+                                <rect key="frame" x="209" y="587" width="150" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="FkU-jt-cPO"/>
                                     <constraint firstAttribute="width" constant="150" id="v0D-2n-8g0"/>
@@ -1263,16 +1263,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG2-1M-E0Z">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="backButtonPressed:" destination="vYF-bo-Glk" eventType="touchUpInside" id="b8Q-EL-kqs"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxQ-P7-yT8">
                                 <rect key="frame" x="234" y="20" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1448,14 +1438,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0C-BK-Y2j">
-                                    <rect key="frame" x="14" y="6" width="34" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Back"/>
-                                    <connections>
-                                        <action selector="backButtonPressed:" destination="gga-cZ-sCA" eventType="touchUpInside" id="pv3-KA-pvv"/>
-                                    </connections>
-                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fti-7w-LE4">
                                     <rect key="frame" x="173" y="11" width="28" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1518,21 +1500,11 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agx-4f-YGE">
-                                    <rect key="frame" x="14" y="6" width="34" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Back">
-                                        <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="backButtonPressed:" destination="szv-yO-sLU" eventType="touchUpInside" id="rLC-cF-yda"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnF-d7-uec">
                                     <rect key="frame" x="326" y="6" width="37" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Done">
-                                        <color key="titleColor" red="0.2784313725" green="0.72941176470000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="doneButtonPressed:" destination="szv-yO-sLU" eventType="touchUpInside" id="RAx-fw-NVq"/>
@@ -1811,10 +1783,12 @@
         <image name="user_location.png" width="558" height="558"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CkI-is-WoF"/>
-        <segue reference="TdV-Pf-JfK"/>
-        <segue reference="bML-gt-Kk9"/>
-        <segue reference="V8A-O7-TmM"/>
+        <segue reference="MdY-ac-v6c"/>
+        <segue reference="m5H-lz-ilu"/>
+        <segue reference="ihU-pu-1ei"/>
+        <segue reference="WPA-qv-sy5"/>
+        <segue reference="4xl-7A-0Ry"/>
+        <segue reference="4SN-9f-EZ1"/>
         <segue reference="34q-c1-waW"/>
     </inferredMetricsTieBreakers>
 </document>

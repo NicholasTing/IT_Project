@@ -30,7 +30,7 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
     
     @IBAction func goButtonPressed(_ sender: UIButton) {
         mode = "nav"
-        performSegue(withIdentifier: "navigate", sender: self)
+//        performSegue(withIdentifier: "navigate", sender: self)
     }
     
     
@@ -43,13 +43,13 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
         else {
             mode = "goHome"
             // Start navigation
-            performSegue(withIdentifier: "home", sender: self)
+//            performSegue(withIdentifier: "home", sender: self)
         }
     }
     
     @IBAction func eatButtonClicked(_ sender: UIButton) {
         mode = "eat"
-        performSegue(withIdentifier: "eat", sender: self)
+//        performSegue(withIdentifier: "eat", sender: self)
     }
     
     
