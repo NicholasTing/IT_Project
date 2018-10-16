@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseStorage
 
-class UsersViewController: UIViewController {
+class UsersViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -79,6 +79,11 @@ class UsersViewController: UIViewController {
         //allow the user to tap on the profile image placeholder
         profileImage.addGestureRecognizer(tapGesture)
         profileImage.isUserInteractionEnabled = true
+    }
+    
+    // Hide keyboard when user touches outisde keybar
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     //after a tap is detected, show the user's photo library for them to pick an image

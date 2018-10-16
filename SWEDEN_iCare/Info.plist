@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) uses your location when in use</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -32,8 +34,6 @@
 	<string>$(PRODUCT_NAME) uses the camera</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>ALWAYS GETTING YOUR LOCATION</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>WHEN IN USE BAYBEH</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME) uses the microphone</string>
 	<key>UIBackgroundModes</key>

@@ -30,7 +30,7 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
     
     @IBAction func goButtonPressed(_ sender: UIButton) {
         mode = "nav"
-        performSegue(withIdentifier: "navigate", sender: self)
+//        performSegue(withIdentifier: "navigate", sender: self)
     }
     
     
@@ -43,13 +43,13 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
         else {
             mode = "goHome"
             // Start navigation
-            performSegue(withIdentifier: "home", sender: self)
+//            performSegue(withIdentifier: "home", sender: self)
         }
     }
     
     @IBAction func eatButtonClicked(_ sender: UIButton) {
         mode = "eat"
-        performSegue(withIdentifier: "eat", sender: self)
+//        performSegue(withIdentifier: "eat", sender: self)
     }
     
     
@@ -118,6 +118,11 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
         
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    // Hide keyboard when user touches outisde keybar
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     

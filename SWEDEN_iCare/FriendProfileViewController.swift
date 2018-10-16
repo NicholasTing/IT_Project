@@ -31,7 +31,8 @@ class FriendProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
-
+    
+   
     
     @IBAction func acceptbutton(_ sender: Any) {
         //random key to user

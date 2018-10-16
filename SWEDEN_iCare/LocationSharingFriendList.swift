@@ -26,7 +26,7 @@ class LocationSharingFriendList: UITableViewController {
             self.createAlert(title: "Hey!", message: "You haven't selected a friend yet.")
         }
         else {
-            performSegue(withIdentifier: "segue_s", sender: self)
+//            performSegue(withIdentifier: "segue_s", sender: self)
         }
     }
     

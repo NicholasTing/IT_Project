@@ -44,5 +44,10 @@ class AddParticipantsViewController: UIViewController, ParticipantsSelectionDele
         ref.updateChildValues(["participants/\(currentUserKey)": currentUser?.uid as Any])
     }
     
+    // Hide keyboard when user touches outisde keybar
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }
 

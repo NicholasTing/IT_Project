@@ -10,7 +10,7 @@ import UIKit
 import JSQMessagesViewController
 import Firebase
 
-class GroupChatViewController: JSQMessagesViewController
+class GroupChatViewController: JSQMessagesViewController, UITextFieldDelegate
 {
     var user = Auth.auth().currentUser
     var groupId:String!
@@ -31,6 +31,7 @@ class GroupChatViewController: JSQMessagesViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         senderId = user?.uid
         senderDisplayName = "Me"
         self.title = FriendsController.concatAddressesFromUsers(users: groupUsers)
@@ -125,4 +126,6 @@ class GroupChatViewController: JSQMessagesViewController
         ref.setValue(message)
         finishSendingMessage()
     }
+    
+    
 }
