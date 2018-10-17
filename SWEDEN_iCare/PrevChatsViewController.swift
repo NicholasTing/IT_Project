@@ -104,8 +104,7 @@ class PrevChatsViewController: UITableViewController {
                         contact.uid = id
                         groupUserList.insert(contact, at: 0)
                         if groupUserList.count == group.count {
-                            print("your butt crack")
-                            print(groupUserList)
+                         
                             self.contactChats.insert(contactChat(contacts: groupUserList, groupId: groupId, lastMessage: lastMessage), at:0)
                         }
                     })
