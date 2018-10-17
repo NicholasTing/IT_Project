@@ -8,14 +8,16 @@
 
 import UIKit
 import Firebase
-import MaterialComponents.MDCTextInputControllerFullWidth
+import MaterialComponents
 
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //OUTLETS
-    @IBOutlet weak var emailText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var emailText: MDCTextField!
+    @IBOutlet weak var passwordText: MDCTextField!
+    
+    
     
     //VARIABLES
 
