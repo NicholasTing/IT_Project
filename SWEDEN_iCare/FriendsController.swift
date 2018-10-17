@@ -52,17 +52,22 @@ class FriendsController {
             let enumerator = snapshot.children
             while let childSnapshot = enumerator.nextObject() as? DataSnapshot {
                 if let group = childSnapshot.value as? [String: AnyObject]{
-                    //                    print(group["participants"])
+                    
+                                        print(group["participants"])
+                    
                     let groupId = childSnapshot.key
                     let participantIds = group["participants"] as? [String: String]
                     var idList:[String] = []
                     
-                    for (_, id) in participantIds!{
-                        if(id == currentUser?.uid){
-                            for (_, id) in participantIds!{
-                                idList.append(id)
+                    if participantIds != nil {
+                    
+                        for (_, id) in participantIds!{
+                            if(id == currentUser?.uid){
+                                for (_, id) in participantIds!{
+                                    idList.append(id)
+                                }
+                                groupDict[groupId] = idList
                             }
-                            groupDict[groupId] = idList
                         }
                     }
                 }

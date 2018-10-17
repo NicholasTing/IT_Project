@@ -12,6 +12,9 @@ import Firebase
 
 class AddParticipantsViewController: UIViewController, ParticipantsSelectionDelegate {
     
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     var currentUser = Auth.auth().currentUser
     var selectedParticipants:[User]!
     var databaseGroup = Database.database().reference().child("groups")
