@@ -8,8 +8,6 @@ class NavController: UIViewController {
     
     
     @IBOutlet weak var Transportation: UISegmentedControl!
-    
-    
     @IBOutlet weak var directionsLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
