@@ -54,12 +54,15 @@ class GroupChatViewController: JSQMessagesViewController, UITextFieldDelegate
                 !text.isEmpty
             {
                 if (groupId == self?.groupId){
-                    if let message = JSQMessage(senderId: id, senderDisplayName: "", date: NSDate(timeIntervalSince1970: timeInt/1000) as Date?, text: text)
-                    {
-                        self?.messages.append(message)
-                        
-                        self?.finishReceivingMessage()
-                    }
+                    FriendsController.fetchFriendEmail(id: id, completion: {email in
+                        let senderEmail = email
+                        if let message = JSQMessage(senderId: id, senderDisplayName: senderEmail, date: NSDate(timeIntervalSince1970: timeInt/1000) as Date?, text: text)
+                        {
+                            self?.messages.append(message)
+                            
+                            self?.finishReceivingMessage()
+                        }
+                    })
                 }
                 
             }
@@ -108,7 +111,9 @@ class GroupChatViewController: JSQMessagesViewController, UITextFieldDelegate
         let timeZone = TimeZone.current
         let dateString = ISO8601DateFormatter.string(from: messages[indexPath.item].date, timeZone: timeZone, formatOptions: options)
         print(dateString)
-        return messages[indexPath.item].senderId == senderId ? nil : NSAttributedString(string: dateString)
+//        return messages[indexPath.item].senderId == senderId ? nil : NSAttributedString(string: dateString)
+        let senderName = NSAttributedString(string: messages[indexPath.item].senderDisplayName)
+        return messages[indexPath.item].senderId == senderId ? nil : senderName
     }
     
     //called when the height of the top label is needed
