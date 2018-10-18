@@ -8,12 +8,20 @@
 
 import UIKit
 import Firebase
+import MaterialComponents
 
 class SignUpViewController: UIViewController {
     
     //OUTLETS
-    @IBOutlet weak var emailText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var emailText: MDCTextField!
+    @IBOutlet weak var passwordText: MDCTextField!
+    
+    
+    
+    // MARK: Properties
+    var emailController: MDCTextInputControllerOutlined?
+    var passwordController: MDCTextInputControllerOutlined?
+    
     
     //VARIABLES
     var databaseReference: DatabaseReference!
@@ -22,6 +30,10 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // TODO: Instantiate controllers
+        emailController = MDCTextInputControllerOutlined(textInput: emailText)
+        passwordController = MDCTextInputControllerOutlined(textInput: passwordText)
+        
         
         // Listen for keyboard events
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)

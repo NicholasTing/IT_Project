@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Firebase
+import MaterialComponents
 
 class AddParticipantsViewController: UIViewController, ParticipantsSelectionDelegate {
     
@@ -20,7 +21,8 @@ class AddParticipantsViewController: UIViewController, ParticipantsSelectionDele
     var databaseGroup = Database.database().reference().child("groups")
     
     @IBOutlet weak var groupName: UITextField!
-    
+    var groupNameController: MDCTextInputControllerOutlined?
+
     @IBOutlet weak var createGroup: UIButton!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
