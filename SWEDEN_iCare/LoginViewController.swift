@@ -17,7 +17,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailText: MDCTextField!
     @IBOutlet weak var passwordText: MDCTextField!
     
-    
+    // MARK: Properties
+    var emailController: MDCTextInputControllerOutlined?
+    var passwordController: MDCTextInputControllerOutlined?
     
     //VARIABLES
 
@@ -25,7 +27,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        // TODO: Instantiate controllers
+        emailController = MDCTextInputControllerOutlined(textInput: emailText)
+        passwordController = MDCTextInputControllerOutlined(textInput: passwordText)
         // Listen for keyboard events
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)

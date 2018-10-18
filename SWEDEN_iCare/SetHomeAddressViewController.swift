@@ -8,17 +8,21 @@
 
 import Foundation
 import Firebase
+import MaterialComponents
+
 class SetHomeAddressViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var homeAddress: UITextField!
+    @IBOutlet weak var homeAddress: MDCTextField!
     
-    
+    var addressController: MDCTextInputControllerOutlined?
+
     let databaseReference = Database.database().reference().child("users")
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addressController = MDCTextInputControllerOutlined(textInput: homeAddress)
+
         homeAddress.clearButtonMode = .whileEditing
         homeAddress.returnKeyType = UIReturnKeyType.done
 
