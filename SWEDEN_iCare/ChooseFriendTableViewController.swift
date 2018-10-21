@@ -2,7 +2,7 @@
 //  ChooseFriendTableViewController.swift
 //  SWEDEN_iCare
 //
-//  Created by mac on 3/10/18.
+//  Created by Weijia on 3/10/18.
 //  Copyright © 2018 Nicholas. All rights reserved.
 //
 
@@ -77,7 +77,6 @@ class ChooseFriendTableViewController: UITableViewController{
         
         
         
-        //cell.textLabel?.text=users[indexPath.row]
         return(cell)
     }
     
@@ -85,7 +84,6 @@ class ChooseFriendTableViewController: UITableViewController{
         selectedFriend = users[indexPath.row]
         print(users[indexPath.row])
         
-//        self.dismiss(animated: true, completion: nil)
     }
     
     

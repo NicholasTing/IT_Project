@@ -2,7 +2,7 @@
 //  ChooseFriendForLocationSharing.swift
 //
 //
-//  Created by mac on 3/10/18.
+//  Created by Weijia on 3/10/18.
 //
 
 import Foundation
