@@ -97,12 +97,6 @@ class LocationSharingFriendList: UITableViewController {
     }
     
     
-    
-    
-    
-    
-    
-    
     func createAlert(title: String, message: String) {
         let alert = UIAlertController(title:title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         

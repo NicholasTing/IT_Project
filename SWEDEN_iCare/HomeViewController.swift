@@ -21,8 +21,6 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    
     @IBAction func makeACall(_ sender: Any) {
         if let url = URL(string: "tel://\(+61478821628)"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {
@@ -33,8 +31,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    
-   
     
     /*
     // MARK: - Navigation
