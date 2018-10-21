@@ -36,23 +36,23 @@
 
 # 3. How this project works 
 
-### Login and Sign-up
+### a) Login and Sign-up
 
 ##### In order to sign up, click the button below and enter an email address and a password of at least 8 digits.
 
 ##### Image goes here
 
-### Home Screen
+### b) Home Screen
 
 ##### Image goes here
 
-### Friend requests
+### c) Friend requests
 
 ##### To send a friend request, you will need to click on an email, and click send.
 
 ##### The other party will have to accept the friend request from their end.
 
-### Call
+### d) Video and Voice Call
 
 ##### In order to initiate a call, you will need to use 2 real iOS devices. 
 
@@ -65,28 +65,28 @@
 4. Video call is then set up between these two devices. 
 
 
-### Chat Message
+### e) Chat Message
 
 ##### In order to send a chat message, you will need to be friends with other users. (See Friend requests on how to be friends with other users)
 
 ##### Click on their name and you will be able to send messages.
 
-### Navigation
+### f) Navigation
 
-#### In order for navigation to work, you will have to allow this app to use your location.
+##### In order for navigation to work, you will have to allow this app to use your location.
 
-#### Navigation
+#### g) Navigation
 
-#### To navigate to your designated address, you simply need to enter where you want to go and how you want to get there (Drive or Walk)
+##### To navigate to your designated address, you simply need to enter where you want to go and how you want to get there (Drive or Walk)
 
-#### Location Sharing
+#### h) Location Sharing
 
-#### In order for location sharing to work, you will need to allow your "carer" to view your location, by giving them permission.
+##### In order for location sharing to work, you will need to allow your "carer" to view your location, by giving them permission.
 
-#### Once permission have been given, the carer will be able to monitor the elderly person's location and let them know whether they have made a right or wrong turn.
+##### Once permission have been given, the carer will be able to monitor the elderly person's location and let them know whether they have made a right or wrong turn.
 
 
 # Enquiries
 
-#### For any other enquiries, feel free to email any one of us in the email provided above.
+##### For any other enquiries, feel free to email any one of us in the email provided above.
 
