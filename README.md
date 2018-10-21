@@ -95,6 +95,12 @@
 
 ##### Once permission have been given, the carer will be able to monitor the elderly person's location and let them know whether they have made a right or wrong turn.
 
+# 4. Testing modules
+
+##### The testing modules could be found in SWEDEN_iCareTests and SWEDEN_iCareUITests.
+
+##### Modules used include XCTest. 
+
 
 # Enquiries
 
