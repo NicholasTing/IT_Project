@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  GruveoSampleApp
+//  SWEDEN_iCare
 //
-//  Created by Max Gurkivskyi on 9/12/17.
-//  Copyright © 2017 Gruveo. All rights reserved.
+//  Created by Jing Kun Ting on 1/10/18.
+//  Copyright © 2018 Nicholas. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -15,7 +15,7 @@
 
 @implementation AppDelegate
 
-
+// Launch the application
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [GruveoCallManager setClientId:@"demo"];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];

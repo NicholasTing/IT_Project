@@ -87,8 +87,6 @@ class ChooseFriendTableViewController: UITableViewController{
     }
     
     
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let locationSharingVC = segue.destination as! LocationSharingViewController
         locationSharingVC.selectedFriend = selectedFriend

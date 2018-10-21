@@ -244,8 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				E10E4FA32164859800A2DFB4 /* Authentication.swift */,
-				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				587CFC7F21635A5B004B18D9 /* GroupChatViewController.swift */,
+				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
 				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
 				EAE284512139AA3A00B98325 /* User.swift */,
 			);
@@ -296,9 +296,9 @@
 		E10D0DCA217C4A6500E3A8FC /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */,
 				E10E4FA721649B0100A2DFB4 /* ReminderTableViewController.swift */,
 				E10E4FA52164961900A2DFB4 /* Reminder.swift */,
-				E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */,
 			);
 			name = Reminders;
 			sourceTree = "<group>";
@@ -341,11 +341,11 @@
 		E183B6BF211C1A7500D5FB2C /* SWEDEN_iCare */ = {
 			isa = PBXGroup;
 			children = (
-				E10D0DCB217C4AAE00E3A8FC /* UI */,
-				E10D0DC8217C49EC00E3A8FC /* Chat_Messaging */,
-				E10D0DCA217C4A6500E3A8FC /* Reminders */,
 				E10D0DC6217C499500E3A8FC /* Authentication */,
+				E10D0DC8217C49EC00E3A8FC /* Chat_Messaging */,
 				E10D0DC7217C49CC00E3A8FC /* Navigation */,
+				E10D0DCA217C4A6500E3A8FC /* Reminders */,
+				E10D0DCB217C4AAE00E3A8FC /* UI */,
 				E10D0DC9217C4A1B00E3A8FC /* Voice_Call */,
 				EA5023C12131662800568BC7 /* Images */,
 				E12195F02161E5C4007DAF25 /* GruveoSDK.framework */,

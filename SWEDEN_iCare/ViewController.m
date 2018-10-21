@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  GruveoSampleApp
+//  SWEDEN_iCare
 //
-//  Created by Max Gurkivskyi on 9/12/17.
-//  Copyright © 2017 Gruveo. All rights reserved.
+//  Created by Jing Kun Ting on 1/10/18.
+//  Copyright © 2018 Nicholas. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -27,6 +27,7 @@
     [self.activityIndicator stopAnimating];
     [GruveoCallManager setDelegate:self];
     
+    // Add gesture recognizer
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:gestureRecognizer];
     gestureRecognizer.cancelsTouchesInView = NO;
@@ -49,6 +50,7 @@
 
 #pragma mark - Private
 
+// Function to make a call if the text field is not empty
 - (void)makeCall {
     if (self.textField.text.length == 0) {
         return;
@@ -75,6 +77,7 @@
 
 #pragma mark - GruveoCallManagerDelegate
 
+// Function to request the server to sign the API token.
 - (void)requestToSignApiAuthToken:(NSString *)token {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api-demo.gruveo.com/signer"]];
     [request setHTTPMethod:@"POST"];
@@ -110,6 +113,7 @@
 
 #pragma mark - UITextFieldDelegate
 
+// To hide the text field when not in use.
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [textField resignFirstResponder];
