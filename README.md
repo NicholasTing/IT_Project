@@ -101,6 +101,12 @@
 
 ##### Modules used include XCTest. 
 
+# 5. Appendix
+
+##### Due to the nature of the files and iOS development in xCode, the files are grouped once you open xCode but not in GitHub.
+
+<img src="iCare_Screenshots/xcode_files.png" width="30%"> 
+
 
 # Enquiries
 
