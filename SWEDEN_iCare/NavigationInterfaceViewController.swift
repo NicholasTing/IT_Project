@@ -1,8 +1,10 @@
 //
 //  NavigationInterfaceViewController.swift
 //  SWEDEN_iCare
-//
-//  Created by mac on 1/10/18.
+
+//  Inspired by Kyle Lee's tutorial: https://www.youtube.com/watch?v=8m-duJ9X_Hs
+
+//  Created by Weijia on 1/10/18.
 //  Copyright © 2018 Nicholas. All rights reserved.
 //
 
@@ -74,7 +76,6 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("\n\n\nTriggered")
         let location = locations[0]
         currentCoordinate = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         
@@ -100,12 +101,12 @@ class NavigationInterfaceViewController: UIViewController, CLLocationManagerDele
         
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {(action) in
             alert.dismiss(animated: true, completion: nil)
-            print("Cancel")
+            
         })
         
         let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in
             alert.dismiss(animated: true, completion: nil)
-            print("OK")
+            
             self.mode = "setHomeAddress"
             self.addHomeAddress()
         })

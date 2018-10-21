@@ -2,7 +2,7 @@
 //  LocationSharingViewController.swift
 //  SWEDEN_iCare
 //
-//  Created by mac on 3/10/18.
+//  Created by Weijia on 3/10/18.
 //  Copyright © 2018 Nicholas. All rights reserved.
 //
 
@@ -135,11 +135,7 @@ class LocationSharingViewController: UIViewController, CLLocationManagerDelegate
     }
     
     
-    // WHY??? WHY YOU ARE NOT CALLED???
-    func applicationWillTerminate(_ application: UIApplication) {
-        print("\n\n\n\n\n\n\nCalled\n\n\n\n\n\n")
-        databaseReference.child(Auth.auth().currentUser!.uid).child("location").setValue("")
-    }
+
     
 
 }

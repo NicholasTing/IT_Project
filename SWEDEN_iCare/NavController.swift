@@ -1,8 +1,18 @@
+//
+//  ChooseFriendTableViewController.swift
+//  SWEDEN_iCare
+//  Inspired by Kyle Lee's tutorial: https://www.youtube.com/watch?v=8m-duJ9X_Hs
+//  Created by Weijia on 3/10/18.
+//  Copyright © 2018 Nicholas. All rights reserved.
+//
+
 
 import UIKit
 import MapKit
 import CoreLocation
 import AVFoundation
+
+
 
 class NavController: UIViewController {
     
@@ -56,7 +66,6 @@ class NavController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Navcontroller: ")
         print(currentCoordinate)
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -66,8 +75,6 @@ class NavController: UIViewController {
         
         // Perform search if search bar is not empty
         if (initialAddress != "") {
-            // **************** Added ******************
-            // If you're free, put everything below into another function
             searchBar.text = initialAddress
             searchBarSearchButtonClicked(searchBar)
             
@@ -132,15 +139,13 @@ class NavController: UIViewController {
     }
     
     @IBAction func SwitchTransMethod(_ sender: Any) {
-        print("Transport method changed!")
         if Transportation.selectedSegmentIndex == 0 {
             transportMethod = "drive"
         }
         if Transportation.selectedSegmentIndex == 1 {
             transportMethod = "walk"
         }
-        // **************** Added ******************
-        // If you're free, put everything below into another function
+
         let localSearchRequest = MKLocalSearchRequest()
         localSearchRequest.naturalLanguageQuery = searchBar.text
         let region = MKCoordinateRegion(center: currentCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
@@ -173,7 +178,7 @@ extension NavController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        print("ENTERED")
+
         stepCounter += 1
         if stepCounter < steps.count {
             let currentStep = steps[stepCounter]
@@ -199,7 +204,7 @@ extension NavController: UISearchBarDelegate {
         searchBar.endEditing(true)
         
         if (currentCoordinate == nil) {
-            let message = "Cannot locate you, you idiot!"
+            let message = "Cannot locate you!"
             self.directionsLabel.text = message
             let speechUtterance = AVSpeechUtterance(string: message)
             self.speechSynthesizer.speak(speechUtterance)
