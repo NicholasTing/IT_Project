@@ -15,7 +15,7 @@
 ##### Open the project using XCode
 
 ##### This project can be run using the emulator.
-##### However, video call, calls and navigation works better on real devices.
+##### However, video call, calls and navigation work better on real devices.
 
 # 2. Team members 
 
