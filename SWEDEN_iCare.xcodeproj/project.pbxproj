@@ -240,6 +240,81 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E10D0DC6217C499500E3A8FC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E10E4FA32164859800A2DFB4 /* Authentication.swift */,
+				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
+				587CFC7F21635A5B004B18D9 /* GroupChatViewController.swift */,
+				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
+				EAE284512139AA3A00B98325 /* User.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		E10D0DC7217C49CC00E3A8FC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				041F2C7D2169B11300899954 /* ChooseFriendForLocationSharing.swift */,
+				041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */,
+				041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */,
+				041F2C792169B11200899954 /* LocationSharingViewController.swift */,
+				1E2D60B82169BFCE007F93B8 /* NavigationInterfaceViewController.swift */,
+				1E2D60B92169BFCF007F93B8 /* SetHomeAddressViewController.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		E10D0DC8217C49EC00E3A8FC /* Chat_Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				587CFC8221635AFA004B18D9 /* AddParticipantsViewController.swift */,
+				5810C8E521437DB900642AFC /* ChatViewController.swift */,
+				587CFC8121635AFA004B18D9 /* ChatParticipantsViewController.swift */,
+				583EC9C02155F6C90022B64E /* FriendsController.swift */,
+				EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */,
+				EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */,
+				EAB182D9214EB8450003135B /* FriendCell.swift */,
+				EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */,
+				583EC9B8215338540022B64E /* PrevChatsViewController.swift */,
+			);
+			name = Chat_Messaging;
+			sourceTree = "<group>";
+		};
+		E10D0DC9217C4A1B00E3A8FC /* Voice_Call */ = {
+			isa = PBXGroup;
+			children = (
+				E12195E72161E537007DAF25 /* AppDelegate.h */,
+				E12195E82161E537007DAF25 /* AppDelegate.m */,
+				E12195E62161E537007DAF25 /* main.m */,
+				E12195EA2161E537007DAF25 /* ViewController.h */,
+				E12195E92161E537007DAF25 /* ViewController.m */,
+			);
+			name = Voice_Call;
+			sourceTree = "<group>";
+		};
+		E10D0DCA217C4A6500E3A8FC /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				E10E4FA721649B0100A2DFB4 /* ReminderTableViewController.swift */,
+				E10E4FA52164961900A2DFB4 /* Reminder.swift */,
+				E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */,
+			);
+			name = Reminders;
+			sourceTree = "<group>";
+		};
+		E10D0DCB217C4AAE00E3A8FC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				04F2A36B214665840051D220 /* NavController.swift */,
+				E131DA2B213F5849000354B5 /* HomeViewController.swift */,
+				EAA9385321315864009932AC /* UsersViewController.swift */,
+				E131DA2E2140127E000354B5 /* HomeTabVC.swift */,
+				EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		E183B6B4211C1A7500D5FB2C = {
 			isa = PBXGroup;
 			children = (
@@ -266,47 +341,20 @@
 		E183B6BF211C1A7500D5FB2C /* SWEDEN_iCare */ = {
 			isa = PBXGroup;
 			children = (
-				E10E4FAB2164B17500A2DFB4 /* SWEDEN_iCare.entitlements */,
+				E10D0DCB217C4AAE00E3A8FC /* UI */,
+				E10D0DC8217C49EC00E3A8FC /* Chat_Messaging */,
+				E10D0DCA217C4A6500E3A8FC /* Reminders */,
+				E10D0DC6217C499500E3A8FC /* Authentication */,
+				E10D0DC7217C49CC00E3A8FC /* Navigation */,
+				E10D0DC9217C4A1B00E3A8FC /* Voice_Call */,
+				EA5023C12131662800568BC7 /* Images */,
 				E12195F02161E5C4007DAF25 /* GruveoSDK.framework */,
 				E12195EE2161E56F007DAF25 /* WebRTC.framework */,
-				EA5023C12131662800568BC7 /* Images */,
-				E183B6C2211C1A7500D5FB2C /* LoginViewController.swift */,
-				587CFC7F21635A5B004B18D9 /* GroupChatViewController.swift */,
-				EAE2844D2139827200B98325 /* SignUpViewController.swift */,
-				04F2A36B214665840051D220 /* NavController.swift */,
-				E131DA2B213F5849000354B5 /* HomeViewController.swift */,
-				EAA9385321315864009932AC /* UsersViewController.swift */,
-				E131DA2E2140127E000354B5 /* HomeTabVC.swift */,
-				EAE284512139AA3A00B98325 /* User.swift */,
-				587CFC8221635AFA004B18D9 /* AddParticipantsViewController.swift */,
-				587CFC8121635AFA004B18D9 /* ChatParticipantsViewController.swift */,
-				EAE2844F2139A74300B98325 /* HomeScreenViewController.swift */,
-				5810C8E521437DB900642AFC /* ChatViewController.swift */,
-				583EC9B8215338540022B64E /* PrevChatsViewController.swift */,
-				583EC9C02155F6C90022B64E /* FriendsController.swift */,
-				EAFCFC5C214CF2C8002F2D08 /* FriendsViewController.swift */,
-				EAFCFC60214EB284002F2D08 /* FriendsAndFriendRequestsViewController.swift */,
-				EAB182D9214EB8450003135B /* FriendCell.swift */,
-				EAB182DB214EBC1F0003135B /* FriendProfileViewController.swift */,
-				047627AA2134C87400A57C74 /* Main.storyboard */,
-				E10E4FA52164961900A2DFB4 /* Reminder.swift */,
-				E12195E72161E537007DAF25 /* AppDelegate.h */,
-				E12195E82161E537007DAF25 /* AppDelegate.m */,
-				E12195E62161E537007DAF25 /* main.m */,
-				E12195EA2161E537007DAF25 /* ViewController.h */,
-				E12195E92161E537007DAF25 /* ViewController.m */,
 				E183B6C7211C1A7500D5FB2C /* Assets.xcassets */,
+				047627AA2134C87400A57C74 /* Main.storyboard */,
 				E183B6CC211C1A7500D5FB2C /* Info.plist */,
 				EA5023C221316A5200568BC7 /* GoogleService-Info.plist */,
-				E10E4FA32164859800A2DFB4 /* Authentication.swift */,
-				E10E4FA721649B0100A2DFB4 /* ReminderTableViewController.swift */,
-				E10E4FA92164A5C600A2DFB4 /* AddReminderViewController.swift */,
-				041F2C7D2169B11300899954 /* ChooseFriendForLocationSharing.swift */,
-				041F2C7E2169B11400899954 /* ChooseFriendTableViewController.swift */,
-				041F2C7B2169B11300899954 /* LocationSharingFriendList.swift */,
-				041F2C792169B11200899954 /* LocationSharingViewController.swift */,
-				1E2D60B82169BFCE007F93B8 /* NavigationInterfaceViewController.swift */,
-				1E2D60B92169BFCF007F93B8 /* SetHomeAddressViewController.swift */,
+				E10E4FAB2164B17500A2DFB4 /* SWEDEN_iCare.entitlements */,
 			);
 			path = SWEDEN_iCare;
 			sourceTree = "<group>";
