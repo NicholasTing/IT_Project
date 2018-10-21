@@ -75,11 +75,11 @@
 
 ##### In order for navigation to work, you will have to allow this app to use your location.
 
-#### g) Navigation
+#### f)i) Navigation
 
 ##### To navigate to your designated address, you simply need to enter where you want to go and how you want to get there (Drive or Walk)
 
-#### h) Location Sharing
+#### f)ii) Location Sharing
 
 ##### In order for location sharing to work, you will need to allow your "carer" to view your location, by giving them permission.
 
