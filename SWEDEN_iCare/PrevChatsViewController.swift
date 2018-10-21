@@ -23,14 +23,11 @@ class PrevChatsViewController: UITableViewController {
     var contactChats:[contactChat] = []{
         didSet{
             self.tableView.reloadData()
-            
         }
     }
     var selectedContacts:contactChat!
     
-    let dispatchGroup = DispatchGroup()
-    //    var contactChats = [contactChat(email: "222@gmail.com", lastMessage: "hahaha"),contactChat(email: "444@gmail.com", lastMessage: "hahaha")]
-    
+    //load friends in contact
     override func viewDidLoad() {
         self.title = "Contacts"
         self.fetchContactChats()
@@ -46,7 +43,7 @@ class PrevChatsViewController: UITableViewController {
         return contactChats.count
     }
     
-    
+    // for each table view cell return the member from the contact Chat list
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
         if contactChats[indexPath.row].contacts.count == 1 {
@@ -58,8 +55,8 @@ class PrevChatsViewController: UITableViewController {
         return cell
     }
     
+    // on click for each contact Chat return chat window of the chat recipient
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let currContact = contactChats[indexPath.row]
         selectedContacts = currContact
         if selectedContacts.contacts.count == 1 {
@@ -72,15 +69,14 @@ class PrevChatsViewController: UITableViewController {
             vc.groupId = selectedContacts.groupId
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
-        //        performSegue(withIdentifier: "contactSegue", sender: nil)
-        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    // fetch data from Firebase and create the data in the form of Contact Chat
     func fetchContactChats(){
         let lastMessage = "default message"
         FriendsController.fetchFriendIds(completion: { friendIds in
@@ -113,26 +109,5 @@ class PrevChatsViewController: UITableViewController {
             }
         })
     }
-    
-    //    func fetchLastMessage(id:String, completion: @escaping (_ lastMessage:String?) -> Void) {
-    //        let query = databaseChats.queryOrdered(byChild: "timestamp")
-    //        _ = query.observe(.childAdded, with: { [weak self] snapshot in
-    //            var lastMessage:String?
-    //            if  let data        = snapshot.value as? [String: String],
-    //                let senderId          = data["sender_id"],
-    //                let text        = data["text"],
-    //                let receiverId  = data["receiver_id"],
-    //                !text.isEmpty
-    //            {
-    //                if ((receiverId == id && senderId == self?.user?.uid) || (senderId == id && receiverId == self?.user?.uid)) {
-    //                    print(text)
-    //                    lastMessage = text
-    //                    completion(lastMessage)
-    //                }
-    //            }
-    //
-    //        })
-    //    }
-    
     
 }

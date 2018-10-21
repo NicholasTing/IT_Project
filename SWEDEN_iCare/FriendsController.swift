@@ -24,15 +24,14 @@ class FriendsController {
                     let fid = friendID as! String
                     idList.append(fid)
                 }
-                
                 completion(idList)
             }
         }
     }
     
+    // fetchFriendEmail based on id from Firebase
     static func fetchFriendEmail(id:String, completion: @escaping (_ email:String?) -> Void) {
         let friendsDBRef = Database.database().reference().child("users")
-        
         friendsDBRef.child(id).observeSingleEvent(of: .value, with:  {(snapshot) in
             var address:String?
             if let properties = snapshot.value as? [String: AnyObject]{
@@ -43,6 +42,7 @@ class FriendsController {
         })
     }
     
+    // fetch group friends ids from firebase
     static func fetchGroupsFriendsIds(completion: @escaping (_ idsInGroup:[String: [String]]?) -> Void) {
         let groupDBRef = Database.database().reference().child("groups")
         
@@ -52,9 +52,7 @@ class FriendsController {
             let enumerator = snapshot.children
             while let childSnapshot = enumerator.nextObject() as? DataSnapshot {
                 if let group = childSnapshot.value as? [String: AnyObject]{
-                    
                                         print(group["participants"])
-                    
                     let groupId = childSnapshot.key
                     let participantIds = group["participants"] as? [String: String]
                     var idList:[String] = []
@@ -76,6 +74,7 @@ class FriendsController {
         })
     }
     
+    // concat addresses of all members in a group
     static func concatAddressesFromUsers(users: [User]) -> String{
         var addresses:String = ""
         for user in users{
@@ -84,6 +83,7 @@ class FriendsController {
         return addresses
     }
     
+    // return idList from a list of Users
     static func idListFromUsers(users: [User]) -> [String]{
         var idList:[String] = []
         for user in users{
