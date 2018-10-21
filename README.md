@@ -40,11 +40,11 @@
 
 ##### In order to sign up, click the button below and enter an email address and a password of at least 8 digits.
 
-##### Image goes here
+<img src="iCare_Screenshots/login_screen.png" width="30%">
 
 ### b) Home Screen
 
-##### Image goes here
+<img src="iCare_Screenshots/home_screen.png" width="30%">
 
 ### c) Friend requests
 
@@ -53,6 +53,8 @@
 ##### The other party will have to accept the friend request from their end.
 
 ### d) Video and Voice Call
+
+<img src="iCare_Screenshots/call_screen.png" width="30%">
 
 ##### In order to initiate a call, you will need to use 2 real iOS devices. 
 
@@ -67,19 +69,27 @@
 
 ### e) Chat Message
 
+<img src="iCare_Screenshots/chats_screen.png" width="30%">
+
 ##### In order to send a chat message, you will need to be friends with other users. (See Friend requests on how to be friends with other users)
 
-##### Click on their name and you will be able to send messages.
+##### Click on the user's email and you will be able to send messages.
 
 ### f) Navigation
+
+<img src="iCare_Screenshots/navigation_home_screen.png" width="30%">
 
 ##### In order for navigation to work, you will have to allow this app to use your location.
 
 #### f)i) Navigation
 
+<img src="iCare_Screenshots/navigation_screen.png" width="30%">
+
 ##### To navigate to your designated address, you simply need to enter where you want to go and how you want to get there (Drive or Walk)
 
 #### f)ii) Location Sharing
+
+<img src="iCare_Screenshots/location_sharing_screen.png" width="30%">  
 
 ##### In order for location sharing to work, you will need to allow your "carer" to view your location, by giving them permission.
 
